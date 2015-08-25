@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+	root element for the scrollable. 
+	when scrolling occurs this element stays still. 
+*/
+
+#nav-thumbnail-container {
+	background:url(images/Bkgd_Thumnails.png) repeat center;
+	height:62px;
+	width:714px;
+	padding:0;
+	margin:0;
+}
+
+#nav-header {
+	background-color:#00AEEF;
+	width:960px;
+	height:90px;
+}
+
+#nav-content {
+	margin-left:10px;
+}
+#nav-content p {
+	float:left;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:14px;
+	margin:0px 40px 0 15px;
+	padding-top:23px;
+}
+
+div.scrollable {
+	
+	/* required settings */
+	position:relative;
+	overflow:hidden;	 	
+	width: 515px;	
+	height:45px;
+	float:left;
+	
+	
+	
+	/* custom decorations */
+	padding:7px 0;	
+}
+
+/*Remove display none when adding more nav items to show navigation */
+a.prev, a.next, a.prevPage, a.nextPage {
+	display:block;
+	width:15px;
+	height:25px;
+	background:url(images/Navigation-left.png) no-repeat;
+	float:left;
+	margin:15px 5px;
+	cursor:pointer;
+	
+
+}
+
+/* mouseover state */
+a.prev:hover, a.next:hover, a.prevPage:hover, a.nextPage:hover {
+	background-position:0px -27px;
+	
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}
+
+/* next button uses another background image */
+/*Remove display none when adding more nav items to show navigation */
+a.next, a.nextPage {
+	background-image:url(images/Navigation-right.png);
+	clear:right;
+}
+
+
+/* 
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+div.scrollable div.items {	
+	/* this cannot be too large */
+	width:20000em;	
+	position:absolute;
+	clear:both;		
+	
+	/* decoration */
+	margin-left:10px;
+}
+
+div.scrollable div.items img {
+	border:none;
+}
+
+
+
+/* single scrollable item */
+div.scrollable div.items div {
+	float:left;
+	
+	/* custom decoration */
+	text-align:center;
+	width:45px;
+	margin-right:20px;
+	padding:0;
+	}
+
+/* active item */
+div.scrollable div.items div.active {
+	
+}
+
+
+/*tooltips */
+
+.tipsy { margin-top: 10px; font-size: 10px;}
+.tipsy-south { background: url(images/tooltip.png) center top no-repeat;
+	}
+	
+.tipsy-south p {
+	padding:5px;
+	margin:5px 0 0 0;
+	background:#cccccc;
+}
+
+

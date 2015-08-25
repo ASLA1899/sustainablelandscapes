@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript">function simple_tooltip(target_items, name){
+ $(target_items).each(function(i){
+		$("body").append("<div class='"+name+"' id='"+name+i+"'><p>"+$(this).attr('title')+"</p></div>");
+		var my_tooltip = $("#"+name+i);
+
+		$(this).removeAttr("title").mouseover(function(){
+				my_tooltip.css({opacity:0.8, display:"none"}).fadeIn(400);
+		}).mousemove(function(kmouse){
+				my_tooltip.css({left:kmouse.pageX+0, top:kmouse.pageY+15});
+				
+		}).mouseout(function(){
+				my_tooltip.fadeOut(400);
+		});
+		
+	});
+}
+$(document).ready(function(){
+	 simple_tooltip("a","tooltip");
+});
+
+</script>
+
+<style>
+
+.tooltip{
+    position:absolute;
+    z-index:999;
+    left:-9999px;
+    background-color:#222;
+    padding:5px;
+    border:1px solid #fff;
+}
+
+.tooltip p{
+    margin:0;
+    padding:0;
+    color:#fff;
+    background-color:#222;
+    padding:2px 7px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div style="margin-left:500px; margin-top:25px;"> <a href="#" title="This is a small Tooltip with the Classname 'Tooltip'"><img src="images/NavImage1.png" / border="0"></a></div>
+</body>
+</html>

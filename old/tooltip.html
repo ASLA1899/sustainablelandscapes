@@ -1,0 +1,157 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- DOCTYPE is always recommended. see: http://www.quirksmode.org/css/quirksmode.html -->
+
+
+<!--
+	This is the jQuery Tools standalone demo, the fastest way to get started.
+	You can freely copy things on your site. All demos can be found here:
+
+	http://flowplayer.org/tools/demos/
+
+	- cdn.jquerytools.org is available until the end of 2010 for testing	
+	- css files should not be referenced from flowplayer.org when in production
+	
+	Enjoy!
+-->
+
+<!-- standalone page styling -->
+
+<style>
+body {
+	padding:150px 50px;
+	font-family:"Lucida Grande","Lucida Sans Unicode","bitstream vera sans","trebuchet ms",verdana;
+}
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+</style>
+
+
+<!--
+	this file includes all tools together with the jQuery library
+-->
+<script src="http://cdn.jquerytools.org/1.0.2/jquery.tools.min.js"></script>
+
+
+
+
+
+
+<!-- tooltip styling -->
+<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/tooltip.css"/>
+
+<!--[if IE]>
+<style>
+div.tooltip {
+	background-color:#fff;
+}
+</style>
+<![endif]-->
+
+
+<!-- standalone page override -->
+<style>
+div.tooltip {
+	font-size:12px;		
+}
+</style>
+
+
+<!-- tooltip trigger styling -->
+<style>
+div.nav {
+	background:transparent url(http://static.flowplayer.org/img/box/right/tools.png) no-repeat scroll 0 50%;
+	color:#333;
+	display:block;
+	font-size:14px;
+	height:125px;
+	padding:18px 80px 20px 15px;
+	text-decoration:none;
+	width:118px !important;
+	
+	position:relative;
+	top:100px;
+	
+}
+
+/* simple mouseover effect for the trigger */
+div.nav  {
+	color:#000;
+}
+
+
+/* override standalone page styling so that the tooltip is fully shown */
+body {
+	padding-left:150px;
+}
+
+</style>
+
+
+<!-- HTML setup -->
+
+<!-- trigger element -->
+<a href="#" class="nav">
+	Move the mouse over this box to see the tooltip in action.
+
+</a>
+
+<!-- tooltip element -->
+<div class="tooltip">
+	<h3>The Tooltip</h3>
+
+	<p>
+		<strong>A great tool for designing better layouts and more intuitive user-interfaces.</strong>
+	</p>
+
+	<p>
+
+		Tooltips can contain any HTML such as links, images, forms and tables.
+		This tooltip is vertically centered on the top edge of the trigger element.
+	</p>
+</div>
+
+
+
+
+ 
+
+<script>
+
+$.tools.addTipEffect("slidedown",  
+	
+	// opening animation
+	function() { 
+		var opacity = this.getConf().opacity;
+		this.getTip().css({opacity:0}).animate({top: '+=15', opacity:opacity}, 300).show();
+	}, 
+	
+	// closing animation
+	function() {
+		this.getTip().animate({top: '+=15', opacity:0}, 300, function() { 
+				$(this).hide().animate({top: '+=30'}, 0);
+		});
+	}
+);
+
+
+$("div.nav ").tooltip({effect: 'slidedown'});
+</script>
+
+

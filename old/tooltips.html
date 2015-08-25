@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+
+
+
+<!--
+	this file includes all tools together with the jQuery library
+-->
+<script src="js/jquery.js"></script>
+
+
+
+
+
+
+<!-- tooltip styling -->
+
+
+<!-- standalone page override -->
+
+
+<!-- tooltip trigger styling -->
+<style>
+.trigger {
+	
+	color:#333;
+	display:block;
+	font-size:14px;
+	height:25px;
+	text-decoration:none;
+	width:45px;
+	
+	position:relative;
+	top:100px;
+	
+}
+
+/* simple mouseover effect for the trigger */
+.trigger:hover {
+	color:#000;
+}
+
+
+/* override standalone page styling so that the tooltip is fully shown */
+body {
+	padding-left:150px;
+}
+
+div.tooltip {
+	background: url(images/tooltip.png) top center no-repeat;
+	font-size:10px;
+
+	
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:10px;
+	display:none;
+	color:#666666;
+	
+}
+
+/* tooltip title element (h3) */
+div.tooltip p {
+	padding:5px;
+	margin:5px 0 0 0;
+	background:#cccccc;
+}
+
+
+
+</style>
+
+
+<!-- HTML setup -->
+
+<!-- trigger element -->
+<a href="#" class="trigger"><img src="images/NavImage1.png" border="0"/>
+</a>
+
+<!-- tooltip element -->
+<div class="tooltip">
+	<p>ToolTip in action</p>
+</div>
+<br /><br /><br /><br /><br /><br /><br />
+<!-- trigger element -->
+<a href="#" class="trigger"><img src="images/NavImage1.png" border="0"/>
+</a>
+
+<!-- tooltip element -->
+<div class="tooltip">
+	<p>ToolTip in action</p>
+</div>
+
+
+<!-- javascript coding -->
+
+<script>
+// execute your scripts when the DOM is ready. this is a good habit
+$(function() {
+
+$(".trigger").tooltip({
+	position:['bottom', 'center'],
+	offset:[15,0]
+	
+	});
+});
+</script>
+
+
+
+
+</body>
+</html>
+

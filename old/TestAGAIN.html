@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link href="navStyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script script src="js/jquery.mousewheel.js"></script>
+
+<style>
+
+#nav-content {
+	margin-left:375px;
+}
+
+div.scrollable {
+	
+	/* required settings */
+	position:relative;
+	overflow:hidden;	 	
+	width: 325px;	
+	float:left;
+	background-color:#06F;
+	
+
+	
+	/* custom decorations */
+	padding:7px 0;	
+}
+
+a.prev, a.next, a.prevPage, a.nextPage {
+	display:block;
+	width:6px;
+	height:11px;
+	background:url(images/Nav-left.png) no-repeat;
+	float:left;
+	margin:15px 5px;
+	cursor:pointer;
+
+}
+
+/* mouseover state */
+a.prev:hover, a.next:hover, a.prevPage:hover, a.nextPage:hover {
+	background-position:0px -11px;
+	
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}
+
+/* next button uses another background image */
+a.next, a.nextPage {
+	background-image:url(images/Nav-right.png);
+	clear:right;	
+}
+
+
+/* 
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+div.scrollable div.items {	
+	/* this cannot be too large */
+	width:20000em;	
+	
+	clear:both;		
+	
+	/* decoration */
+	margin-left:10px;
+}
+
+div.scrollable div.items img {
+	border:none;
+}
+
+
+
+/* single scrollable item */
+div.scrollable div.items div {
+	float:left;
+	
+	/* custom decoration */
+	text-align:center;
+	
+	margin-right:20px;
+	padding:0;
+	}
+
+/* active item */
+div.scrollable div.items div.active {
+	
+}
+
+
+/*tooltips */
+
+.trigger {
+	
+	color:#333;
+	display:block;
+	font-size:14px;
+	text-decoration:none;
+	top:0px;
+	
+}
+
+
+.trigger:hover {
+	color:#000;
+}
+
+
+
+
+div.tooltip {
+	background: url(images/tooltip.png) top center no-repeat;
+	font-size:10px;
+
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:10px;
+	display:none;
+	color:#666666;
+	
+}
+
+
+div.tooltip p {
+	padding:5px;
+	margin:5px 0 0 0;
+	background:#cccccc;
+}
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<div id="nav" style="background-color:#06F;">
+<div id="nav-content">
+	
+<a class="prev"></a> 
+<!-- root element for scrollable --> 
+
+<div class="scrollable"> 
+     
+    <!-- root element for the items --> 
+    <div class="items"> 
+        <div><a href="link.html" class="trigger"><img src="images/NavImage1.png"  border="0"/></a><div class="tooltip"><p>ToolTip Tool Tip</p></div></div>  <div><img src="images/NavImage1.png" /></div>  <div><img src="images/NavImage1.png" /></div>  <div><img src="images/NavImage1.png" /></div>  <div><img src="images/NavImage1.png" /></div>  
+        <div><img src="images/NavImage1.png" /></div>  <div><img src="images/NavImage1.png" /></div>  <div><img src="images/NavImage1.png" /></div>  <div><img src="images/NavImage1.png" /></div>  <div><img src="images/NavImage1.png" /></div>  
+        <div><img src="images/NavImage1.png" /></div> 
+    </div> 
+     
+</div>
+
+<a class="next"></a> 
+
+<br clear="all" />
+</div>
+</div>
+
+<!--JAVSCRIPT - NAVIGATION___________________________________________________________________________________-->
+<script> 
+// execute your scripts when DOM is ready. this is a good habit 
+$(function() {         
+         
+    // initialize scrollable  
+    $("div.scrollable").scrollable();     
+     
+}); 
+</script>
+
+<script>
+// execute your scripts when the DOM is ready. this is a good habit
+$(function() {
+
+$(".trigger").tooltip({
+	position:['bottom', 'center'],
+	offset:[20,0]
+	
+	});
+});
+</script>
+
+<!--JAVSCRIPT - SLIDESHOW___________________________________________________________________________________-->
+
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$("#slider").easySlider();
+	});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {	
+
+	//Show Banner
+	$("#slider li .desc").show(); //Show Banner
+	$("#slider li .block").animate({ opacity: 0.85 }, 1 ); //Set Opacity
+
+	
+			
+	//Toggle Teaser
+	$("#slider li a.collapse").click(function() {									  
+		$("#slider li .block").slideToggle();
+		$("a.collapse").toggleClass("show");
+		return false; 
+	});
+	
+});//Close Function
+
+
+</script>
+</body>
+</html>

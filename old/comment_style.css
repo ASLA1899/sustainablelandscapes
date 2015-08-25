@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#idc-container-parent #idc-container {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:2px solid #edg;
+}
+
+#idc-container-parent #idc-container.idc-cover{
+	
+}
+
+#idc-container-parent #idc-container.idc-cover h3 {
+	color:#09F;
+	font-size:18px;
+	text-transform:capitalize;
+}
+
+#idc-container-parent #idc-container.idc-new{
+	
+}
+
+#idc-container-parent #idc-container.idc-head{
+	
+}
+
+#idc-container-parent #idc-container.idc-head .idc-ctools{
+	
+}
+
+#idc-container-parent #idc-container.idc-head .idc-user_i{
+	
+}
+
+#idc-container-parent #idc-container.idc-footer{
+	
+}
+
+#idc-container-parent #idc-container.idc-thread{
+	
+}
+
+#idc-container-parent #idc-container.idc-c{
+	
+	
+}
+
+#idc-container-parent #idc-container.idc-c.idc-admin{
+	
+}
+
+#idc-container-parent #idc-container.idc-c-h{
+	
+}
+
+#idc-container-parent #idc-container.idc-c-h .idc-a{
+	
+}
+
+#idc-container-parent #idc-container.idc-c-h .idc-i{
+	
+}
+
+#idc-container-parent #idc-container.idc-c-h .idc-v{
+	
+}
+
+#idc-container-parent #idc-container.idc-m{
+	
+}
+
+#idc-container-parent #idc-container.idc-c-t{
+	
+}
+
+#idc-container-parent #idc-container.idc-c-t-inner{
+	
+}
+
+.idc-c-b
+
+.idc-c-b .idc-c-b_info
+
+.idc-c.idc-highlight

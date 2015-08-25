@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Easy Slider jQuery Plugin Demo</title>
+<script type="text/javascript" src="js/navigation.js"></script>
+<script type="text/javascript" src="js/easySlider.packed.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$("#slider").easySlider();
+	});
+</script>
+<meta name="description" content="Simple easy-to-use jQuery plugin for sliding images and content">
+</meta>
+
+<style>
+body {
+	margin:0;
+	padding:40px;
+	background:#fff;
+	font:80% Arial, Helvetica, sans-serif;
+	color:#555;
+	line-height:180%;
+}
+h1{
+	font-size:180%;
+	font-weight:normal;
+	}
+h2{
+	font-size:160%;
+	font-weight:normal;
+	}	
+h3{
+	font-size:140%;
+	font-weight:normal;
+	}	
+img{border:none;}
+pre{
+	display:block;
+	font:12px "Courier New", Courier, monospace;
+	padding:10px;
+	border:1px solid #bae2f0;
+	background:#e3f4f9;	
+	margin:.5em 0;
+	width:500px;
+	}		
+
+/* Easy Slider */
+
+	#slider ul, #slider li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider, #slider li{ 
+		/* 
+			define width and height of container element and list item (slide)
+			list items must be the same size as the slider area
+		*/ 
+		width:723px;
+		height:455px;
+		overflow:hidden;
+		background-color:#09F;
+		}
+	span#prevBtn{
+		font-family:Georgia; font-size:15px;}
+	span#nextBtn{
+		font-family:Georgia; font-size:15px;}					
+
+/* // Easy Slider */
+
+</style>
+</head>
+<body>
+
+	<h1>Easy Slider jQuery Plugin Demo</h1>
+	
+	<h2>Easy Slider for images - non styled version with default settings</h2>
+	
+	<div id="slider">
+		<ul>				
+			<li><img src="images/SlideImageTest1.jpg" alt="Css Template Preview" /></a></li>
+			<li><img src="images/SlideImageTest2.jpg" alt="Css Template Preview" /></a></li>
+			<li><img src="images/SlideImageTest1.jpg" alt="Css Template Preview" /></a></li>
+			<li><img src="images/SlideImageTest2.jpg" alt="Css Template Preview" /></a></li>
+			<li><img src="images/SlideImageTest1.jpg" alt="Css Template Preview" /></a></li>			
+		</ul>
+        
+        <div style="height:25px; margin-top:50px; position:absolute;">
+        	<span id="prevBtn"><a href="javascript:void(0);" class="slide-previous"></a></span>
+            <span id="nextBtn"><a href="javascript:void(0);" class="slide-next"></a></span>
+        </div>
+	</div>
+	
+	
+
+</body>
+</html>

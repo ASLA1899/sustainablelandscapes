@@ -1,0 +1,185 @@
+<html>
+<head>
+<style>
+body {
+	padding:150px 50px;
+	font-family:"Lucida Grande","Lucida Sans Unicode","bitstream vera sans","trebuchet ms",verdana;
+}
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 500px;
+	height:120px;
+
+	/* custom decorations */
+	border:1px solid #ccc;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+/* single scrollable item */
+.scrollable img {
+	float:left;
+	margin:20px 5px 20px 21px;
+	background-color:#fff;
+	padding:2px;
+	border:1px solid #ccc;
+	cursor:pointer;
+	
+	
+}
+
+/* active item */
+
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background:url(../img/scrollable/arrow/hori_large.png) no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin:40px 10px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* right */
+a.right 				{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover 		{ background-position:-30px -30px; }
+a.right:active 	{ background-position:-60px -30px; } 
+
+
+/* left */
+a.left				{ margin-left: 0px; } 
+a.left:hover  		{ background-position:-30px 0; }
+a.left:active  	{ background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down		{ 
+	background:url(../img/scrollable/arrow/vert_large.png) no-repeat; 
+	float: none;
+	margin: 10px 50px;
+}
+
+/* up */
+a.up:hover  		{ background-position:-30px 0; }
+a.up:active  		{ background-position:-60px 0; }
+
+/* down */
+a.down 				{ background-position: 0 -30px; }
+a.down:hover  		{ background-position:-30px -30px; }
+a.down:active  	{ background-position:-60px -30px; } 
+
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+} 	
+
+
+
+</style>
+
+
+<!--
+	this file includes all tools together with the jQuery library
+-->
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- HTML structures -->
+
+
+<!-- "previous page" action -->
+<a class="prevPage browse left"></a>
+
+<!-- root element for scrollable -->
+<div class="scrollable">	
+	
+	<!-- root element for the items -->
+	<div class="items">
+	
+		<!-- 1-5 -->
+		<img src="images/CrackGarden_Nav.jpg" />
+		<img src="images/Greensburg_Nav.jpg" />
+		<img src="images/Highline_Nav.jpg" />
+		<img src="images/Highpoint_Nav.jpg" />
+		<img src="images/RainGarden_Nav.jpg" />
+
+		
+		<!-- 5-10 -->
+		<img src="images/RedRibbon_Nav.jpg" />
+		<img src="images/SiskiyouSt_Nav.jpg" />
+		<img src="images/VietVillage_Nav.jpg" />
+		<img src="images/WaMuRoof_Nav.jpg" />
+		<img src="images/WellesleyCollege_Nav.jpg" />
+        
+        
+      </div>
+        
+        
+	
+</div>
+
+<!-- "next page" action -->
+<a class="nextPage browse right"></a>
+
+<br clear="all" />
+
+<!-- javascript coding -->
+
+
+<script>
+// execute your scripts when the DOM is ready. this is a good habit
+$(function() {
+
+	// initialize scrollable
+	$("div.scrollable").scrollable({size:1, api:true});
+
+});
+
+ 
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- DOCTYPE is always recommended. see: http://www.quirksmode.org/css/quirksmode.html -->
+
+<!--
+	This is the jQuery Tools standalone demo, the fastest way to get started.
+	You can freely copy things on your site. All demos can be found here:
+
+	http://flowplayer.org/tools/demos/
+
+	- cdn.jquerytools.org is available until the end of 2010 for testing	
+	- css files should not be referenced from flowplayer.org when in production
+	
+	Enjoy!
+-->
+
+<!-- standalone page styling -->
+<style>
+body {
+	padding:150px 50px;
+	font-family:"Lucida Grande","Lucida Sans Unicode","bitstream vera sans","trebuchet ms",verdana;
+}
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+</style>
+
+
+<!--
+	this file includes all tools together with the jQuery library
+-->
+<script src="jquery-1.3.2.js"></script>
+<script src="tools.scrollable-1.1.0.js"></script>
+
+
+
+
+
+
+<!-- without body tag IE may have unprodictable behaviours --> 
+<body>
+
+<!--
+<link rel="stylesheet" type="text/css" href="scrollable-horizontal.css" />
+<link rel="stylesheet" type="text/css" href="scrollable-buttons.css" />
+-->
+
+<link rel="stylesheet" type="text/css" href="kTest.css" />
+
+<!-- HTML structures -->
+
+
+<!-- "previous page" action -->
+<a class="prevPage browse left"></a>
+
+<!-- root element for scrollable -->
+<div class="scrollable">	
+	
+	<!-- root element for the items -->
+	<div class="items">
+		<!-- 1-5 -->
+		<img src="images/CrackGarden_Nav.jpg" />
+		<img src="images/Greensburg_Nav.jpg" />
+		<img src="images/Highline_Nav.jpg" />
+		<img src="images/Highpoint_Nav.jpg" />
+		<img src="images/RainGarden_Nav.jpg" />
+
+		
+		<!-- 5-10 -->
+		<img src="images/RedRibbon_Nav.jpg" />
+		<img src="images/SiskiyouSt_Nav.jpg" />
+		<img src="images/VietVillage_Nav.jpg" />
+		<img src="images/WaMuRoof_Nav.jpg" />
+		<img src="images/WellesleyCollege_Nav.jpg" />
+				
+	</div>
+	
+</div>
+
+<!-- "next page" action -->
+<a class="nextPage browse right"></a>
+
+<br clear="all" />
+
+<!-- javascript coding -->
+
+
+<script>
+// execute your scripts when the DOM is ready. this is a good habit
+$(function() {
+
+	// initialize scrollable
+	var api = $(".scrollable").scrollable(); 
+
+});
+</script>
+
+

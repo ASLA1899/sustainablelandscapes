@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link href="SlideShowStyle.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/navigation.js"></script>
+<script src="http://static.flowplayer.org/js/jquery.mousewheel.js"></script>
+
+</head>
+
+<body>
+<div> 
+<!-- root element for scrollable --> 
+
+<div class="scrollable"> 
+     
+    <!-- root element for the items --> 
+    <div class="items"> 
+        <div><img src="images/SlideImageTest1.jpg" /></div>  <div><img src="images/SlideImageTest2.jpg" /></div> div><img src="images/SlideImageTest2.jpg" /></div>
+    </div> 
+     
+</div>
+<br clear="all" />
+</div>
+
+
+
+
+<script> 
+// execute your scripts when DOM is ready. this is a good habit 
+$(function() {		
+		
+	// initialize scrollable 
+	$("div.scrollable").scrollable();	
+	
+});
+
+</script>
+
+</body>
+</html>

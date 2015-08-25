@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+
+
+
+</head>
+
+<body>
+<div id="home-container">
+
+<!--HEADER-->
+<div id="header">
+
+<div id="nav">
+<div id="logo"><img src="images/Logo.png" /></div>
+
+
+<!-- javascript coding -->
+</div>
+
+<div class="clear"></div>
+<img src="images/Title.jpg" style="padding:30px 0px 5px 25px;"/>
+
+</div>
+
+<!-- THUMBNAILS -->
+<ul class="thumbnails">
+
+	
+	<li class="thumbnails-blue"></li
+	><li><a href="#"><span><p class="title">High Line Park</p><p class="index-title-city">New York City</p></span><img src="images/home/Highline_Index.jpg" /></a></li
+    ><li class="thumbnails-orange"></li
+    ><li><a href="#"><span><p class="title">Red Ribbon Project</p><p class="index-title-city">Qinhuangdao City, <br />Hebei Province, China</p></span><img src="images/home/RedRibbon_Index.jpg" /></a></li
+    ><li></li
+    
+    ><li><a href="#"><span><p class="title">Washington Mutual Center Roof Garden</p><p class="index-title-city">Seattle</p></span><img src="images/home/WaMuRoof_Index.jpg" /></a></li
+    ><li class="thumbnails-green"></li
+    ><li><a href="#"><span><p class="title">Crack Garden</p><p class="index-title-city">San Francisco</p></span><img src="images/home/CrackGarden_Index.jpg" /></a></li
+	><li class="thumbnails-blue"></li
+    ><li><a href="#"><span><p class="title">Viet Village Urban Farm</p><p class="index-title-city">New Orleans</p></span><img src="images/home/VietVillage_Index.jpg" /></a></li
+    
+    ><li></li
+    ><li><a href="#"><span><p class="title">Mount Tabor Middle School Rain Garden</p><p class="index-title-city">Portland</p></span><img src="images/home/RainGarden_Index.jpg" /></a></li
+    ><li></li
+    ><li><a href="#"><span><p class="title">Wellesley College</p><p class="index-title-city">Wellesley, Massachusetts</p></span><img src="images/home/WellesleyCollege_Index.jpg" /></a></li
+    ><li class="thumbnails-orange"></li
+    
+    
+    ><li><a href="#"><span><p class="title">Greensburg Sustainable Comprehensive Plan</p><p class="index-title-city">Greensburg, Kansas</p></span><img src="images/home/Greensburg_Index.jpg" /></a></li
+    ><li class="thumbnails-grey"></li
+    ><li><a href="#"><span><p class="title">NE Siskiyou Green Street</p><p class="index-title-city">Portland</p></span><img src="images/home/SiskiyouSt_Index.jpg" /></a></li
+    ><li  class="thumbnails-green"></li
+    ><li><a href="secondary.html"><span><p class="title">High Point</p><p class="index-title-city">Seattle</p></span><img src="images/home/Highpoint_Index.jpg" /></a></li
+    
+    
+>
+</ul>
+<!--THUMBNAILS END-->
+
+<!--FOOTER-->
+<div id="footer-home">
+	<div class="date">&copy;2009 American Society of Landscape Architects<br />
+    <a href="#">Contact Us</a>
+    </div>
+    
+    <div class="learn"><img src="images/LearnMore_Title.png" />
+   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet tortor ac quam mattis vestibulum nec eget neque. Etiam vestibulum sem a quam tempus dictum id ut purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam fermentum congue venenatis.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ac elit orci.</p> 
+</div>
+    <div class="clear"></div>
+</div>
+
+</div>
+
+<!--JAVSCRIPT - NAVIGATION___________________________________________________________________________________-->
+
+<!-- JAVASCRIPT - IMAGE HOVER___________________________________________________________________________________-->
+
+<script type='text/javascript'>
+$(function(){
+	$("ul.thumbnails a").hover(function(){
+		$(this).children("img").fadeOut();
+	}, function(){
+		$(this).children("img").fadeIn();
+	})		
+});
+
+</script>
+</body>
+</html>

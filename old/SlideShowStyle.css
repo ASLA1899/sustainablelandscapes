@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+	root element for the scrollable. 
+	when scrolling occurs this element stays still. 
+*/
+div.scrollable {
+	
+	/* required settings */
+	position:relative;
+	overflow:hidden;	 	
+	width: 723px;	
+	height:430px;
+	float:left;
+	
+	/* custom decorations */
+	margin:0px;
+	padding:7px 0;	
+}
+
+a.prev, a.next, a.prevPage, a.nextPage {
+	display:block;
+	width:6px;
+	height:11px;
+	background:url(images/Nav-left.png) no-repeat;
+	float:left;
+	margin:15px 5px;
+	cursor:pointer;
+}
+
+/* mouseover state */
+a.prev:hover, a.next:hover, a.prevPage:hover, a.nextPage:hover {
+	background-position:0px -11px;		
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}
+
+/* next button uses another background image */
+a.next, a.nextPage {
+	background-image:url(images/Nav-right.png);
+	clear:right;	
+}
+
+
+/* 
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+div.scrollable div.items {	
+	/* this cannot be too large */
+	width:20000em;	
+	position:absolute;
+	clear:both;		
+	
+	/* decoration */
+	margin-left:0;
+}
+
+div.scrollable div.items img {
+	border:none;
+}
+
+
+
+/* single scrollable item */
+div.scrollable div.items div {
+	float:left;
+	
+	}
+
+/* active item */
+div.scrollable div.items div.active {
+	border:1px inset #ccc;		
+	background-color:#fff;
+}
+
+
+
+.tipsy { padding: 5px; font-size: 10px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat; margin-top:25px;}  
+
+.tipsy-north { background-image: url(images/tipsy-north.gif); background-position: top center;  }
+
+
