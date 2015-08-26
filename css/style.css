@@ -1324,10 +1324,9 @@ color:#00AEEF;
 @media (max-width: 767px) {
 div.scrollable { 	
 	width: 100vw;
-	height: 160vh;
-	max-height: auto;	
+	height: 100vh;	
 	left: -2%;
-	overflow-y: scroll;
+	overflow-y: visible;
 	overflow-x: hidden;
 }
 
@@ -1336,12 +1335,13 @@ a.bigleft, a.bigright {
 }
 
 ul.thumbnails li {
-	display: block;
+	display: inline-block;
 }
 
 ul.thumbnails {
 	width: 100vw;
 	display: block;
+	height: auto;
 }
 
 #loadMore {
