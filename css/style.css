@@ -1,6 +1,5 @@
 ﻿@charset "UTF-8";
 /* CSS Document */
-/* Old Baseline Styles See below for responsive media queries*/
 
 body {
 	font-family:Arial, Helvetica, sans-serif;
@@ -11,7 +10,8 @@ body {
 	margin:0;
 }
 
-a {
+a
+{
   outline: none;
 }
 
@@ -30,8 +30,8 @@ body a:hover {
 	width:1160px;
 	margin:auto;
 	position:relative;
-	/*border:1px solid #808285;*/
 	max-width: 100%;
+	/*border:1px solid #808285;*/
 
 }
 
@@ -40,8 +40,11 @@ body a:hover {
 }
 
 .thumnail-nav-bar {
-	z-index:50; width:960px; margin:15px 125px 0px 125px; padding:0;
-	width: 100%;
+	z-index:50; 
+	width:960px;
+	max-width: 100%; 
+	margin:15px 125px 0px 125px; 
+	padding:0;
 }
 
 .textleft, .textright {
@@ -52,6 +55,29 @@ body a:hover {
 
 .textright {
 	margin-left:775px;
+}
+
+.title {
+	padding:30px 25px 5px 25px;
+	
+}
+
+.title a {
+	text-decoration: none !important;
+}
+
+.title .design {
+	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
+	font-weight: 100;
+	font-size: 2.35rem;
+	color: #d4d4d4;
+}
+
+.title .sustainable {
+	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
+	font-weight: 100;
+	font-size: 2.35rem;
+	color: #666666;
 }
 
 
@@ -65,7 +91,7 @@ div.scrollable {
 	width: 960px;	
 	height:550px;
 	float:left;
-	max-width: 100%;
+	
 	margin:0px	 0 0 0;
 	
 	/* custom decorations */
@@ -76,8 +102,7 @@ div.scrollable {
 a.bigleft, a.bigright {
 	display:block;
 	width:75px;
-	height:536px;
-	max-width: 100%; 
+	height:536px; 
 	background: url(images/LargeSlideLEFT.png) no-repeat;
 	margin:5px 0 0 0;
 	background-position:10px 200px;
@@ -159,9 +184,9 @@ a.bigright {
 */
 div.scrollable div.items {	
 	/* this cannot be too large */
-	width:320000px;	
+	width:20000em;	
 	position:absolute;
-	clear:both;	
+	clear:both;		
 	
 	/* decoration */
 	margin-left:10px;
@@ -184,7 +209,7 @@ div.scrollable div.items div {
 
 /* active item */
 div.scrollable div.items div.active {
-	max-width: 100%;
+	
 }
 
 
@@ -193,7 +218,7 @@ div.scrollable div.items div.active {
 	background:#00AEEF;
 	margin:0px 0 0 0;
 	padding:0;
-	min-height:90px;
+	height:90px;
 	width:960px;
 	max-width: 100%;
 }
@@ -205,7 +230,6 @@ padding:0px 0 0 25px;
 height:90px;
 float:left;
 max-width: 100%;
-
 }
 
 #nav-container ul#dropdown {
@@ -420,27 +444,7 @@ p.category {
 	border:0;
 }
 
-.title {
-	padding: 35px 0px 1px 25px;
-}
 
-.title .design {
-	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
-	color: #bababa;
-	font-size: 3.7rem;
-	font-weight: 100;
-}
-
-.title .sustainable {
-	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
-	color: #666666;
-	font-size: 3.7rem;
-	font-weight: 100;
-}
-
-.title a {
-	text-decoration: none !important;
-}
 
 /*Index Thumnails___________________________________________________________________________________ */
 
@@ -506,6 +510,19 @@ ul.thumbnails li a img {
 	position:absolute;
 	border:0;
 }
+
+
+* html ul.thumbnails li { display:inline; }  /* for IE 6 */
+* + html ul.thumbnails li { display:inline; }  /* for IE 7 */
+
+* html ul.thumbnails li.view { display:inline; }  /* for IE 6 */
+* + html ul.thumbnails li.view { display:inline; }  /* for IE 7 */
+
+* html ul.thumbnails li.about { display:inline; }  /* for IE 6 */
+* + html ul.thumbnails li.about { display:inline; }  /* for IE 7 */
+
+* html ul.thumbnails li.movie { display:inline; }  /* for IE 6 */
+* + html ul.thumbnails li.movie { display:inline; }  /* for IE 7 */
 
 
 ul.thumbnails li.movie a:link,
@@ -592,15 +609,22 @@ line-height:16px;
 	background-color:#eeeeee;
 }
 
+#loadMore {
+    display: none !important;
+}
+
+#showLess {
+    display: none !important;
+}
+
 /*Index-Footer___________________________________________________________________________________ */
 
 #footer {
 	width:960px;
-	margin:0 auto;
+	margin:0px auto;
 	padding:0;
 	height:162px;
 	background:#eee;
-	max-width: 100%;
 	
 }
 
@@ -674,6 +698,9 @@ line-height:16px;
 
 
 /*Video Index_______________________________________________________________________________________*/
+
+* html ul.video li { display:inline; }  /* for IE 6 */
+* + html ul.video li { display:inline; }  /* for IE 7 */
 
 ul.video {
 width:960px;
@@ -1294,21 +1321,44 @@ color:#00AEEF;
 }
 
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
+div.scrollable { 	
+	width: 100vw;
+	height: 160vh;
+	max-height: auto;	
+	left: -2%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+a.bigleft, a.bigright {
+	display: none !important;
+}
+
+ul.thumbnails li {
+	display: block;
+}
 
 ul.thumbnails {
-width:960px;
-margin:0px 0 0 0;
-padding:0px;
+	width: 100vw;
+	display: block;
 }
 
-#footer {
-	height: auto;
-	bottom: 0;
+#loadMore {
+	display: block !important;
+    color:green;
+    cursor:pointer;
 }
-
-#footer .nea {
-	float: left;
+#loadMore:hover {
+    color:black;
+}
+#showLess {
+	display: block !important;
+    color:red;
+    cursor:pointer;
+}
+#showLess:hover {
+    color:black;
 }
 
 }
