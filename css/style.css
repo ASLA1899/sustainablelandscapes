@@ -1323,8 +1323,54 @@ color:#00AEEF;
 
 @media (max-width: 767px) {
 
+#header {
+	margin-left: 0px;
+	height: 400px;
+}
+
+#nav {
+	height: 200px;
+}
+
+#nav-container {
+	width: 100%;
+	padding-left: 0px;
+}
+
+#nav-container ul#dropdown {
+	padding-left: 0px;
+}
+
+.title {
+	padding: 20px 15px 5px 15px
+}
+
+.title .design {
+	line-height: 1.1em;
+}
+
+.title .sustainable {
+	line-height: 1.1em;
+	float: left;
+}
+
 .thumnail-nav-bar {
-	max-width: 100%;
+	width: 100%;
+	margin: 15px 0px 0px 0px;
+}
+
+ul.thumbnails li.movie {
+	margin-top: 15px;
+	margin-left: 15px;
+	width: 343px;
+}
+
+.textleft, .textright {
+	float: left;
+}
+
+.textright {
+	margin-left: 15px;
 }
 
 div.scrollable { 	
