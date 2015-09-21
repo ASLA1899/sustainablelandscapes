@@ -3,6 +3,9 @@
 <head>
 
 <title>Designing Our Future: Sustainable Landscapes</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -37,10 +40,16 @@ $(document).ready(function () {
     <!--HEADER-->
         <div id="header">
 
-            <div id="nav">
+            <nav class="navbar navbar-default" role="navigation" id="nav">
                 <div id="logo"><a href="http://www.asla.org"><img src="images/Logo.png"></a></div>
-                    <div id="nav-container">
-                        <ul id="dropdown">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="nav-container">
+                        <ul class="nav navbar-nav" id="dropdown">
 	                       <li class="cases studies"><a class="mainnav" href="#">Case Studies</a>
     		                  <ul class="cases-body studies-drop">
         	                   <li class="cols"><p class="category">U.S. Mid-Atlantic</p>
@@ -128,8 +137,8 @@ $(document).ready(function () {
                               </ul>
                             </li>
                         </ul>
-                    </div>
-            </div>
+                      </div>
+            </nav>
             <div class="clear"></div>
                 <div class="title"><a href="index.html"><span class="design">DESIGNING OUR FUTURE:</span>&nbsp;<span class="sustainable">SUSTAINABLE LANDSCAPES</span></a></div>
         </div>
@@ -206,7 +215,6 @@ $(document).ready(function () {
             <!--FOOTER-->
 
     </div>
-</div>
 <div class="clear"></div>
 <div id="footer">
 	<div class="copy">&copy;2014 American Society of Landscape Architects<br>
@@ -216,6 +224,7 @@ $(document).ready(function () {
     <div class="nea"><img style="float:left; margin-right:10px;" src="images/NEALogo.png">This Web site has been made possible through a grant by: <a target="_blank" href="http://www.nea.gov/">National Endowment for the Arts</a></div>
     
     <div class="clear"></div>
+</div>
 </div>
 <!-- JAVASCRIPT - TOP NATIGATION ___________________________________________________________________________________-->
 
@@ -251,8 +260,6 @@ $(function(){
 
 
 </script>-->
-
-
 
 <!--JAVSCRIPT - THUMBNAIL NAVIGATION___________________________________________________________________________________-->
 <script>
@@ -292,25 +299,47 @@ $(function(){
 </script>
 
 <script type="text/javascript">
-$(document).ready(function () {
-    // Load the first 3 list items from another HTML file
-    //$('#myList').load('externalList.html li:lt(3)');
-    $('.thumbnails li:lt(3)').show();
-    $('#showLess').hide();
-    var items =  25;
-    var shown =  3;
-    $('#loadMore').click(function () {
-        $('#showLess').show();
-        shown = $('.thumbnails li:visible').size()+5;
-        if(shown< items) {$('.thumbnails li:lt('+shown+')').show();}
-        else {$('.thumbnails li:lt('+items+')').show();
-             $('#loadMore').hide();
-             }
-    });
-    $('#showLess').click(function () {
-        $('.thumbnails li').not(':lt(3)').hide();
+
+$(document).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (max-width: 767px)");
+
+    if (isMobile.matches) {
+
+      var totalCount;   //Keeps track of the total number of li's, shown or hidden.
+      var currentCount; //Keeps track of the number of li's currently shown.
+
+      $(document).ready(function () {
+      //Count how many li's there are in total.
+      totalCount  = $('.thumbnails li').size();
+      //Start by showing three of them.
+      currentCount = 8;
+      adjustLiShown();
+      $('#loadMore').click(function () {
+       //Increase by three and update.
+       currentCount += 8;
+       adjustLiShown()
+      });
+      $('#showLess').click(function () {
+       //Decrease by three and update.
+       currentCount -= 8;
+       adjustLiShown()
     });
 });
+
+function adjustLiShown() {
+    //Hide all and then show the one with index under total count.
+    $('.thumbnails li').hide().filter(':lt(' + currentCount + ')').show();
+    //Only show "load more" if we haven't reached the total yet.
+    $('#loadMore').toggle(currentCount < totalCount);
+    //Only show "show less" if we are above the starting number.
+    $('#showLess').toggle(currentCount > 8);
+}
+
+       }
+
+});
+
+
 </script>
 </body>
 </html>

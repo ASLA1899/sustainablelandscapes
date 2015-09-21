@@ -1320,8 +1320,13 @@ color:#00AEEF;
 	margin:10px 0 20px 0;
 }
 
+/*Mobile*/
+@media (max-width:767px) {
 
-@media (max-width: 767px) {
+#home-container {
+	max-width: 100%;
+
+}
 
 #header {
 	margin-left: 0px;
