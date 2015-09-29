@@ -3,9 +3,9 @@
 
 body {
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size: 12px !important;
 	color:#444444;
-	line-height:18px;
+	line-height:18px !important;
 	padding:0;
 	margin:0;
 }
@@ -26,6 +26,16 @@ body a:hover {
 	text-decoration:underline;
 }
 
+.row {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
+.container-fluid {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
 #home-container {
 	width:1160px;
 	margin:auto;
@@ -33,6 +43,13 @@ body a:hover {
 	max-width: 100%;
 	/*border:1px solid #808285;*/
 
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff !important;
+	background-color: #00AEEF;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 .clear {
@@ -69,14 +86,14 @@ body a:hover {
 .title .design {
 	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
 	font-weight: 100;
-	font-size: 2.35rem;
+	font-size: 3.7rem;
 	color: #d4d4d4;
 }
 
 .title .sustainable {
 	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
 	font-weight: 100;
-	font-size: 2.35rem;
+	font-size: 3.7rem;
 	color: #666666;
 }
 
@@ -92,7 +109,7 @@ div.scrollable {
 	height:550px;
 	float:left;
 	
-	margin:0px	 0 0 0;
+	margin:0px	 0 20px 0;
 	
 	/* custom decorations */
 	padding:7px 0;	
@@ -216,30 +233,46 @@ div.scrollable div.items div.active {
 
 #nav {
 	background:#00AEEF;
-	margin:0px 0 0 0;
+	margin:0 0 0 100px;
 	padding:0;
-	height:90px;
+	height:100px;
 	width:960px;
 	max-width: 100%;
+	border-radius: 0px;
+	border: none;
 }
 
 #nav-container {
 background:none;
 width: 720px;
-padding:0px 0 0 25px;
-height:90px;
+padding:40px 0 0 25px;
 float:left;
 max-width: 100%;
 }
 
-#nav-container ul#dropdown {
-	margin:35px 0 0 0;
+#nav-container ul.dropdown-menu ul#studies-drop {
+padding:0 0 25px 25px;
+	margin:0 0 0 30px;
+	position:absolute;
+	top:20px;
+	background: #00Aeef;
+	border:none;
 	list-style:none;
-	position:relative;
 	z-index:100;
 }
 
-#nav-container ul#dropdown li.cases {
+#nav-container ul.dropdown-menu {
+padding:0 0 25px 25px;
+	margin:0 0 0 30px;
+	position:absolute;
+	top:20px;
+	background: #00Aeef;
+	border:none;
+	list-style:none;
+	z-index:100;
+}
+
+#nav-container ul.dropdown-menu a#cases {
 list-style:none;
 font-family:Arial, Helvetica, sans-serif;
 font-size:18px;
@@ -249,30 +282,29 @@ float:left;
 }
 
 
-#nav-container ul#dropdown li.cases  a:link.mainnav,
-#nav-container ul#dropdown li.cases a:visited.mainnav {
+#nav-container ul#dropdown li.dropdown a:link#main-nav,
+#nav-container ul#dropdown li.dropdown a:visited#main-nav {
 	background:url(images/TopNave-ArrownRight.png) no-repeat left;
 	background-position: 0 -3px;
-	color:#fff;
+	color:#fff !important;
 	text-decoration:none;
 	padding: 0 0 0 24px;
 	display:block;
 	margin-left:30px;
 	height:20px;
-	display:block;
 }
 
 
-#nav-container ul#dropdown li.cases  a:hover.mainnav, 
-#nav-container ul#dropdown li.cases a:active.mainnav{
+#nav-container ul#dropdown li.dropdown a:hover#main-nav, 
+#nav-container ul#dropdown li.dropdown a:active#main-nav{
 	
 background:url(images/TopNAV-ArrowDown.png) no-repeat left;
 text-decoration:underline;
 
 }
-#nav-container ul#dropdown li.cases ul.cases-body 
+#nav-container ul.dropdown li.dropdown a#main-nav ul#cases-body 
 { display:none; 
-padding:0 0 25px 25px;
+	padding:0 0 25px 25px;
 	margin:0 0 0 30px;
 	position:absolute;
 	top:20px;
@@ -283,7 +315,7 @@ padding:0 0 25px 25px;
 	
 }
 
- ul.cases-body li.cols {
+#nav-container ul.dropdown-menu li.cols {
 	margin:0 25px 0 0;
 	padding:0;
 	text-decoration:none;
@@ -291,6 +323,7 @@ padding:0 0 25px 25px;
 	width:175px;
 	background:none;
 }
+
 .category-cases{
 font-family:Arial, Helvetica, sans-serif;
 	text-transform:none;
@@ -430,12 +463,12 @@ p.category {
 #header {
 	width:960px;
 	border-bottom:1px solid #999;
-	margin:0 0 0 100px;
+	margin:5px 0 0 100px;
 	max-width: 100%;
 }
 
 #logo {
-	margin:23px 0 0 25px;
+	margin:18px 0 0 25px;
 	float:left;
 }
 
@@ -1330,11 +1363,13 @@ color:#00AEEF;
 
 #header {
 	margin-left: 0px;
-	height: 400px;
+	height: 200px;
 }
 
 #nav {
 	height: 200px;
+	margin: 0;
+
 }
 
 #nav-container {
@@ -1342,7 +1377,7 @@ color:#00AEEF;
 	padding-left: 0px;
 }
 
-#nav-container ul#dropdown {
+#nav-container ul.dropdown-menu {
 	padding-left: 0px;
 }
 
