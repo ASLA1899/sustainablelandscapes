@@ -251,8 +251,8 @@ max-width: 100%;
 }
 
 #nav-container ul.dropdown-menu ul#studies-drop {
-padding:0 0 25px 25px;
-	margin:0 0 0 30px;
+	padding:0 0 25px 15px;
+	margin:0 0 0 10px;
 	position:absolute;
 	top:20px;
 	background: #00Aeef;
@@ -262,8 +262,8 @@ padding:0 0 25px 25px;
 }
 
 #nav-container ul.dropdown-menu {
-padding:0 0 25px 25px;
-	margin:0 0 0 30px;
+	padding:0 0 25px 15px;
+	margin:0 0 0 10px;
 	position:absolute;
 	top:20px;
 	background: #00Aeef;
@@ -271,6 +271,11 @@ padding:0 0 25px 25px;
 	list-style:none;
 	z-index:100;
 }
+
+#nav-container .studies-drop {
+	min-width: 680px;
+}
+
 
 #nav-container ul.dropdown-menu a#cases {
 list-style:none;
@@ -302,8 +307,9 @@ background:url(images/TopNAV-ArrowDown.png) no-repeat left;
 text-decoration:underline;
 
 }
-#nav-container ul.dropdown li.dropdown a#main-nav ul#cases-body 
-{ display:none; 
+
+#nav-container ul.dropdown li.dropdown a#main-nav ul.cases-body { 
+	display:none; 
 	padding:0 0 25px 25px;
 	margin:0 0 0 30px;
 	position:absolute;
@@ -315,8 +321,8 @@ text-decoration:underline;
 	
 }
 
-#nav-container ul.dropdown-menu li.cols {
-	margin:0 25px 0 0;
+.cols {
+	margin:0 15px 0 15px;
 	padding:0;
 	text-decoration:none;
 	float:left;
@@ -361,10 +367,11 @@ color:#fff;
 
 
 
-p.category {
+li.category {
 	font-family:Arial, Helvetica, sans-serif;
 	text-transform:none;
 	font-weight:bold;
+	color: #fff;
 	font-size:16px;
 	padding:15px 0 0 0;
 	margin:0;
@@ -1363,7 +1370,7 @@ color:#00AEEF;
 
 #header {
 	margin-left: 0px;
-	height: 200px;
+	min-height: 200px;
 }
 
 #nav {
@@ -1400,9 +1407,14 @@ color:#00AEEF;
 }
 
 ul.thumbnails li.movie {
-	margin-top: 15px;
-	margin-left: 15px;
-	width: 343px;
+	display:inline-block;
+	overflow:hidden;
+	list-style:none;
+	width:343px;
+	height:162px;
+	margin:0px 0px 15px 15px;
+	padding:0px;
+	background-color:#eee;
 }
 
 ul.thumbnails li {
@@ -1457,8 +1469,25 @@ a.bigleft, a.bigright {
     position: relative;
 }
 
+#showLess {
+	display: block !important;
+    color: red;
+    text-align: center;
+    cursor:pointer;
+    max-width: 100%;
+    height: 50px;
+    border: 4px solid red;
+    bottom: 0;
+    position: relative;
+}
+
 #loadMore p {
-	padding-top: 3px;
+	padding-top: 11px;
+	font-weight: 600;
+}
+
+#showLess p {
+	padding-top: 11px;
 	font-weight: 600;
 }
 
@@ -1472,8 +1501,9 @@ a.bigleft, a.bigright {
     color: red;
     cursor: pointer;
 }
-#showLess:hover {
-    color:black;
+#showLess:hover, #showLess:focus {
+    color: #fff;
+    background-color: red;
 }
 
 #footer {

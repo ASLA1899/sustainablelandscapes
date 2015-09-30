@@ -1,5 +1,10 @@
+$(document).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (min-width: 768px)");
+
+    if (isMobile.matches) {
+
 $(document).ready(function(){
-  $("ul#studies-drop").hide();
+  $("ul.studies-drop").hide();
 
     var isMousedOver;
 
@@ -11,14 +16,14 @@ $(document).ready(function(){
             }, 150);
     }
 
-    $("li#studies").hover(
+    $("li.studies").hover(
         function(){
-            $("ul#studies-drop").stop(true,true).slideDown("medium");
+            $("ul.studies-drop").stop(true,true).slideDown("medium");
             isMousedOver = true;
-            $("li#studies").removeClass("active");
+            $("li.studies").removeClass("active");
             $(this).addClass("active");
             var that = this;
-            $("ul#studies-drop").data("mouseoutfn", function() { hideDropdown(that) });
+            $("ul.studies-drop").data("mouseoutfn", function() { hideDropdown(that) });
         },
         function(){
             isMousedOver = false;
@@ -26,7 +31,7 @@ $(document).ready(function(){
         }
     );
 
-    $("ul#studies-drop").hover(
+    $("ul.studies-drop").hover(
         function() {
             isMousedOver = true;
         },
@@ -39,7 +44,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("ul#educations-drop").hide();
+  $("ul.educations-drop").hide();
 
     var isMousedOver;
 
@@ -51,14 +56,14 @@ $(document).ready(function(){
             }, 150);
     }
 
-    $("li#educations").hover(
+    $("li.educations").hover(
         function(){
-            $("ul#educations-drop").stop(true,true).slideDown("medium");
+            $("ul.educations-drop").stop(true,true).slideDown("medium");
             isMousedOver = true;
-            $("li#educations").removeClass("active");
+            $("li.educations").removeClass("active");
             $(this).addClass("active");
             var that = this;
-            $("ul#educations-drop").data("mouseoutfn", function() { hideDropdown(that) });
+            $("ul.educations-drop").data("mouseoutfn", function() { hideDropdown(that) });
         },
         function(){
             isMousedOver = false;
@@ -66,7 +71,7 @@ $(document).ready(function(){
         }
     );
 
-    $("ul#educations-drop").hover(
+    $("ul.educations-drop").hover(
         function() {
             isMousedOver = true;
         },
@@ -79,26 +84,26 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("ul#videos-drop").hide();
+  $("ul.videos-drop").hide();
 
     var isMousedOver;
 
     var hideDropdown = function(a) {
             setTimeout( function() {
                 if (isMousedOver) return;
-                $("ul#videos-drop").slideUp("medium");
+                $("ul.videos-drop").slideUp("medium");
                 $(a).removeClass("active");
             }, 150);
     }
 
-    $("li#videos").hover(
+    $("li.videos").hover(
         function(){
-            $("ul#videos-drop").stop(true,true).slideDown("medium");
+            $("ul.videos-drop").stop(true,true).slideDown("medium");
             isMousedOver = true;
-            $("li#videos").removeClass("active");
+            $("li.videos").removeClass("active");
             $(this).addClass("active");
             var that = this;
-            $("ul#videos").data("mouseoutfn", function() { hideDropdown(that) });
+            $("ul.videos").data("mouseoutfn", function() { hideDropdown(that) });
         },
         function(){
             isMousedOver = false;
@@ -106,7 +111,7 @@ $(document).ready(function(){
         }
     );
 
-    $("ul#videos-drop").hover(
+    $("ul.videos-drop").hover(
         function() {
             isMousedOver = true;
         },
@@ -115,5 +120,9 @@ $(document).ready(function(){
             $(this).data("mouseoutfn")();
         }
     );
+
+});
+
+}
 
 });
