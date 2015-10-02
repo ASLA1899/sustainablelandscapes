@@ -4,13 +4,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Designing Our Future: Sustainable Landscapes</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <!-- InstanceEndEditable -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/easyslider.js"></script>
 <script script src="js/jquery.tipsy.js"></script>
 <script script src="js/tools.scrollable-1.1.0.js"></script>
 <script src="js/dropdown.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Work+Sans:400,100,700' rel='stylesheet' type='text/css'>
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
@@ -20,277 +26,316 @@
 
 <!-- HEADER___________________________________________________________________________________________________-->
 
-<div id="header">
+<nav class="navbar navbar-default" role="navigation" id="nav">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-container">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="logo" href="http://www.asla.org"><img src="images/Logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-container">
+        <ul class="nav navbar-nav" id="dropdown">
+          <li class="dropdown cases studies">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Case Studies</a>
+    		      <ul class="dropdown-menu multi-column cases-body studies-drop">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="cols">
+                      <li class="category">U.S. Mid-Atlantic</li>
+                      <li class="category-cases"><a href="sidwell.html">Sidwell Friends School</a></li>
+            
+                      <li class="category">U.S. Northeast</li>
+                      <li class="category-cases"><a href="bryantpark.html">Bryant Park</a></li>
+                      <li class="category-cases"><a href="brownfield.html">From Brownfield to Greenfield</a></li>
+                      <li class="category-cases"><a href="gowanus.html">Gowanus Canal Sponge Park&trade;</a></li>
+                      <li class="category-cases"><a href="highline.html">High Line Park</a></li>
+                      <li class="category-cases"><a href="lilylake.html">Lily Lake Residence</a></li>
+                      <li class="category-cases"><a href="trid.html">Transit Revitalization Investment District (TRID) Master Plan</a></li>
+            
+                      <li class="category">U.S. Northwest</li>
+                      <li class="category-cases"><a href="highpoint.html">High Point</a></li>
+                      <li class="category-cases"><a href="raingarden.html">Mount Tabor Middle School Rain Garden</a></li>
+                      <li class="category-cases"><a href="greenstreet.html">NE Siskiyou Green Street </a></li>
+                      <li class="category-cases"><a href="greenroof.html">Washington Mutual Center Green Roof</a></li>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="cols"> 
+                      <li class="category">U.S. Midwest</p>
+                      <li class="category-cases"><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></p>
+                      <li class="category-cases"><a href="discovery.html">James Clarkson Environmental Discovery Center</a></p>
+                      <li class="category-cases"><a href="kresge.html">Kresge Foundation Headquarters</a></p>
+                      <li class="category-cases"><a href="rooftophaven.html">Rooftop Haven for Urban Agriculture</a></p>
+            
+                      <li class="category">U.S. West</li>
+                      <li class="category-cases"><a href="cas.html">California Academy of Sciences</a></li>
+                      <li class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></li>
+                      <li class="category-cases"><a href="crackgarden.html">The Crack Garden</a></li>
+                      <li class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></li>
+                      <li class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></li>
+                      <li class="category-cases"><a href="nuevaschool.html">Nueva School </a></li>
 
-<div id="nav">
-<div id="logo"><a href="http://www.asla.org"><img src="images/Logo.png"></a></div>
-<div id="nav-container">
-<ul id="dropdown">
-	<li class="cases studies"><a class="mainnav" href="#">Case Studies</a>
-    		<ul class="cases-body studies-drop">
-        	<li class="cols"><p class="category">U.S. Mid-Atlantic</p>
-            <p class="category-cases"><a href="sidwell.html">Sidwell Friends School</a></p>
+                      <li class="category-cases"><a href="cannerylofts.html">Pacific Cannery Lofts</a></li>
+                      <li class="category-cases"><a href="transwater.html">Transformative Water</a></li>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="cols">   
+                      <li class="category">U.S. Southeast</li>
+                      <li class="category-cases"><a href="vietvillage.html">Viet Village Urban Farm</a></li>
             
-            <p class="category">U.S. Northeast</p>
-            <p class="category-cases"><a href="bryantpark.html">Bryant Park</a></p>
-            <p class="category-cases"><a href="brownfield.html">From Brownfield to Greenfield</a></p>
-            <p class="category-cases"><a href="gowanus.html">Gowanus Canal Sponge Park&trade;</a></p>
-            <p class="category-cases"><a href="highline.html">High Line Park</a></p>
-            <p class="category-cases"><a href="lilylake.html">Lily Lake Residence</a></p>
-            <p class="category-cases"><a href="trid.html">Transit Revitalization Investment District (TRID) Master Plan</a></p>
+                      <li class="category">U.S. Southwest </li>
+                      <li class="category-cases"><a href="sonoran.html">Underwood Family Sonoran Landscape Laboratory</a></li>
             
-             <p class="category">U.S. Northwest</p>
-            <p class="category-cases"><a href="highpoint.html">High Point</a></p>
-            <p class="category-cases"><a href="raingarden.html">Mount Tabor Middle School Rain Garden</a></p>
-            <p class="category-cases"><a href="greenstreet.html">NE Siskiyou Green Street </a></p>
-            <p class="category-cases"><a href="greenroof.html">Washington Mutual Center Green Roof</a></p>
-            </li><li class="cols"> <p class="category">U.S. Midwest</p>
-            <p class="category-cases"><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></p>
-            <p class="category-cases"><a href="discovery.html">James Clarkson Environmental Discovery Center</a></p>
-            <p class="category-cases"><a href="kresge.html">Kresge Foundation Headquarters</a><br></p>
-            <p class="category-cases"><a href="rooftophaven.html">Rooftop Haven for Urban Agriculture</a></p>
+                      <li class="category">Canada </li>
+                      <li class="category-cases"><a href="hto.html">HtO Park</a></li>
             
+                      <li class="category">Europe </li>
+                      <li class="category-cases"><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan </a></li>
             
-               <p class="category">U.S. West </p>
-            <p class="category-cases"><a href="cas.html">California Academy of Sciences</a></p>
-            <p class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></p>
-            <p class="category-cases"><a href="crackgarden.html">The Crack Garden</a></p>
-            <p class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></p>
-            <p class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></p>
-            <p class="category-cases"><a href="nuevaschool.html">Nueva School </a></p>
-
-            <p class="category-cases"><a href="cannerylofts.html">Pacific Cannery Lofts</a></p>
-            <p class="category-cases"><a href="transwater.html">Transformative Water</a></p>
-            </li><li class="cols">   <p class="category">U.S. Southeast </p>
-            <p class="category-cases"><a href="vietvillage.html">Viet Village Urban Farm</a></p>
-            
-            <p class="category">U.S. Southwest </p>
-            <p class="category-cases"><a href="sonoran.html">Underwood Family Sonoran Landscape Laboratory</a></p>
-            
-            <p class="category">Canada </p>
-            <p class="category-cases"><a href="hto.html">HtO Park</a></p>
-            
-            <p class="category">Europe </p>
-            <p class="category-cases"><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan </a></p>
-            
-              <p class="category">Asia </p>
-            <p class="category-cases"><a href="chongae.html">ChonGae Canal Point Source Park</a></p>
-            <p class="category-cases"><a href="ecolodge.html">Crosswaters Ecolodge </a></p>
-            <p class="category-cases"><a href="redribbon.html">The Red Ribbon, Tanghe River Park </a></p></li></ul>
-     </li><li class="cases videos"><a class="mainnav" href="videos.html">Animations</a>
-    		<ul class="cases-body videos-drop">
-        	<li class="cols">
-            <p style="padding-top:15px;" class="category-cases"><a href="Vid_Waste.html">Building a Park Out of Waste</a></p>
-            <p class="category-cases"><a href="Vid_ActiveLiving.html">Designing for Active Living</a></p>
-            <p class="category-cases"><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></p>
-            <p class="category-cases"><a href="Vid_UrbanAg.html">The Edible City</a></p>
-            <p class="category-cases"><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></p>
-            <p class="category-cases"><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></p>
-            <p class="category-cases"><a href="Vid_Infrastructure.html">Infrastructure for All</a></p>
-            <p class="category-cases"><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></p>
-            <p class="category-cases"><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></p>
-            <p class="category-cases"><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></p>
-            
-            
-            </li></ul></li><li class="cases educations"><a class="mainnav" href="education.html">Education</a>
-    		<ul style="padding-right:0;" class="cases-body educations-drop">
-        	<li class="cols"><p style="padding-top:15px; " class="category-cases"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></p>
-            <p class="category-cases"><a href="Ed_ActiveLiving.html">Design for Active Living</a></p>
-            <p class="category-cases"><a href="Ed_Wildlife.html">Designing for Biodiversity</a></p>
-            <p class="category-cases"><a href="Ed_Energy.html">Energy Efficiency</a></p>
-            <p class="category-cases"><a href="Ed_WaterManagement.html">Green Infrastructure</a></p>
-            <p class="category-cases"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a><br></p>
-            <p class="category-cases"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></p>
-            <p class="category-cases"><a href="Ed_UrbanAg.html">Urban Agriculture</a></p>
-            <p class="category-cases"><a href="Ed_UrbanForests.html">Urban Forestry</a></p>
-            <p class="category-cases"><a href="Ed_Parks.html">Urban Parks</a></p>
-            </li></ul></li>
-</ul>
-</div>
-</div>
+                      <li class="category">Asia </li>
+                      <li class="category-cases"><a href="chongae.html">ChonGae Canal Point Source Park</a></li>
+                      <li class="category-cases"><a href="ecolodge.html">Crosswaters Ecolodge </a></li>
+                      <li class="category-cases"><a href="redribbon.html">The Red Ribbon, Tanghe River Park </a></li>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+          </li>
+          <li class="dropdown cases videos">
+            <a class="dropdown-toggle" href="videos.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Animations</a>
+    		      <ul class="dropdown-menu cases-body videos-drop">
+        	      <div class="cols">
+                  <li style="padding-top:15px;" class="category-cases"><a href="Vid_Waste.html">Building a Park Out of Waste</a></li>
+                  <li class="category-cases"><a href="Vid_ActiveLiving.html">Designing for Active Living</a></li>
+                  <li class="category-cases"><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></li>
+                  <li class="category-cases"><a href="Vid_UrbanAg.html">The Edible City</a></li>
+                  <li class="category-cases"><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></li>
+                  <li class="category-cases"><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></li>
+                  <li class="category-cases"><a href="Vid_Infrastructure.html">Infrastructure for All</a></li>
+                  <li class="category-cases"><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></li>
+                  <li class="category-cases"><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></li>
+                  <li class="category-cases"><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></li>
+                </div>
+              </ul>
+          </li>
+          <li class="dropdown cases educations">
+            <a class="dropdown-toggle" href="education.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Education</a>
+    		      <ul style="padding-right:0;" class="dropdown-menu cases-body educations-drop">
+        	      <div class="cols">
+                  <li style="padding-top:15px; " class="category-cases"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></li>
+                  <li class="category-cases"><a href="Ed_ActiveLiving.html">Design for Active Living</a></li>
+                  <li class="category-cases"><a href="Ed_Wildlife.html">Designing for Biodiversity</a></li>
+                  <li class="category-cases"><a href="Ed_Energy.html">Energy Efficiency</a></li>
+                  <li class="category-cases"><a href="Ed_WaterManagement.html">Green Infrastructure</a></li>
+                  <li class="category-cases"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a><br></li>
+                  <li class="category-cases"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></li>
+                  <li class="category-cases"><a href="Ed_UrbanAg.html">Urban Agriculture</a></li>
+                  <li class="category-cases"><a href="Ed_UrbanForests.html">Urban Forestry</a></li>
+                  <li class="category-cases"><a href="Ed_Parks.html">Urban Parks</a></li>
+                </div>
+              </ul>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
 <div class="clear"></div>
-<a href="index.html"><img src="images/Title.jpg" style="padding:30px 0px 5px 25px; border:0;"/></a>
+  <div id="header">
+    <div class="title"><a href="index.html"><span class="design">DESIGNING OUR FUTURE:</span>&nbsp;<span class="sustainable">SUSTAINABLE LANDSCAPES</span></a></div>
+  </div>
 
-</div>
 
 <!-- LEFT COLUMN___________________________________________________________________________________________________-->
-<div style="margin:0 0 0 100px;">
-<div id="left-col"><!-- InstanceBeginEditable name="Left Column" -->
-<h2>PROJECT TYPE</h2>
-	<ul><li>Urban</li>
-	  <li>University</li>
-	  <li>Campus</li>
-	  <li>Green Roof </li>
-	
-	</ul>
-<h2>Environmental Benefits</h2>
-	<ul>
-	  <li>Circulates Water </li>
-	  <li>Cleans Water</li>
-	  <li>Creates Habitat for Wildlife</li>
-	  <li>Ecologically Manages Storm Water</li>
-	  <li>Reintroduces Native Plants</li>
-	  <li>Re-Uses Waste</li>
-       
-	
-	</ul> 
+<div class="main-container">
+    <div id="left-col"><!-- InstanceBeginEditable name="Left Column" -->
+      <div class="project-type">
+      <h2>PROJECT TYPE</h2>
+	     <ul>
+        <li>Urban</li>
+	      <li>University</li>
+	      <li>Campus</li>
+	      <li>Green Roof</li>
+	     </ul>
+      </div>
+
+      <div class="enviromental-benefits">
+      <h2>Environmental Benefits</h2>
+	     <ul>
+	       <li>Circulates Water</li>
+	       <li>Cleans Water</li>
+	       <li>Creates Habitat for Wildlife</li>
+	       <li>Ecologically Manages Storm Water</li>
+	       <li>Reintroduces Native Plants</li>
+	       <li>Re-Uses Waste</li>
+	     </ul>
+       </div> 
     
+    <div class="pdf">
     <a href="pdfs/Sidwell_Fact_Sheet.pdf" target="_blank" onClick="_gaq.push(['_trackEvent', 'PDFS', 'Download', 'Sustainable Landscapes']);"><img src="images/FactsButton.jpg" /></a>
+    </div>
     <!--RELATED LINKS-->    
     <div class="related">
-    <h1 style="padding-top:25px;">Related <br>Animations</h1>
-   <ul class="related-box"><li><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a><br />
-     </li>
-     <li><a href="Vid_Energy.html"></a></li>
-    
-    </ul>
-    <h1>Related Education Resources</h1>
-     <ul class="related-box">
-       
-       <li><a href="Ed_WaterManagement.html">Green infrastructure</a><br />
-       </li>
-    
-     </ul>
+      <h1 style="padding-top:25px;">Related <br>Animations</h1>
+        <ul class="related-box">
+          <li><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a><br />
+          </li>
+          <li><a href="Vid_Energy.html"></a></li>
+        </ul>
+      <h1>Related Education Resources</h1>
+        <ul class="related-box">
+          <li><a href="Ed_WaterManagement.html">Green infrastructure</a><br />
+          </li>
+        </ul>
     </div>
-<!--RELATED LINKS END-->    
+    <!--RELATED LINKS END-->    
     
- <h3>Links</h3>
+    <h3>Links</h3>
  
- <ul class="links">
-	<li><a href="http://www.sidwell.edu/about_sfs/envstewardship.aspx" target="_blank" >Environmental Stewardship <em>(Sidwell Friends School)</em></a></li>
-	<li><a href="http://www.sustainablesites.org/cases/show.php?id=27" target="_blank">Pilot Project <em>(Sustainable Sites Initiative)</em></a></li> 
-    <li><a href="http://www.andropogon.com/sidwell-friends-school-middle-school-addition" target="_blank" >Sidwell Friends School <em>(Andropogon Associates)</em></a></li>
-    <li><a href="http://greensource.construction.com/projects/0707_sidwell.asp" target="_blank" >Sidwell Friends School <em>(Greensource Magazine)</em></a></li>
-     <li><a href="http://www.kierantimberlake.com/featured_projects/sidwell_school_1.html" target="_blank" >Sidwell Friends School <em>(Kieran Timberlake)</em></a></li>
-     
-   </ul>
+    <ul class="links">
+	    <li><a href="http://www.sidwell.edu/about_sfs/envstewardship.aspx" target="_blank" >Environmental Stewardship <em>(Sidwell Friends School)</em></a></li>
+	    <li><a href="http://www.sustainablesites.org/cases/show.php?id=27" target="_blank">Pilot Project <em>(Sustainable Sites Initiative)</em></a></li> 
+      <li><a href="http://www.andropogon.com/sidwell-friends-school-middle-school-addition" target="_blank" >Sidwell Friends School <em>(Andropogon Associates)</em></a></li>
+      <li><a href="http://greensource.construction.com/projects/0707_sidwell.asp" target="_blank" >Sidwell Friends School <em>(Greensource Magazine)</em></a></li>
+      <li><a href="http://www.kierantimberlake.com/featured_projects/sidwell_school_1.html" target="_blank" >Sidwell Friends School <em>(Kieran Timberlake)</em></a></li> 
+    </ul>
    
- <!-- InstanceEndEditable -->   
-</div>
+  <!-- InstanceEndEditable -->   
+  </div>
 
 <!-- RIGHT COLUMN___________________________________________________________________________________________________-->
 
-<div id="right-col"><!-- InstanceBeginEditable name="Title" -->
-<h1>Sidwell Friends School</h1>
-<span class="secondary-title-city">Washington, D.C., U.S.A.</span><!-- InstanceEndEditable -->
-<div id="slideshow"><!-- InstanceBeginEditable name="Slideshow" -->
-  <div id="slider">
-    <ul>
-      <li><img src="images/sidwell/Sidwell_1.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>In 2007, Sidewell Friends School renovated and modernized its urban campus. An enlarged middle school building now includes an outdoor living laboratory that features a green roof, terraced wetland, rain garden, and habitat pond.  This space functions as an extension of the classroom where students can learn about sustainable practices.</p>
-            <p class="captions">Photo: Andropogon Associates</p>
-            <p class="count">Photo 1 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
-      <li><img src="images/sidwell/Sidwell_2.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>The landscape and building function as a single integrated system that is designed to capture, clean, and re-use wastewater from the school. Dirty water and sewage flows from the kitchen and bathrooms into settling tanks, where solids are removed, before being released underground in the constructed wetland. The water circulates through the landscape for three to five days before it is re-used in the building’s toilets and cooling tower.  </p>
-            <p class="captions">Photo: Andropogon Associates</p>
-            <p class="count">Photo 2 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
-      <li><img src="images/sidwell/Sidwell_3.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>Terraced wetlands step down the hill of the courtyard as they act as the primary filtration mechanism for building wastewater. Below the surface, dirty water from the kitchen and bathrooms flows through the dirt and sand to remove contaminants.  Because the water never breaches the surface, students in the courtyard cannot smell odor nor contact the water directly. </p>
-            <p class="captions">Photo: Sidwell Friends School</p>
-            <p class="count">Photo 3 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
-      <li><img src="images/sidwell/Sidwell_4.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>A separate, yet equally dynamic system is designed to capture and clean storm water runoff. All paved surfaces drain into vegetated swales, which filter runoff through sand and plant material before directing it to the courtyard’s rain garden and habitat pond. The system promotes groundwater recharge and prevents polluted runoff from entering the city storm drains.   </p>
-            <p class="captions">Photo: Andropogon Associates</p>
-            <p class="count">Photo 4 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
-      <li><img src="images/sidwell/Sidwell_5.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>The green roof on top of the new middle school building adds another layer to the school’s stormwater management system. Rather than diverting rain water to gutters and storm drains, the living roof absorbs water into its soils where it is stored and taken up by resident native plants. In large storms, clean water overflows into a drain pipe that leads to the habitat pond.       </p>
-            <p class="captions">Photo: Furbish Company</p>
-            <p class="count">Photo 5 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
-      <li><img src="images/sidwell/Sidwell_6.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>The habitat pond, filled with storm water and located at the bottom of the sunken courtyard, acts as a center for learning and recovery. Science classes experience the benefits of water management systems by comparing water quality before and after it enters the filtration system.  </p>
-            <p class="captions">Photo: Andropogon Associates</p>
-            <p class="count">Photo 6 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
-      <li><img src="images/sidwell/Sidwell_7.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>The wetland, rain garden, and green roof feature more than 50 plant species native to the Chesapeake Bay Region. The varied plant-types, chosen for their ability to break down pollutants, add color and beauty to the landscape and provide habitat for native wildlife. The landscape has attracted endangered species including the Snowy Owl and Monarch Butterfly.</p>
-            <p class="captions">Photo: Andropogon Associates</p>
-            <p class="count">Photo 7 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
-      <li><img src="images/sidwell/Sidwell_8.jpg" alt="Sidwell Friends School" />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>The design re-purposed old materials from local construction projects. Before they became walkways, steps, and walls at Sidwell Friends, these flagstones cladded a deconstructed railway bridge 200 miles away. </p>
-            <p class="captions">Photo: Photo: Andropogon Associates</p>
-            <p class="count">Photo 8 of 8</p>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </li>
+  <div id="right-col"><!-- InstanceBeginEditable name="Title" -->
+    <h1>Sidwell Friends School</h1>
+      <span class="secondary-title-city">Washington, D.C., U.S.A.</span><!-- InstanceEndEditable -->
+        <div id="slideshow"><!-- InstanceBeginEditable name="Slideshow" -->
+          <div id="slider">
+            <ul>
+              <li><img src="images/sidwell/Sidwell_1.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>In 2007, Sidewell Friends School renovated and modernized its urban campus. An enlarged middle school building now includes an outdoor living laboratory that features a green roof, terraced wetland, rain garden, and habitat pond.  This space functions as an extension of the classroom where students can learn about sustainable practices.</p>
+                    <p class="captions">Photo: Andropogon Associates</p>
+                    <p class="count">Photo 1 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="images/sidwell/Sidwell_2.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>The landscape and building function as a single integrated system that is designed to capture, clean, and re-use wastewater from the school. Dirty water and sewage flows from the kitchen and bathrooms into settling tanks, where solids are removed, before being released underground in the constructed wetland. The water circulates through the landscape for three to five days before it is re-used in the building’s toilets and cooling tower.  </p>
+                    <p class="captions">Photo: Andropogon Associates</p>
+                    <p class="count">Photo 2 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="images/sidwell/Sidwell_3.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>Terraced wetlands step down the hill of the courtyard as they act as the primary filtration mechanism for building wastewater. Below the surface, dirty water from the kitchen and bathrooms flows through the dirt and sand to remove contaminants.  Because the water never breaches the surface, students in the courtyard cannot smell odor nor contact the water directly. </p>
+                    <p class="captions">Photo: Sidwell Friends School</p>
+                    <p class="count">Photo 3 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="images/sidwell/Sidwell_4.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>A separate, yet equally dynamic system is designed to capture and clean storm water runoff. All paved surfaces drain into vegetated swales, which filter runoff through sand and plant material before directing it to the courtyard’s rain garden and habitat pond. The system promotes groundwater recharge and prevents polluted runoff from entering the city storm drains.   </p>
+                    <p class="captions">Photo: Andropogon Associates</p>
+                    <p class="count">Photo 4 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="images/sidwell/Sidwell_5.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>The green roof on top of the new middle school building adds another layer to the school’s stormwater management system. Rather than diverting rain water to gutters and storm drains, the living roof absorbs water into its soils where it is stored and taken up by resident native plants. In large storms, clean water overflows into a drain pipe that leads to the habitat pond.</p>
+                    <p class="captions">Photo: Furbish Company</p>
+                    <p class="count">Photo 5 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="images/sidwell/Sidwell_6.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>The habitat pond, filled with storm water and located at the bottom of the sunken courtyard, acts as a center for learning and recovery. Science classes experience the benefits of water management systems by comparing water quality before and after it enters the filtration system.</p>
+                    <p class="captions">Photo: Andropogon Associates</p>
+                    <p class="count">Photo 6 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="images/sidwell/Sidwell_7.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>The wetland, rain garden, and green roof feature more than 50 plant species native to the Chesapeake Bay Region. The varied plant-types, chosen for their ability to break down pollutants, add color and beauty to the landscape and provide habitat for native wildlife. The landscape has attracted endangered species including the Snowy Owl and Monarch Butterfly.</p>
+                    <p class="captions">Photo: Andropogon Associates</p>
+                    <p class="count">Photo 7 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="images/sidwell/Sidwell_8.jpg" alt="Sidwell Friends School" class="img-responsive" />
+                <div class="desc"><a href="#" class="collapse">Close Me!</a>
+                  <div class="block">
+                    <p>The design re-purposed old materials from local construction projects. Before they became walkways, steps, and walls at Sidwell Friends, these flagstones cladded a deconstructed railway bridge 200 miles away. </p>
+                    <p class="captions">Photo: Photo: Andropogon Associates</p>
+                    <p class="count">Photo 8 of 8</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
       
-    </ul>
+             </ul>
+          </div>
+        </div>
+    
+        <div id="facts"><!-- InstanceBeginEditable name="Project Facts" -->
+          <p class="header">Project Facts</p>
+            <div class="col1">
+              <ul class="facts">
+                <li>Sidwell Friends is a K-12 private school located on a 15-acre site in historic Tenleytown, Washington, D.C. </li>
+                <li>Completed in 2007, Sidwell Friends School renovated and expanded its fifty-year-old, 33,000 square-foot middle school building. The new facility includes an eco-friendly courtyard, a green roof, and an additional 39,000 square-feet of classroom space.  </li>
+                <li>A wastewater management system cleans 3,000 gallons of water per day. After circulating through the landscape for three to five days, the water is re-used in the building’s toilets and cooling tower.  </li>
+              </ul>
+            </div>
+            <div class="col2">
+              <ul class="facts">
+                <li>On-site sewage treatment, water re-use, and water-efficient native plants reduce the school’s water consumption by 93 percent. </li>
+                <li>The middle school building is certified LEED Platinum.</li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="comments">
+          <div class="share">
+            <div class="share-button"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a95791f4a30594f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a95791f4a30594f"></script>
+            </div>
+          </div>
+
+          <script>
+          var idcomments_acct = 'b83f1c10ae5ee54d431dc475ba32c9c8';
+          var idcomments_post_id;
+          var idcomments_post_url;
+          </script>
+          <span id="IDCommentsPostTitle"></span>
+          <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+        </div>
+
   </div>
-<!-- InstanceEndEditable --></div>
-    <div id="facts"><!-- InstanceBeginEditable name="Project Facts" -->
-      <p class="header">Project Facts</p>
-      <div class="col1">
-        <ul class="facts">
-          <li>Sidwell Friends is a K-12 private school located on a 15-acre site in historic Tenleytown, Washington, D.C. </li>
-          <li>Completed in 2007, Sidwell Friends School renovated and expanded its fifty-year-old, 33,000 square-foot middle school building. The new facility includes an eco-friendly courtyard, a green roof, and an additional 39,000 square-feet of classroom space.  </li>
-          <li>A wastewater management system cleans 3,000 gallons of water per day. After circulating through the landscape for three to five days, the water is re-used in the building’s toilets and cooling tower.  </li>
-        </ul>
-      </div>
-      <div class="col2">
-        <ul class="facts">
-          <li>On-site sewage treatment, water re-use, and water-efficient native plants reduce the school’s water consumption by 93 percent. </li>
-          <li>The middle school building is certified LEED Platinum.</li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    <!-- InstanceEndEditable --></div>
-    <div id="comments"><div class="share">
-<div class="share-button"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a95791f4a30594f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a95791f4a30594f"></script></div>
 
-</div><script>
-var idcomments_acct = 'b83f1c10ae5ee54d431dc475ba32c9c8';
-var idcomments_post_id;
-var idcomments_post_url;
-</script>
-<span id="IDCommentsPostTitle"></span>
-<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script></div>
-
-</div>
-
-<div class="clear"></div>
+  <div class="clear"></div>
 
 </div>
 <!--FOOTER___________________________________________________________________________________________________-->

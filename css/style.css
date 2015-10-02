@@ -229,7 +229,9 @@ div.scrollable div.items div.active {
 	
 }
 
-
+.main-container {
+	margin: 0 0 0 100px !important;
+}
 
 #nav {
 	background:#00AEEF;
@@ -795,7 +797,7 @@ h1 {
 	margin:0;
 	color:#00AEEF;
 	font-size:28px;
-	padding:4px 0 10px 0;
+	padding:0 0 10px 0;
 	font-weight:normal;	
 }
 
@@ -810,7 +812,7 @@ h2 {
 	background-color:#aaaaaa;
 	color:#fff;
 	text-transform:uppercase;
-	font-size:14px;
+	font-size:14px !important;
 	margin:0 0 10px 0px;
 	padding:5px 0 5px 25px;
 	font-weight:normal;
@@ -1496,21 +1498,16 @@ a.bigleft, a.bigright {
     background-color: #00AEEF;
 }
 
-#showLess {
-	display: block !important;
-    color: red;
-    cursor: pointer;
-}
 #showLess:hover, #showLess:focus {
     color: #fff;
     background-color: red;
 }
 
 #footer {
-	margin-top: 65px;
+	margin-bottom: 0px;
 	position: relative;
 	width: 100%;
-	height: 202px;
+	height: auto;
 	bottom: 0;
 	left: 0;
 }
@@ -1518,6 +1515,66 @@ a.bigleft, a.bigright {
 #footer .nea {
 	float: left;
 }
+
+/*Secondary Pages___________________________________________________________________________________ */
+
+h1 {
+	padding: 5px 0 5px 25px;
+}
+
+h2 {
+	padding: 5px 0 5px 30px;
+}
+
+.secondary-title-city {
+	padding-left: 25px;
+}
+
+.main-container {
+	margin: 0 0 0 0px !important;
+}
+
+#left-col {
+	width: 100%;
+	margin-top: 0px;
+	border-bottom: 1px solid #aaa;
+}
+
+#left-col ul {
+	padding: 0 0 5px 20px;
+}
+
+.project-type {
+	width: 100%;
+}
+
+.project-type li {
+	display: inline-block;
+}
+
+#left-col .related {
+	width: 100%;
+}
+
+#right-col {
+	width: 100%;
+	margin-left: 0px;
+}
+
+#slideshow {
+	height: 237px !important;
+}
+
+#slider {
+	width: 100%;
+	height: 237px !important;
+}
+
+#slider li {
+	width: 100%;
+	height: auto;
+}
+
 }
 
 
