@@ -1565,14 +1565,19 @@ h2 {
 	height: 237px !important;
 }
 
-#slider {
-	width: 100%;
+#slider, #slider li {
+	width: 399px;
 	height: 237px !important;
 }
 
-#slider li {
+
+#slider ul {
+	
+	
+}
+
+#idc-container-parent {
 	width: 100%;
-	height: auto;
 }
 
 }
