@@ -388,14 +388,14 @@ $('#carousel-example-generic').carousel({
 $(document).ready(function() {	
 
 	//Show Banner
-	$("#slider li .desc").show(); //Show Banner
-	$("#slider li .block").animate({ opacity: 0.85 }, 1 ); //Set Opacity
+	$(".carousel-inner .item .carousel-caption").show(); //Show Banner
+	$(".carousel-inner .item .carousel-caption p").animate({ opacity: 0.85 }, 1 ); //Set Opacity
 
 	
 			
 	//Toggle Teaser
-	$("#slider li a.collapse").click(function() {									  
-		$("#slider li .block").slideToggle();
+	$(".carousel-inner .item .carousel-caption a.collapse").click(function() {									  
+		$(".carousel-inner .item .carousel-caption").slideToggle();
 		$("a.collapse").toggleClass("show");
 		
 		return false; 

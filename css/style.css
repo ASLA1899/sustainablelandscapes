@@ -1639,7 +1639,38 @@ h2 {
 }
 
 #idc-container .idc-c-m .idc-column-wide, #idc-container .idc-c-m .idc-column {
-	margin-left: 25px;
+	margin-left: 5px;
+	width: 40% !important;
+}
+
+#idc-container div.idc-text_noresize, #idc-container textarea.idc-text_noresize {
+	width: 97%;
+	margin: 0 0 4px 4px !important;
+
+}
+
+#idc-container .idc-c-m .idc-column-wide, #idc-container .idc-c-m .idc-column {
+	clear: left !important;
+	margin-bottom: 15px;
+}
+
+#IDCColumnName {
+	float: right !important;
+	clear: left !important;
+}
+
+#IDCColumnEmailReply {
+	float: right !important;
+	clear: left !important;
+}
+
+#IDCColumnURL{
+	float: right !important;
+	clear: left !important;
+}
+
+.idc-columns {
+	width: 60% !important;
 }
 
 }
