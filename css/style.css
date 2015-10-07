@@ -1409,6 +1409,30 @@ color:#00AEEF;
 	padding-left: 0px;
 }
 
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #E1F5FE;
+}
+
+.navbar-toggle .icon-bar {
+	width: 30px;
+	height: 7px;
+	border-radius: 0px;
+}
+
+.navbar-toggle {
+	margin-top: 30px;
+	margin-right: 45px;
+	border-radius: 0px;
+}
+
 .title {
 	padding: 20px 15px 5px 25px
 }
