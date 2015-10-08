@@ -1662,6 +1662,17 @@ h2 {
 	top: 50%;
 }
 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+	min-width: 100%;
+}
+
+.carousel-control {
+	z-index: 2;
+	background: transparent;
+	height: 100px;
+	top: 35%;
+}
+
 #idc-container-parent {
 	width: 100%;
 }
@@ -1767,6 +1778,10 @@ html, body {
 	margin-right: 35px;
 }
 
+#footer {
+	width: 100%;
+}
+
 }
 
 /*Tweener*/
@@ -1829,8 +1844,17 @@ html, body {
 }
 
 #right-col {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: none;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+	min-width: 100%;
+}
+
+#footer {
+	width: 100%;
 }
 
 }
