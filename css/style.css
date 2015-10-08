@@ -1410,6 +1410,16 @@ color:#00AEEF;
 /*Mobile*/
 @media (max-width:767px) {
 
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+  	overflow-y: scroll; 
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+
 #home-container {
 	max-width: 100%;
 
@@ -1668,42 +1678,159 @@ h2 {
 	margin-left: 25px;
 }
 
-#idc-container .idc-c-m .idc-column-wide, #idc-container .idc-c-m .idc-column {
-	margin-left: 5px;
-	width: 40% !important;
-}
-
 #idc-container div.idc-text_noresize, #idc-container textarea.idc-text_noresize {
 	width: 97%;
 	margin: 0 0 4px 4px !important;
 
 }
 
-#idc-container .idc-c-m .idc-column-wide, #idc-container .idc-c-m .idc-column {
-	clear: left !important;
-	margin-bottom: 15px;
-}
-
-#IDCColumnName {
-	float: right !important;
-	clear: left !important;
-}
-
-#IDCColumnEmailReply {
-	float: right !important;
-	clear: left !important;
-}
-
-#IDCColumnURL{
-	float: right !important;
-	clear: left !important;
-}
-
 .idc-columns {
-	width: 60% !important;
+	margin-bottom: 10px !important;
+	margin-left: 4px !important;
+}
+
+.idc-column {
+	float: right !important;
+	clear: left !important;
+	width: 50%;
+	margin-left: 1px !important;
+}
+
+#idc-container-parent #idc-container #IDNewThreadSubmitLI {
+	margin: 10px 0px 20px 0px;
+	margin-right: 3%;
 }
 
 }
 
+/*Tweener*/
+@media (min-width: 905px) and (max-width: 1036px) {
 
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+  	overflow-y: scroll; 
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
 
+#home-container {
+	max-width: 100%;
+}
+
+#nav {
+	height: 100px;
+	margin: 0;
+	width: 100%;
+}
+
+#header {
+	margin: 0 !important;
+	min-height: 80px;
+	width: 100%;
+}
+
+#nav-container {
+	width: 70%;
+	padding-left: 0px;
+}
+
+#nav-container ul.dropdown-menu {
+	padding-left: 0px;
+}
+
+.title {
+	padding: 20px 15px 5px 25px
+}
+
+.title .design {
+	line-height: 1.1em;
+}
+
+.title .sustainable {
+	line-height: 1.1em;
+}
+
+.main-container {
+	margin: 0 0 0 30px !important;
+}
+
+#left-col {
+	width: 20%;
+}
+
+#right-col {
+	width: 72%;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+}
+
+/*Tweener*/
+@media (min-width: 768px) and (max-width: 905px) {
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+  	overflow-y: scroll; 
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+
+#home-container {
+	max-width: 100%;
+}
+
+#nav {
+	height: 100px;
+	margin: 0;
+	width: 100%;
+}
+
+#header {
+	margin: 0 !important;
+	min-height: 80px;
+	width: 100%;
+}
+
+#nav-container {
+	width: 70%;
+	padding-left: 0px;
+}
+
+#nav-container ul.dropdown-menu {
+	padding-left: 0px;
+}
+
+.title .sustainable {
+	line-height: 1em;
+}
+
+.main-container {
+	margin: 0 0 0 0px !important;
+}
+
+#left-col {
+	width: 100%;
+	margin-left: 0px;
+}
+
+#left-col ul {
+	display: inline-flex;
+}
+
+#left-col .related {
+	width: 100%;
+}
+
+#right-col {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+}
