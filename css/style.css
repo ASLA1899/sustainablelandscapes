@@ -652,11 +652,11 @@ line-height:16px;
 }
 
 #loadMore {
-    display: none !important;
+    display: none;
 }
 
 #showLess {
-    display: none !important;
+    display: none;
 }
 
 /*Index-Footer___________________________________________________________________________________ */
@@ -1545,11 +1545,10 @@ a.bigleft, a.bigright {
 }
 
 #loadMore {
-	display: block !important;
     color: #00AEEF;
     text-align: center;
     cursor:pointer;
-    max-width: 100%;
+    width: 100%;
     height: 50px;
     border: 4px solid #00AEEF;
     bottom: 0;
@@ -1557,11 +1556,10 @@ a.bigleft, a.bigright {
 }
 
 #showLess {
-	display: block !important;
     color: red;
     text-align: center;
     cursor:pointer;
-    max-width: 100%;
+    width: 100%;
     height: 50px;
     border: 4px solid red;
     bottom: 0;
