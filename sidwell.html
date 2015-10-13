@@ -13,6 +13,7 @@
 <!--JS-->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/offcanvas.js"></script>
 <script type="text/javascript" src="js/easyslider.js"></script>
 <script script src="js/jquery.tipsy.js"></script>
 <script script src="js/tools.scrollable-1.1.0.js"></script>
@@ -26,19 +27,22 @@
 <div id="home-container">
 
 <!-- HEADER___________________________________________________________________________________________________-->
-
-<nav class="navbar navbar-default" role="navigation" id="nav">
+<header class="clearfix">
+  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+    <span class="sr-only">Toggle Button</span>
+    MENU
+  </button>
+<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas">
   <div class="container-fluid">
       <div class="navbar-header">
-          <button type="button" class="navbar-toggle">
-            <a href="menu.html">
+          <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
             <span class="sr-only">Toggle Navigation</span>
-            MENU
-          </a>
+            <i class="glyphicon glyphicon-remove"></i>
+            
           </button>
           <a class="navbar-brand" id="logo" href="http://www.asla.org"><img src="images/Logo.png"></a>
       </div>
-      <div class="collapse navbar-collapse" id="nav-container">
+      <div id="nav-container">
         <ul class="nav navbar-nav" id="dropdown">
           <li class="dropdown cases studies">
             <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Case Studies</a>
@@ -145,6 +149,7 @@
       </div>
   </div>
 </nav>
+</header>
 <div class="clear"></div>
   <div id="header">
     <div class="title"><a href="index.html"><span class="design">DESIGNING OUR FUTURE:</span>&nbsp;<span class="sustainable">SUSTAINABLE LANDSCAPES</span></a></div>
