@@ -120,7 +120,7 @@ a.bigleft, a.bigright {
 	display:block;
 	width:75px;
 	height:536px; 
-	background: url(images/LargeSlideLEFT.png) no-repeat;
+	background: url(../images/LargeSlideLEFT.png) no-repeat;
 	margin:5px 0 0 0;
 	background-position:10px 200px;
 	float:left;
@@ -186,7 +186,7 @@ a.disabled {
 /* next button uses another background image */
 /*Remove display none when adding more nav items to show navigation */
 a.bigright {
-	background:url(images/LargeSlideRIGHT.png) no-repeat;
+	background:url(../images/LargeSlideRIGHT.png) no-repeat;
 	background-position:10px 200px;
 	clear:right;
 	margin-left:10px;
@@ -1474,6 +1474,8 @@ html, body {
 	font-size: 1.5em;
 	font-weight: 600;
 }
+
+
 
 .title {
 	padding: 20px 15px 5px 25px
