@@ -253,30 +253,16 @@ float:left;
 max-width: 100%;
 }
 
-#nav-container ul.dropdown-menu ul#studies-drop {
-	padding:0 0 25px 15px;
-	margin:0 0 0 10px;
-	position:absolute;
-	top:20px;
-	background: #00Aeef;
-	border:none;
-	list-style:none;
-	z-index:100;
-}
-
 #nav-container ul.dropdown-menu {
-	padding:0 0 25px 15px;
+	padding:15px 0 25px 15px;
 	margin:0 0 0 10px;
-	position:absolute;
+	position: absolute;
 	top:20px;
 	background: #00Aeef;
 	border:none;
 	list-style:none;
 	z-index:100;
-}
-
-#nav-container .studies-drop {
-	min-width: 680px;
+	border-radius: 0px;
 }
 
 
@@ -322,6 +308,10 @@ text-decoration:underline;
 	list-style:none;
 	z-index:100;
 	
+}
+
+.dropdown-submenu {
+	position: relative;
 }
 
 .cols {
@@ -370,11 +360,11 @@ color:#fff;
 
 
 
-li.category {
+a.category {
 	font-family:Arial, Helvetica, sans-serif;
 	text-transform:none;
 	font-weight:bold;
-	color: #fff;
+	color: #fff !important;
 	font-size:16px;
 	padding:15px 0 0 0;
 	margin:0;
@@ -1437,22 +1427,28 @@ html, body {
 
 #nav-container ul.dropdown-menu {
 	height: auto;
+	padding-left: 0px;
+	padding: 0px;
+	position: relative;
 }
 
 .cols {
-	float: none;
-	width: 200px;
+	margin-left: 25px;
+}
+
+.dropdown {
+	display: block;
+}
+
+.dropdown-submenu {
+	position: relative;
+	display: block;
+	padding: 15px 0 0 15px;
 }
 
 #nav-container {
 	width: 100%;
 	padding-left: 0px;
-}
-
-#nav-container ul.dropdown-menu {
-	padding-left: 0px;
-	padding: 0px;
-	position: relative;
 }
 
 .navbar-default {
@@ -1541,16 +1537,17 @@ html, body {
 	}
 
 .navbar-offcanvas.navbar-offcanvas-right.offcanvas-position.in {
-	left:auto;right:0px;
+	left:auto;
+	right:0px;
 	}
 
 .navbar-offcanvas .dropdown.active .caret {
-	border-top:0px;border-bottom:4px solid;
+	border-top:0px;
+	border-bottom:4px solid;
 	}
 
 .navbar-offcanvas .dropdown-menu {
 	position:relative;
-	display:block;
 	width:100%;
 	background:inherit;
 	border:inherit;
