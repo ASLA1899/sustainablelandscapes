@@ -254,15 +254,74 @@ max-width: 100%;
 }
 
 #nav-container ul.dropdown-menu {
-	padding:15px 0 25px 15px;
+	padding:0px 0 25px 15px;
 	margin:0 0 0 10px;
-	position: absolute;
+	position:absolute;
 	top:20px;
 	background: #00Aeef;
 	border:none;
 	list-style:none;
 	z-index:100;
 	border-radius: 0px;
+}
+
+.dropdown-submenu {
+	position:relative
+
+	}
+
+.dropdown-submenu a {
+ 	color: #fff !important;
+ }
+
+.dropdown-submenu a:hover, a:focus {
+	background-color: transparent;
+}
+
+.dropdown-submenu .dropdown-menu {
+	top:0;
+	left:100%;
+	margin-top:-6px;
+	border-top-left-radius:0
+	}
+
+.dropup .dropdown-submenu .dropdown-menu,.navbar-fixed-bottom .dropdown-submenu .dropdown-menu {
+	top:auto;
+	bottom:0;
+	margin-top:0;
+	margin-bottom:-6px;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:0;
+	}
+
+.dropdown-menu-right .dropdown-submenu .dropdown-menu {
+	left:auto;
+	right:100%;
+	border-top-left-radius:4px;
+	border-top-right-radius:0;
+	}
+
+.dropup .dropdown-menu-right .dropdown-submenu .dropdown-menu,.navbar-fixed-bottom .dropdown-menu-right .dropdown-submenu .dropdown-menu {
+	border-radius:4px 4px 0;
+	}
+
+.dropdown-submenu > a:after {
+	margin-top:6px;
+	border-left:4px dashed;
+	border-top:4px solid transparent;
+	border-bottom:4px solid transparent;
+	}
+
+.dropdown-menu-right .dropdown-submenu > a:after {
+	float:left;
+	border-left:none;
+	margin-left:-10px;
+	margin-right:0;
+	border-right:4px dashed;
+	border-top:4px solid transparent;
+	border-bottom:4px solid transparent;
+	}
+
 }
 
 
@@ -310,17 +369,13 @@ text-decoration:underline;
 	
 }
 
-.dropdown-submenu {
-	position: relative;
-}
-
 .cols {
-	margin:0 15px 0 15px;
+	margin:15px 15px 0 15px !important;
 	padding:0;
 	text-decoration:none;
 	float:left;
-	width:175px;
 	background:none;
+	width: 200px;
 }
 
 .category-cases{
@@ -838,6 +893,8 @@ h3 {
 	padding:0 0 7px 10px;
 	margin-right:7px;
 	background:url(../images/bullet.png) left top no-repeat;
+	font-size: 13px;
+	line-height: 20px;
 }
 
 
@@ -1217,11 +1274,11 @@ font-size:10px;
 	width: 100%;
 	background: #111;
 	border-top: 1px solid #000;
-	padding:15px 0px 15px 15px;
+	padding:20px 0px 25px 15px;
 	color:#FFF;
 	font-style:normal;
-	font-size:12px;
-	line-height:18px;
+	font-size:13px;
+	line-height:20px;
 	font-family:Arial, Helvetica, sans-serif;
 	
 }
