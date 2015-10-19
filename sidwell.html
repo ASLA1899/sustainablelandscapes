@@ -47,7 +47,7 @@
         <ul class="nav navbar-nav" id="dropdown">
           <li class="dropdown cases studies">
             <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Case Studies</a>
-    		      <ul class="dropdown-menu multi-level cases-body studies-drop cols" role="menu">
+    		      <ul class="dropdown-menu multi-level cases-body studies-drop" role="menu">
                 <li class="dropdown-submenu">
                   <a href="#">U.S. Mid-Atlantic <span class="glyphicon glyphicon-menu-right"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -57,12 +57,14 @@
                 <li class="dropdown-submenu">
                   <a href="#">U.S. Northeast <span class="glyphicon glyphicon-menu-right"></span></a>
                     <ul class="dropdown-menu">
+                      <div class="cols">
                       <li class="category-cases"><a href="bryantpark.html">Bryant Park</a></li>
                       <li class="category-cases"><a href="brownfield.html">From Brownfield to Greenfield</a></li>
                       <li class="category-cases"><a href="gowanus.html">Gowanus Canal Sponge Park&trade;</a></li>
                       <li class="category-cases"><a href="highline.html">High Line Park</a></li>
                       <li class="category-cases"><a href="lilylake.html">Lily Lake Residence</a></li>
                       <li class="category-cases"><a href="trid.html">Transit Revitalization Investment District (TRID) Master Plan</a></li>
+                    </div>
                     </ul>
                 </li>
                 <li class="dropdown-submenu">
@@ -447,6 +449,12 @@ $(document).ready(function() {
 });//Close Function
 
 
+</script>
+
+<script type="text/javascript">
+  $("li.dropdown-submenu a").click(function(e) {
+    e.stopPropagation();
+  });
 </script>
 
 <script type="text/javascript">
