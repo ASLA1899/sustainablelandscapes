@@ -1529,6 +1529,13 @@ html, body {
 	padding: 15px 0 0 15px;
 }
 
+.dropdown-submenu .dropdown-menu {
+	top:0;
+	left: 0;
+	margin-top:-6px;
+	border-top-left-radius:0
+	}
+
 #nav-container {
 	width: 100%;
 	padding-left: 0px;
