@@ -257,7 +257,6 @@ max-width: 100%;
 	padding:0px 15px 25px 15px;
 	margin:0 15px 0 10px;
 	position:absolute;
-	top:20px;
 	background: #00Aeef;
 	border:none;
 	list-style:none;
@@ -281,6 +280,10 @@ max-width: 100%;
 
 .dropdown-menu > li > a {
 	padding: 3px 10px;
+}
+
+.cols {
+	width: 200px;
 }
 
 .dropdown-menu > li > a:hover,
