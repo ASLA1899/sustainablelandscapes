@@ -290,6 +290,7 @@ ul.cases-body ul.dropdown-menu {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
 	background-color: #00AEEF;
+	text-decoration: underline;
 }
 
 .dropdown-menu > .active > a,
@@ -1500,20 +1501,22 @@ html, body {
 	padding-left: 0px;
 	padding: 0px;
 	position: relative;
-}
-
-.cols {
-	margin-left: 25px;
+	width: 200px;
 }
 
 .dropdown {
 	display: block;
+	margin-bottom: 15px;
 }
 
 .dropdown-submenu {
 	position: relative;
 	display: block;
-	padding: 15px 0 0 15px;
+	padding: 15px 0 0 0px;
+}
+
+li.dropdown-submenu > a {
+	font-weight: 600;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -1522,9 +1525,20 @@ html, body {
 	margin-top:-6px;
 	border-top-left-radius:0
 	}
+.category-cases {
+	padding-left: 20px;
+}
+
+#nav-container ul#dropdown li.dropdown a:link#main-nav, #nav-container ul#dropdown li.dropdown a:visited#main-nav {
+	margin-left: 20px;
+}
 
 #nav-container {
 	width: 100%;
+	padding-left: 0px;
+}
+
+#nav-container ul.dropdown-menu {
 	padding-left: 0px;
 }
 
