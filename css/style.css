@@ -253,8 +253,16 @@ float:left;
 max-width: 100%;
 }
 
+ul.cases-body ul.dropdown-menu {
+	padding: 0;
+	text-decoration: none;
+	background: none;
+	width: 190px;
+	margin: 0 25px 0 0;
+}
+
 #nav-container ul.dropdown-menu {
-	padding:0px 15px 25px 15px;
+	padding:15px 20px 15px 15px;
 	margin:0 15px 0 10px;
 	position:absolute;
 	background: #00Aeef;
@@ -262,6 +270,7 @@ max-width: 100%;
 	list-style:none;
 	z-index:100;
 	border-radius: 0px;
+	width: 190px;
 }
 
 .nav .open > a,
@@ -278,10 +287,6 @@ max-width: 100%;
  	color: #fff !important;
  }
 
-.dropdown-menu > li > a {
-	padding: 3px 10px;
-}
-
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
 	background-color: #00AEEF;
@@ -291,15 +296,6 @@ max-width: 100%;
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
 	background-color: #00AEEF;
-}
-
-.dropdown-menu  {
-	margin: 0 25px 0 0;
-	padding: 0;
-	text-decoration: none;
-	float: left;
-	width: 175px !important;
-	background: none;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -390,15 +386,6 @@ text-decoration:underline;
 	list-style:none;
 	z-index:100;
 	
-}
-
-.cols {
-	margin:15px 15px 0 15px !important;
-	padding:0;
-	text-decoration:none;
-	float:left;
-	background:none;
-	width: 200px;
 }
 
 .category-cases{
@@ -1679,6 +1666,13 @@ html, body {
 	margin-bottom: 15px;
 	}
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { 
+	background:#f8f8f8;
+	color: #00AEEF;
+	margin-left: 28px;
+	margin-bottom: 15px;
+	}
+
 .offcanvas-toggle .icon-bar { 
 	background:#000;
 	}
@@ -1736,40 +1730,44 @@ ul.thumbnails li.movie {
 	display:inline-block;
 	overflow:hidden;
 	list-style:none;
-	width: 100%;
+	width: 275px;
 	height:162px;
-	margin:0px 0px 15px 15px;
-	padding:0px;
+	margin:10px 0px 25px 0px;
 	background-color:#eee;
+}
+
+ul.thumbnails li.view span {
+	padding-top: 65px;
 }
 
 ul.thumbnails li {
 	display: inline-block;
 	margin-bottom: 15px;
-	margin-left: 15px;
-	width: 140px;
-	height: 140px;
+	margin-left: 0px;
+	margin-right: 15px;
+	width: 130px;
+	height: 130px;
 }
 
 ul.thumbnails li.view {
-	width: 140px;
-	height: 140px;
-	background-size: 140px 140px;
+	width: 130px;
+	height: 130px;
+	background-size: 130px 130px;
 }
 
 ul.thumbnails {
-	max-width: 100%;
+	width: 90%;
 	height: auto;
-	margin-right: 15px;
+	margin: 0 auto;
+	padding-left: 6%;
+}
+
+ul.thumbnails li.movie a:link, ul.thumbnails li.movie a:hover, ul.thumbnails li.movie a:visited {
+	margin-left: -25px;
 }
 
 .textleft, .textright {
 	display: none !important;
-}
-
-.row {
-	margin-left: -15px !important;
-	margin-right: -15px !important;
 }
 
 div.scrollable { 	
@@ -1790,7 +1788,6 @@ div.scrollable div.items {
 
 div.scrollable div.items div {
 	width: 100%;
-	padding: 10px;
 }
 
 a.bigleft, a.bigright {
