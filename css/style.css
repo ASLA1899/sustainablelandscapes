@@ -966,6 +966,7 @@ h3 {
 	padding:0 0 7px 0px;
 	margin-right:7px;
 	background:none;
+	color: #fff;
 }
 
 
@@ -1927,7 +1928,7 @@ h2 {
 }
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-	top: 50%;
+	top: 10%;
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
