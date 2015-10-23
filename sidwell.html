@@ -429,7 +429,7 @@ $( ".dropdown-submenu" ).click(function(event) {
 });
 
 $('.dropdown-submenu>a').unbind('click').click(function(e){
-        $('.dropdown-submenu>p').hide();
+        $('.dropdown-submenu > p').hide();
         $(this).next('p').toggle();
         e.stopPropagation();
         e.preventDefault();
