@@ -16,6 +16,10 @@ a
   outline: none;
 }
 
+.focus {
+	outline: 0;
+}
+
 
 body a:link, 
 body a:visited {
@@ -102,36 +106,18 @@ body a:hover {
 /*THUMBNAIL SLIDES_______________________________________________________________________________ */
 
 div.scrollable {
-	
-	/* required settings */
-	position:relative;
-	overflow:hidden;	 	
+	position:relative;	 	
 	width: 960px;	
-	height:550px;
-	float:left;
-	
-	margin:0px	 0 20px 0;
-	
+	height:580px;
+	margin:0 auto;
 	/* custom decorations */
 	padding:7px 0;	
 }
 
-/*Remove display none when adding more nav items to show navigation */
-a.bigleft, a.bigright {
-	display:block;
-	width:75px;
-	height:536px; 
-	background: url(../images/LargeSlideLEFT.png) no-repeat;
-	margin:5px 0 0 0;
-	background-position:10px 200px;
-	float:left;
-	transition:.4s linear;
-  /* We need to help some browsers along for this to work */
-  -moz-transition:.4s linear;
-  -webkit-transition:.4s linear;
-	cursor:pointer;
-}
-a.bigleft {
+.slick-prev {
+
+left: -6%;
+
 	animation: myfirst 8s;
 	-moz-animation:myfirst 8s; /* Firefox */
 	-webkit-animation:myfirst 8s; /* Safari and Chrome */
@@ -168,14 +154,8 @@ a.bigleft {
 100% {opacity:1;}
 }
 
-a.bigleft {
+li.bigleft {
 	margin-left:15px;
-}
-
-/* mouseover state */
-a.bigleft:hover, a.bigright:hover {
-	background-color:#eee;
-	
 }
 
 /* disabled navigational button */
@@ -186,48 +166,30 @@ a.disabled {
 
 /* next button uses another background image */
 /*Remove display none when adding more nav items to show navigation */
-a.bigright {
-	background:url(../images/LargeSlideRIGHT.png) no-repeat;
-	background-position:10px 200px;
+.slick-next {
+	background:url(../images/LargeSlideRIGHT.png) no-repeat !important;
 	clear:right;
 	margin-left:10px;
+	right: -10%;
 }
 
-
-/* 
-	root element for scrollable items. Must be absolutely positioned
-	and it should have a super large width to accomodate scrollable items.
-	it's enough that you set width and height for the root element and
-	not for this element.
-*/
-div.scrollable div.items {	
-	/* this cannot be too large */
-	width:20000em;	
-	position:absolute;
-	clear:both;		
-	
-	/* decoration */
-	margin-left:10px;
-}
-
-div.scrollable div.items img {
-	border:none;
-	
-}
-
-
-
-/* single scrollable item */
-div.scrollable div.items div {
+.slick-prev, .slick-next { 
+    display:block;
+	width:75px;
+	height:536px; 
+	background: url(../images/LargeSlideLEFT.png) no-repeat;
+	margin:5px 0 0 0;
 	float:left;
-	
-	/* custom decoration */
-	padding:0;
-	}
+	transition:.4s linear;
+  /* We need to help some browsers along for this to work */
+  -moz-transition:.4s linear;
+  -webkit-transition:.4s linear;
+	cursor:pointer;
+	top: 35%;
+}
 
-/* active item */
-div.scrollable div.items div.active {
-	
+.slick-slide {
+	outline: none;
 }
 
 .main-container {
@@ -280,12 +242,65 @@ ul.cases-body ul.dropdown-menu {
 }
 
 .dropdown-submenu {
-	position:relative;
+    position: relative;
 }
 
-.dropdown-submenu a {
- 	color: #fff !important;
- }
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    margin-bottom: 6px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu > li > a {
+	color: #fff;
+	font-weight: 600;
+}
+
+.dropdown-menu > li > a:hover {
+	text-decoration: underline;
+	color: #fff;
+
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #fff;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+    margin-bottom: 10px;
+}
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
@@ -546,13 +561,13 @@ a.category {
 
 /*Index Thumnails___________________________________________________________________________________ */
 
-ul.thumbnails {
+div.thumbnails {
 width:960px;
 margin:0px 0 0 0;
 padding:0px;
 }
 
-ul.thumbnails li {
+div.thumbnails .thumb {
 	display:inline-block;
 	overflow:hidden;
 	list-style:none;
@@ -562,18 +577,18 @@ ul.thumbnails li {
 	padding:0px;
 }
 
-ul.thumbnails li.movie {
+div.thumbnails div.movie {
 	display:inline-block;
 	overflow:hidden;
 	list-style:none;
-	width:349px;
+	width:353px;
 	height:162px;
 	margin:0px 0px 25px 25px;
 	padding:0px;
 	background-color:#eee;
 }
 
-ul.thumbnails li.about {
+div.thumbnails li.about {
 	display:inline-block;
 	overflow:hidden;
 	list-style:none;
@@ -585,9 +600,9 @@ ul.thumbnails li.about {
 	color:#fff;
 }
 
-ul.thumbnails li.about a:link,
-ul.thumbnails li.about a:hover,
-ul.thumbnails li.about a:visited{
+div.thumbnails li.about a:link,
+div.thumbnails li.about a:hover,
+div.thumbnails li.about a:visited{
 display:block;
 width:177px;
 height:40px;
@@ -596,7 +611,7 @@ padding:0;
 margin-left:123px;
 }
 
-ul.thumbnails li a {
+div.thumbnails .thumb a {
 	border:none;
 	width:162px;
 	height:162px;
@@ -604,7 +619,7 @@ ul.thumbnails li a {
 	
 }
 
-ul.thumbnails li a img {
+div.thumbnails li a img {
 	position:absolute;
 	border:0;
 }
@@ -623,18 +638,19 @@ ul.thumbnails li a img {
 * + html ul.thumbnails li.movie { display:inline; }  /* for IE 7 */
 
 
-ul.thumbnails li.movie a:link,
-ul.thumbnails li.movie a:hover, 
-ul.thumbnails li.movie a:visited {
+div.thumbnails div.movie a:link,
+div.thumbnails div.movie a:hover, 
+div.thumbnails div.movie a:visited {
 display:block;
 width:230px;
 height:40px;
 background:url(../images/home/Watch_Animations.png) no-repeat;
 padding:0;
 margin-left:70px;
+margin-top: 10px;
 }
 
-ul.thumbnails a span {
+div.thumbnails .thumb a span {
 	display:block;
 	width:162px;
 	height:162px;
@@ -642,39 +658,40 @@ ul.thumbnails a span {
 	position:absolute;
 }
 
-ul.thumbnails a span p{
+div.thumbnails .thumb a span p{
 	padding:10px 10px 5px 10px;
 	margin:0;
 }
 
-ul.thumbnails a span p.index-title-city {
+div.thumbnails .thumb a span p.index-title-city {
 	font-size:12px;	
 	line-height:16px;
 	padding-top:0;
 	color:#eeeeee;
 }
 
-ul.thumbnails a, a:hover span p{
+div.thumbnails .thumb a, 
+div.thumbnails .thumb a:hover span p{
 	text-decoration:none;
 	color:#00AEEF;
 }
 
-ul.thumbnails a span p.title {
+div.thumbnails .thumb a span p.title {
 	color:#eeeeee;
 	font-size:18px;
 	line-height:22px;
 }
 
-ul.thumbnails a:hover span p.title {
+div.thumbnails .thumb a:hover span p.title {
 	color:#00AEEF;
 }
 
-ul.thumbnails a:hover span p.index-title-city {
+div.thumbnails .thumb a:hover span p.index-title-city {
 	color:#00AEEF;
 }
 
 
-ul.thumbnails a span p {
+div.thumbnails .thumb a span p {
 	color:#666;
 }
 
@@ -683,14 +700,14 @@ ul.thumbnails a span p {
 	background: url(../images/View_Index_NoArrow.jpg) top;
 }
 
-ul.thumbnails li.view {
+div.thumbnails li.view {
 width:162px;
 height:162px;
 background:url(../images/View_Index_NoArrow.jpg) top;
 position:relative;
 }
 
-ul.thumbnails li.view span {
+div.thumbnails li.view span {
 padding:75px 10px 5px 2px;
 font-family:Arial, Helvetica, sans-serif;
 font-size:11px;
@@ -1505,27 +1522,62 @@ html, body {
 	width: 200px;
 }
 
-.dropdown {
-	display: block;
-	margin-bottom: 15px;
-}
-
 .dropdown-submenu {
-	position: relative;
-	display: block;
-	padding: 15px 0 0 0px;
+    position: relative;
 }
 
-li.dropdown-submenu > a {
-	font-weight: 600;
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 0;
+    margin-top: -6px;
+    margin-left: -1px;
+    margin-bottom: 6px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
 }
 
-.dropdown-submenu .dropdown-menu {
-	top:0;
-	left: 0;
-	margin-top:-6px;
-	border-top-left-radius:0
-	}
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #fff;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+    margin-bottom: 10px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	text-decoration: underline;
+	color: #fff;
+
+}
+
 .category-cases {
 	padding-left: 20px;
 }
@@ -1541,6 +1593,7 @@ li.dropdown-submenu > a {
 
 #nav-container ul.dropdown-menu {
 	padding-left: 0px;
+	margin-bottom: 10px;
 }
 
 .navbar-nav {
@@ -1733,56 +1786,12 @@ li.dropdown-submenu > a {
 	margin: 15px 0px 0px 0px;
 }
 
-ul.thumbnails a span p.title {
-	margin-right: 30px;
-}
-
-ul.thumbnails a span p.index-title-city {
-	margin-right: 30px;
-}
-
-ul.thumbnails li.movie {
-	display:inline-block;
-	overflow:hidden;
-	list-style:none;
-	width: 275px;
-	height:162px;
-	margin:10px 0px 25px 0px;
-	background-color:#eee;
-}
-
-ul.thumbnails li.view span {
-	padding-top: 65px;
-}
-
-ul.thumbnails li {
-	display: inline-block;
-	margin-bottom: 15px;
-	margin-left: 0px;
-	margin-right: 15px;
-	width: 130px;
-	height: 130px;
-}
-
-ul.thumbnails li.view {
-	width: 130px;
-	height: 130px;
-	background-size: 130px 130px;
-}
-
-ul.thumbnails {
-	width: 90%;
-	height: auto;
-	margin: 0 auto;
-	padding-left: 6%;
-}
-
-ul.thumbnails li.movie a:link, ul.thumbnails li.movie a:hover, ul.thumbnails li.movie a:visited {
-	margin-left: -25px;
-}
-
 .textleft, .textright {
 	display: none !important;
+}
+
+.thumbnails .movie div div {
+	display: block;
 }
 
 div.scrollable { 	
@@ -1790,19 +1799,7 @@ div.scrollable {
 	height: auto;
 	overflow-y: visible;
 	overflow-x: hidden;
-}
-
-div.scrollable div.items {
-  width: 100%;
-  position: relative;
-  clear: both;
-  float: none;
-  overflow: visible;
-  margin-left: 0px;
-}
-
-div.scrollable div.items div {
-	width: 100%;
+	margin-left: 0;
 }
 
 a.bigleft, a.bigright {
@@ -1983,6 +1980,65 @@ h2 {
 
 }
 
+/*Tweener====================================*/
+@media (min-width: 768px) and (max-width: 1068px) {
+
+div.scrollable {
+	width: 700px;
+	height: 420px;
+	padding: 20px 0;
+}
+
+div.thumbnails .thumb {
+	width: 105px;
+	height: 105px;
+}
+
+div.thumbnails div.movie {
+	width: 238px;
+	height: 105px;
+}
+
+div.thumbnails div.movie a:link {
+	width: 120px;
+	height: 25px;
+	background-size: 120px 25px;
+	margin-left: 80px;
+	margin-top: -10px;
+}
+
+.thumb img {
+	width: 105px;
+	height: 105px;
+}
+
+.movie img {
+	width: 150px;
+}
+
+.movie p {
+	padding: 10px 10px 0 11px !important;
+}
+
+.slick-prev, .slick-next {
+	top: 30%;
+}
+
+.slick-prev {
+	left: -8%;
+}
+
+#footer {
+	margin-bottom: 0px;
+	position: relative;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	left: 0;
+}
+
+}
+
 /*Tweener Secondary Pages===============================================*/
 @media (min-width: 905px) and (max-width: 1068px) {
 
@@ -2018,7 +2074,7 @@ html, body {
 }
 
 #nav-container ul.dropdown-menu {
-	padding-left: 0px;
+	padding-left: 15px;
 }
 
 .title {
@@ -2114,6 +2170,10 @@ html, body {
 
 #left-col ul {
 	display: inline-flex;
+}
+
+#nav-container ul.dropdown-menu {
+	padding-left: 15px;
 }
 
 #left-col .related {
