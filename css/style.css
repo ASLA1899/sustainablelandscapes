@@ -995,7 +995,7 @@ h3 {
 
 
 #left-col .ed-button {
-	padding:0 0 25px 25px;
+	padding:0 0 25px 0px;
 	margin:0;
 	border:0;
 }
@@ -1021,7 +1021,7 @@ h3 {
 
 #right-col {
 	width:723px;
-	margin:25px 0 0 50px;
+	margin:25px 0 0 25px;
 	padding:0;
 	float:left;
 }
@@ -1063,7 +1063,7 @@ margin:0;
 
 #right-col .ideas {
 	width: 100%;
-	margin:25px 0 25px 0;
+	margin:25px 0 25px 0px;
 	background-color:#eeeeee;
 
 }
@@ -1161,7 +1161,7 @@ margin-left:180px;
 /*Video Embed__________________________________________________________________________________*/
 #video{ width: 100%;
 height: 100%;
-margin:15px 0 10px 0;
+margin:15px 0 10px 0px;
 border:solid #cccccc 1px;
 }
 
@@ -1379,7 +1379,7 @@ font-size:10px;
 	position:absolute;
 	z-index:10;
 	margin-left:575px;
-	*margin-top:20px;
+	margin-top:20px;
 }
 
 
@@ -1958,6 +1958,12 @@ h2 {
 	top: 25%;
 }
 
+#left-col .ed-button {
+	padding:0 0 25px 25px;
+	margin:0;
+	border:0;
+}
+
 #idc-container-parent {
 	width: 100%;
 }
@@ -1967,7 +1973,7 @@ h2 {
 }
 
 #comments .share {
-	margin-left: 220px;
+	margin-left: 220px !important;
 }
 
 #idc-container-parent #idc-container #IDCommentsNoCommentsDiv {
@@ -2047,6 +2053,12 @@ div.thumbnails div.movie a:link {
 	left: -8%;
 }
 
+#left-col .ed-button {
+	padding:0 0 25px 25px;
+	margin:0;
+	border:0;
+}
+
 #footer {
 	margin-bottom: 0px;
 	position: relative;
@@ -2122,9 +2134,20 @@ html, body {
 	margin-right: 35px;
 }
 
+#left-col .ed-button {
+	padding:0 0 25px 25px;
+	margin:0;
+	border:0;
+}
+
 #idc-container-parent {
 	width: 100%;
 }
+
+#comments .share {
+	right: 10%;
+}
+
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
 	min-width: 100%;
@@ -2200,8 +2223,7 @@ html, body {
 }
 
 #right-col {
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 0 auto;
 	float: none;
 }
 
