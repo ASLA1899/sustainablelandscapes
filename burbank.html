@@ -48,7 +48,7 @@
         <ul class="nav navbar-nav" id="dropdown">
           <li class="dropdown cases studies">
             <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="main-nav">Case Studies</a>
-    		      <ul class="dropdown-menu multi-level cases-body studies-drop cols" role="menu">
+              <ul class="dropdown-menu multi-level cases-body studies-drop cols" role="menu">
                 <li class="dropdown-submenu">
                   <a href="#">U.S. Mid-Atlantic</a>
                     <ul class="dropdown-menu" role="menu">
@@ -72,6 +72,7 @@
                   <a href="#">U.S. Northwest</a>
                     <ul class="dropdown-menu" role="menu">
                       <p class="category-cases"><a href="highpoint.html">High Point</a></p>
+                      <p class="category-cases"><a href="lafayette.html">Lafayette Greens</a></p>
                       <p class="category-cases"><a href="raingarden.html">Mount Tabor Middle School Rain Garden</a></p>
                       <p class="category-cases"><a href="greenstreet.html">NE Siskiyou Green Street </a></p>
                       <p class="category-cases"><a href="greenroof.html">Washington Mutual Center Green Roof</a></p>
@@ -93,11 +94,13 @@
                       <p class="category-cases"><a href="burbank.html">Burbank Water and Power Eco-Campus</a></p>
                       <p class="category-cases"><a href="cas.html">California Academy of Sciences</a></p>
                       <p class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></p>
+                      <p class="category-cases"><a href="apartments.html">Drs. Julian and Raye Richardson Apartments</a></p>
                       <p class="category-cases"><a href="crackgarden.html">The Crack Garden</a></p>
                       <p class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></p>
                       <p class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></p>
                       <p class="category-cases"><a href="nuevaschool.html">Nueva School </a></p>
                       <p class="category-cases"><a href="cannerylofts.html">Pacific Cannery Lofts</a></p>
+                      <p class="category-cases"><a href="sunnylands.html">Sunnylands Center &amp; Gardens</a></p>
                       <p class="category-cases"><a href="transwater.html">Transformative Water</a></p>
                     </ul>
                 </li>
@@ -110,6 +113,7 @@
                 <li class="dropdown-submenu">
                   <a href="#">U.S. Southwest</a>
                     <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="courthouse.html">Pete v. Domenici U.S. Courthouse Sustainable Landscape Rennovation</a></p>
                       <p class="category-cases"><a href="sonoran.html">Underwood Family Sonoran Landscape Laboratory</a></p>
                     </ul>
                 </li>
@@ -131,6 +135,7 @@
                     <ul class="dropdown-menu" role="menu">
                       <p class="category-cases"><a href="chongae.html">ChonGae Canal Point Source Park</a></p>
                       <p class="category-cases"><a href="ecolodge.html">Crosswaters Ecolodge</a></p>
+                      <p class="category-cases"><a href="quarry.html">Quarry Garden</a></p>
                       <p class="category-cases"><a href="redribbon.html">The Red Ribbon, Tanghe River Park</a></p>
                     </ul>
                 </li>   
@@ -138,7 +143,7 @@
           </li>
           <li class="dropdown cases videos">
             <a class="dropdown-toggle" href="videos.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Animations</a>
-    		      <ul class="dropdown-menu cases-body videos-drop">
+              <ul class="dropdown-menu cases-body videos-drop">
                 <p style="padding-top:15px;" class="category-cases"><a href="Vid_Waste.html">Building a Park Out of Waste</a></p>
                 <p class="category-cases"><a href="Vid_ActiveLiving.html">Designing for Active Living</a></li>
                 <p class="category-cases"><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></p>
@@ -153,7 +158,7 @@
           </li>
           <li class="dropdown cases educations">
             <a class="dropdown-toggle" href="education.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Education</a>
-    		      <ul style="padding-right:0;" class="dropdown-menu cases-body educations-drop">
+              <ul style="padding-right:0;" class="dropdown-menu cases-body educations-drop">
                 <p style="padding-top:15px; " class="category-cases"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></p>
                 <p class="category-cases"><a href="Ed_ActiveLiving.html">Design for Active Living</a></p>
                 <p class="category-cases"><a href="Ed_Wildlife.html">Designing for Biodiversity</a></p>
@@ -403,15 +408,6 @@
     <div class="clear"></div>
 </div>
 <!--JAVSCRIPT - NAVIGATION___________________________________________________________________________________-->
-<script>
-// execute your scripts when the DOM is ready. this is a good habit
-$(function() {
-
-	// initialize scrollable
-	var api = $(".scrollable").scrollable(); 
-
-});
-</script>
 
 <script type='text/javascript'>
   $(function() {
@@ -431,18 +427,32 @@ $(function() {
   });
 </script>
 
+<script type="text/javascript">
+$( ".dropdown-submenu" ).click(function(event) {
+    // stop bootstrap.js to hide the parents
+    event.stopPropagation();
+    // hide the open children
+    $( this ).find(".dropdown-submenu").removeClass('open');
+    // add 'open' class to all parents with class 'dropdown-submenu'
+    $( this ).parents(".dropdown-submenu").addClass('open');
+    // this is also open (or was)
+    $( this ).toggleClass('open');
+});
+
+$('.dropdown-submenu>a').unbind('click').click(function(e){
+        $('.dropdown-submenu>p').hide();
+        $(this).next('p').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+</script>
+
 <!--JAVSCRIPT - SLIDESHOW___________________________________________________________________________________-->
 
 <script type="text/javascript">
 $('#carousel-example-generic').carousel({
     interval: false
 });
-</script>
-
-<script type="text/javascript">
-	$(document).ready(function(){	
-		$("#slider").easySlider();
-	});
 </script>
 
 <script>

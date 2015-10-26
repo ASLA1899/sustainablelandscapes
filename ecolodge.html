@@ -2,17 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/secondary.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
+
 <title>Designing Our Future: Sustainable Landscapes</title>
-<!-- InstanceEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<!--Stylesheets-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-submenu.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Work+Sans:400,100,700' rel='stylesheet' type='text/css'>
+<!--JS-->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/easyslider.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-submenu.min.js"></script>
 <script script src="js/jquery.tipsy.js"></script>
-<script script src="js/tools.scrollable-1.1.0.js"></script>
+<script type="text/javascript" src="js/offcanvas.js"></script>
 <script src="js/dropdown.js"></script>
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+
 </head>
 
 <body>
@@ -20,146 +27,203 @@
 
 <!-- HEADER___________________________________________________________________________________________________-->
 
+<header class="clearfix">
+  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+    <span class="sr-only">Toggle Button</span>
+    MENU
+  </button>
+<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+            <span class="sr-only">Toggle Navigation</span>
+            <i class="glyphicon glyphicon-remove"></i>
+          </button>
+          <a class="navbar-brand" id="logo" href="http://www.asla.org"><img src="images/Logo.png"></a>
+      </div>
+      <div id="nav-container">
+        <ul class="nav navbar-nav" id="dropdown">
+          <li class="dropdown cases studies">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="main-nav">Case Studies</a>
+              <ul class="dropdown-menu multi-level cases-body studies-drop cols" role="menu">
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Mid-Atlantic</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="sidwell.html">Sidwell Friends School</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Northeast</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="bryantpark.html">Bryant Park</a></p>
+                      <p class="category-cases"><a href="brownfield.html">From Brownfield to Greenfield</a></p>
+                      <p class="category-cases"><a href="gowanus.html">Gowanus Canal Sponge Park&trade;</a></p>
+                      <p class="category-cases"><a href="highline.html">High Line Park</a></p>
+                      <p class="category-cases"><a href="breakwaters.html">Living Breakwaters</a></p>
+                      <p class="category-cases"><a href="lilylake.html">Lily Lake Residence</a></p>
+                      <p class="category-cases"><a href="steelyard.html">The Steel Yard</a></p>
+                      <p class="category-cases"><a href="trid.html">Transit Revitalization Investment District (TRID) Master Plan</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Northwest</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="highpoint.html">High Point</a></p>
+                      <p class="category-cases"><a href="lafayette.html">Lafayette Greens</a></p>
+                      <p class="category-cases"><a href="raingarden.html">Mount Tabor Middle School Rain Garden</a></p>
+                      <p class="category-cases"><a href="greenstreet.html">NE Siskiyou Green Street </a></p>
+                      <p class="category-cases"><a href="greenroof.html">Washington Mutual Center Green Roof</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Midwest</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></p>
+                      <p class="category-cases"><a href="discovery.html">James Clarkson Environmental Discovery Center</a></p>
+                      <p class="category-cases"><a href="kresge.html">Kresge Foundation Headquarters</a></p>
+                      <p class="category-cases"><a href="rooftophaven.html">Rooftop Haven for Urban Agriculture</a></p>
+                      <p class="category-cases"><a href="woodland.html">The Woodland Discovery Playground</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. West</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="burbank.html">Burbank Water and Power Eco-Campus</a></p>
+                      <p class="category-cases"><a href="cas.html">California Academy of Sciences</a></p>
+                      <p class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></p>
+                      <p class="category-cases"><a href="apartments.html">Drs. Julian and Raye Richardson Apartments</a></p>
+                      <p class="category-cases"><a href="crackgarden.html">The Crack Garden</a></p>
+                      <p class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></p>
+                      <p class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></p>
+                      <p class="category-cases"><a href="nuevaschool.html">Nueva School </a></p>
+                      <p class="category-cases"><a href="cannerylofts.html">Pacific Cannery Lofts</a></p>
+                      <p class="category-cases"><a href="sunnylands.html">Sunnylands Center &amp; Gardens</a></p>
+                      <p class="category-cases"><a href="transwater.html">Transformative Water</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Southeast</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="vietvillage.html">Viet Village Urban Farm</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Southwest</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="courthouse.html">Pete v. Domenici U.S. Courthouse Sustainable Landscape Rennovation</a></p>
+                      <p class="category-cases"><a href="sonoran.html">Underwood Family Sonoran Landscape Laboratory</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">Canada</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="hto.html">HtO Park</a></p>
+                      <p class="category-cases"><a href="sherbourne.html">Sherbourne Common</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">Europe</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">Asia</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="chongae.html">ChonGae Canal Point Source Park</a></p>
+                      <p class="category-cases"><a href="ecolodge.html">Crosswaters Ecolodge</a></p>
+                      <p class="category-cases"><a href="quarry.html">Quarry Garden</a></p>
+                      <p class="category-cases"><a href="redribbon.html">The Red Ribbon, Tanghe River Park</a></p>
+                    </ul>
+                </li>   
+              </ul>
+          </li>
+          <li class="dropdown cases videos">
+            <a class="dropdown-toggle" href="videos.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Animations</a>
+              <ul class="dropdown-menu cases-body videos-drop">
+                <p style="padding-top:15px;" class="category-cases"><a href="Vid_Waste.html">Building a Park Out of Waste</a></p>
+                <p class="category-cases"><a href="Vid_ActiveLiving.html">Designing for Active Living</a></li>
+                <p class="category-cases"><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></p>
+                <p class="category-cases"><a href="Vid_UrbanAg.html">The Edible City</a></li>
+                <p class="category-cases"><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></p>
+                <p class="category-cases"><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></p>
+                <p class="category-cases"><a href="Vid_Infrastructure.html">Infrastructure for All</a></p>
+                <p class="category-cases"><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></p>
+                <p class="category-cases"><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></p>
+                <p class="category-cases"><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></p>
+              </ul>
+          </li>
+          <li class="dropdown cases educations">
+            <a class="dropdown-toggle" href="education.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Education</a>
+              <ul style="padding-right:0;" class="dropdown-menu cases-body educations-drop">
+                <p style="padding-top:15px; " class="category-cases"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></p>
+                <p class="category-cases"><a href="Ed_ActiveLiving.html">Design for Active Living</a></p>
+                <p class="category-cases"><a href="Ed_Wildlife.html">Designing for Biodiversity</a></p>
+                <p class="category-cases"><a href="Ed_Energy.html">Energy Efficiency</a></p>
+                <p class="category-cases"><a href="Ed_WaterManagement.html">Green Infrastructure</a></p>
+                <p class="category-cases"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a></p>
+                <p class="category-cases"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></p>
+                <p class="category-cases"><a href="Ed_UrbanAg.html">Urban Agriculture</a></p>
+                <p class="category-cases"><a href="Ed_UrbanForests.html">Urban Forestry</a></p>
+                <p class="category-cases"><a href="Ed_Parks.html">Urban Parks</a></p>
+              </ul>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
+</header>
 <div id="header">
-
-<div id="nav">
-<div id="logo"><a href="http://www.asla.org"><img src="images/Logo.png"></a></div>
-<div id="nav-container">
-<ul id="dropdown">
-	<li class="cases studies"><a class="mainnav" href="#">Case Studies</a>
-    		<ul class="cases-body studies-drop">
-        	<li class="cols"><p class="category">U.S. Mid-Atlantic</p>
-            <p class="category-cases"><a href="sidwell.html">Sidwell Friends School</a></p>
-            
-            <p class="category">U.S. Northeast</p>
-            <p class="category-cases"><a href="bryantpark.html">Bryant Park</a></p>
-            <p class="category-cases"><a href="brownfield.html">From Brownfield to Greenfield</a></p>
-            <p class="category-cases"><a href="gowanus.html">Gowanus Canal Sponge Park&trade;</a></p>
-            <p class="category-cases"><a href="highline.html">High Line Park</a></p>
-            <p class="category-cases"><a href="lilylake.html">Lily Lake Residence</a></p>
-            <p class="category-cases"><a href="trid.html">Transit Revitalization Investment District (TRID) Master Plan</a></p>
-            
-             <p class="category">U.S. Northwest</p>
-            <p class="category-cases"><a href="highpoint.html">High Point</a></p>
-            <p class="category-cases"><a href="raingarden.html">Mount Tabor Middle School Rain Garden</a></p>
-            <p class="category-cases"><a href="greenstreet.html">NE Siskiyou Green Street </a></p>
-            <p class="category-cases"><a href="greenroof.html">Washington Mutual Center Green Roof</a></p>
-            </li><li class="cols"> <p class="category">U.S. Midwest</p>
-            <p class="category-cases"><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></p>
-            <p class="category-cases"><a href="discovery.html">James Clarkson Environmental Discovery Center</a></p>
-            <p class="category-cases"><a href="kresge.html">Kresge Foundation Headquarters</a><br></p>
-            <p class="category-cases"><a href="rooftophaven.html">Rooftop Haven for Urban Agriculture</a></p>
-            
-            
-               <p class="category">U.S. West </p>
-            <p class="category-cases"><a href="cas.html">California Academy of Sciences</a></p>
-            <p class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></p>
-            <p class="category-cases"><a href="crackgarden.html">The Crack Garden</a></p>
-            <p class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></p>
-            <p class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></p>
-            <p class="category-cases"><a href="nuevaschool.html">Nueva School </a></p>
-
-            <p class="category-cases"><a href="cannerylofts.html">Pacific Cannery Lofts</a></p>
-            <p class="category-cases"><a href="transwater.html">Transformative Water</a></p>
-            </li><li class="cols">   <p class="category">U.S. Southeast </p>
-            <p class="category-cases"><a href="vietvillage.html">Viet Village Urban Farm</a></p>
-            
-            <p class="category">U.S. Southwest </p>
-            <p class="category-cases"><a href="sonoran.html">Underwood Family Sonoran Landscape Laboratory</a></p>
-            
-            <p class="category">Canada </p>
-            <p class="category-cases"><a href="hto.html">HtO Park</a></p>
-            
-            <p class="category">Europe </p>
-            <p class="category-cases"><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan </a></p>
-            
-              <p class="category">Asia </p>
-            <p class="category-cases"><a href="chongae.html">ChonGae Canal Point Source Park</a></p>
-            <p class="category-cases"><a href="ecolodge.html">Crosswaters Ecolodge </a></p>
-            <p class="category-cases"><a href="redribbon.html">The Red Ribbon, Tanghe River Park </a></p></li></ul>
-     </li><li class="cases videos"><a class="mainnav" href="videos.html">Animations</a>
-    		<ul class="cases-body videos-drop">
-        	<li class="cols">
-            <p style="padding-top:15px;" class="category-cases"><a href="Vid_Waste.html">Building a Park Out of Waste</a></p>
-            <p class="category-cases"><a href="Vid_ActiveLiving.html">Designing for Active Living</a></p>
-            <p class="category-cases"><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></p>
-            <p class="category-cases"><a href="Vid_UrbanAg.html">The Edible City</a></p>
-            <p class="category-cases"><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></p>
-            <p class="category-cases"><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></p>
-            <p class="category-cases"><a href="Vid_Infrastructure.html">Infrastructure for All</a></p>
-            <p class="category-cases"><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></p>
-            <p class="category-cases"><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></p>
-            <p class="category-cases"><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></p>
-            
-            
-            </li></ul></li><li class="cases educations"><a class="mainnav" href="education.html">Education</a>
-    		<ul style="padding-right:0;" class="cases-body educations-drop">
-        	<li class="cols"><p style="padding-top:15px; " class="category-cases"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></p>
-            <p class="category-cases"><a href="Ed_ActiveLiving.html">Design for Active Living</a></p>
-            <p class="category-cases"><a href="Ed_Wildlife.html">Designing for Biodiversity</a></p>
-            <p class="category-cases"><a href="Ed_Energy.html">Energy Efficiency</a></p>
-            <p class="category-cases"><a href="Ed_WaterManagement.html">Green Infrastructure</a></p>
-            <p class="category-cases"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a><br></p>
-            <p class="category-cases"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></p>
-            <p class="category-cases"><a href="Ed_UrbanAg.html">Urban Agriculture</a></p>
-            <p class="category-cases"><a href="Ed_UrbanForests.html">Urban Forestry</a></p>
-            <p class="category-cases"><a href="Ed_Parks.html">Urban Parks</a></p>
-            </li></ul></li>
-</ul>
-</div>
-</div>
-<div class="clear"></div>
-<a href="index.html"><img src="images/Title.jpg" style="padding:30px 0px 5px 25px; border:0;"/></a>
-
+  <div class="title"><a href="index.html"><span class="design">DESIGNING OUR FUTURE:</span>&nbsp;<span class="sustainable">SUSTAINABLE LANDSCAPES</span></a></div>
 </div>
 
 <!-- LEFT COLUMN___________________________________________________________________________________________________-->
-<div style="margin:0 0 0 100px;">
-<div id="left-col"><!-- InstanceBeginEditable name="Left Column" -->
-<h2>PROJECT TYPE</h2>
-	<ul><li>Rural</li>
-	  <li>Botanic Garden</li>
-	  <li>River</li>
-	  <li>Trail</li>
-	  <li>Greenfield </li>
-	
-	</ul>
-<h2>Environmental Benefits</h2>
-	<ul><li>Preserves Native Plants</li>
-	  <li>Produces Food </li>
-	  <li>Recycles Materials</li>
-	  <li>Restores Biodiversity</li>
-       
-	
-	</ul> 
+<div class="main-container">
+  <div id="left-col">
+    <div class="project-type">
+    <h2>PROJECT TYPE</h2>
+	   <ul>
+      <li>Rural</li>
+	    <li>Botanic Garden</li>
+	    <li>River</li>
+	    <li>Trail</li>
+	    <li>Greenfield</li>
+	   </ul>
+   </div>
+
+   <div class="environmental-benefits">
+    <h2>Environmental Benefits</h2>
+	   <ul>
+      <li>Preserves Native Plants</li>
+	    <li>Produces Food</li>
+	    <li>Recycles Materials</li>
+	    <li>Restores Biodiversity</li>
+	   </ul>
+   </div> 
     
+    <div class="pdf">
     <a href="pdfs/Ecolodge_Fact_Sheet.pdf" target="_blank" onClick="_gaq.push(['_trackEvent', 'PDFS', 'Download', 'Sustainable Landscapes']);"><img src="images/FactsButton.jpg" /></a>
+    </div>
     <!--RELATED LINKS-->    
    <div class="related">
     <h1 style="padding-top:25px;">Related <br>Animations</h1>
-   <ul class="related-box">
+      <ul class="related-box">
        <li><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></li>
-     
-    
-    </ul>
+      </ul>
+
     <h1>Related Education Resources</h1>
      <ul class="related-box">
        <li><a href="Ed_Wildlife.html">Designing for Biodiversity</a></li>
-      
-       </li>
-    
      </ul>
-    </div>
+   </div>
 <!--RELATED LINKS END-->    
     
  <h3>Links</h3>
  
  <ul class="links">
 	<li><a href="http://www.asla.org/2010awards/370.html" >2010 General Design Honor Award (ASLA)</a></li> 
-    <li><a href="http://en.wikipedia.org/wiki/Ecotourism" target="_blank">Ecotourism (Wikipedia)</a></li>
-   
-     
-   </ul>
+  <li><a href="http://en.wikipedia.org/wiki/Ecotourism" target="_blank">Ecotourism (Wikipedia)</a></li> 
+ </ul>
    
  <!-- InstanceEndEditable -->   
 </div>
@@ -169,93 +233,108 @@
 <div id="right-col"><!-- InstanceBeginEditable name="Title" -->
 <h1>Crosswaters Ecolodge</h1>
 <span class="secondary-title-city">Nankun Mountain Reserve, Guangdong Province, China</span><!-- InstanceEndEditable -->
-<div id="slideshow"><!-- InstanceBeginEditable name="Slideshow" -->
-  <div id="slider">
-    <ul>
-      <li><img src="images/ecolodge/Ecolodge_1.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/ecolodge/Ecolodge_1.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
             <p>Throughout China, rapid industrialization is causing millions of people to migrate from the countryside to cities like Guangzhou. As urban areas sprawl outward, new development consumes open land and critical natural resources. This pattern of development is causing widespread environmental devastation and social disruption that is jeopardizing China’s long term future.  </p>
             <p class="captions">ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 1 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      <li><img src="images/ecolodge/Ecolodge_2.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
-            <p>The Nankun Mountain Reserve was created in 1984 in an effort to preserve 260-square kilometers of native evergreen forest. Located within the reserve on a mountain above the Ganken River, Crosswaters Ecolodge was created as a sustainably-minded hotel and resort featuring 53 villas and suites.  </p>
+      </div>
+      <div class="item">
+        <img src="images/ecolodge/Ecolodge_2.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
+            <p>The Nankun Mountain Reserve was created in 1984 in an effort to preserve 260-square kilometers of native evergreen forest. Located within the reserve on a mountain above the Ganken River, Crosswaters Ecolodge was created as a sustainably-minded hotel and resort featuring 53 villas and suites.</p>
             <p class="captions">ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 2 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      <li><img src="images/ecolodge/Ecolodge_3.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
+      </div>
+      <div class="item">
+        <img src="images/ecolodge/Ecolodge_3.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
             <p>The resort, which is the first ecotourism destination in China, respectfully leverages the natural beauty of the land to provide guests with engaging outdoor activities, delicious local food, and breathtaking scenery. Income from the resort helps fund forest conservation. </p>
             <p class="captions">ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 3 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      <li><img src="images/ecolodge/Ecolodge_4.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
+      </div>
+      <div class="item">
+        <img src="images/ecolodge/Ecolodge_4.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
             <p>More than 5,000 native Keija people live within the reserve. During the planning process, landscape architects consulted the community to learn the history of the land and native culture. Local residents offered insight into the project proposal, shown above. The community planning process helped increase the community’s sense of ownership and appreciation for the new development.  </p>
             <p class="captions">ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 4 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      <li><img src="images/ecolodge/Ecolodge_5.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
+      </div>
+      <div class="item">
+        <img src="images/ecolodge/Ecolodge_5.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
             <p>Local Keija craftsman and artisans were employed in constructing nearly all aspects of the lodge, even complex structures like this bamboo bridge, which spans the Ganken River. Here, local workers were mentored by expert craftsman to learn new construction techniques. The community benefits as local craftsman gain new skills that can be applied on future projects. </p>
             <p class="captions">ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 5 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      <li><img src="images/ecolodge/Ecolodge_6.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
+      </div>
+      <div class="item">
+        <img src="images/ecolodge/Ecolodge_6.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
             <p>Buildings, structures, and paving around the resort all incorporate local materials such as bamboo, clay tiles, marble, and river stones. The restaurant and lounge, shown here, feature bamboo flying buttresses that honor the traditional architecture of southeast China. Guests enjoy views from the open-sided restaurant while enjoying hearty local dishes, prepared with organic vegetables grown on site.</p>
             <p class="captions">ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 6 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      <li><img src="images/ecolodge/Ecolodge_7.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
+      </div>
+      <div class="item">
+        <img src="images/ecolodge/Ecolodge_7.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
             <p>The local community engages with the resort on many levels, providing guests with insight into the sustainable lifestyles of rural China. Here, in the “Garden of Cultivation," Keija farmers cultivate and harvest native fruits and vegetables that supply the kitchen. Guests of the resort see and taste the advantages of local food production. </p>
             <p class="captions">ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 7 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      <li><img src="images/ecolodge/Ecolodge_8.jpg" alt="Crosswaters Ecolodge " />
-        <div class="desc"><a href="#" class="collapse">Close Me!</a>
-          <div class="block">
+      </div>
+      <div class="item">
+        <img src="images/ecolodge/Ecolodge_8.jpg" alt="Crosswaters Ecolodge " />
+        <div class="desc"><a href="#" class="down">Close Me!</a>
+          <div class="carousel-caption">
             <p>Guests can interact with the landscape throughout their visit, choosing among a multitude of outdoor activities including mountain climbing, boating, birding, farming, or fishing. At night, guests can star gaze from the outlook tower shown in the above picture.   </p>
             <p class="captions">Photo: ASLA Honor Award Recipient, Crosswaters Ecolodge by EDSA, Inc.  <br />(Photo: EDSA and Hitesh Mehta)</p>
             <p class="count">Photo 8 of 8</p>
             <div class="clear"></div>
           </div>
         </div>
-      </li>
-      
-    </ul>
+      </div>
   </div>
-<!-- InstanceEndEditable --></div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <img src="images/slidetest/new/Slideshow-LeftRollover.png" class="glyphicon glyphicon-chevron-left" />
+      <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <img src="images/slidetest/new/Slideshow-RightRollover.png" class="glyphicon glyphicon-chevron-right" />
+      <span class="sr-only">Next</span>
+  </a>
+</div>
+
     <div id="facts"><!-- InstanceBeginEditable name="Project Facts" -->
       <p class="header">Project Facts</p>
       <div class="col1">
@@ -271,11 +350,13 @@
         </ul>
       </div>
       <div class="clear"></div>
-    <!-- InstanceEndEditable --></div>
-    <div id="comments"><div class="share">
-<div class="share-button"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a95791f4a30594f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a95791f4a30594f"></script></div>
+  </div>
+    <div id="comments">
+      <div class="share">
+        <div class="share-button"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a95791f4a30594f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a95791f4a30594f"></script></div>
+      </div>
 
-</div><script>
+<script>
 var idcomments_acct = 'b83f1c10ae5ee54d431dc475ba32c9c8';
 var idcomments_post_id;
 var idcomments_post_url;
@@ -302,15 +383,6 @@ var idcomments_post_url;
     <div class="clear"></div>
 </div>
 <!--JAVSCRIPT - NAVIGATION___________________________________________________________________________________-->
-<script>
-// execute your scripts when the DOM is ready. this is a good habit
-$(function() {
-
-	// initialize scrollable
-	var api = $(".scrollable").scrollable(); 
-
-});
-</script>
 
 <script type='text/javascript'>
   $(function() {
@@ -330,32 +402,57 @@ $(function() {
   });
 </script>
 
+<script type="text/javascript">
+$( ".dropdown-submenu" ).click(function(event) {
+    // stop bootstrap.js to hide the parents
+    event.stopPropagation();
+    // hide the open children
+    $( this ).find(".dropdown-submenu").removeClass('open');
+    // add 'open' class to all parents with class 'dropdown-submenu'
+    $( this ).parents(".dropdown-submenu").addClass('open');
+    // this is also open (or was)
+    $( this ).toggleClass('open');
+});
+
+$('.dropdown-submenu>a').unbind('click').click(function(e){
+        $('.dropdown-submenu>p').hide();
+        $(this).next('p').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+</script>
+
 <!--JAVSCRIPT - SLIDESHOW___________________________________________________________________________________-->
 
-
 <script type="text/javascript">
-	$(document).ready(function(){	
-		$("#slider").easySlider();
-	});
+$('#carousel-example-generic').carousel({
+    interval: false
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+      $('.dropdown-submenu > a').submenupicker();
+    });
 </script>
 
 <script type="text/javascript">
-$(document).ready(function() {	
+$(document).ready(function() {  
 
-	//Show Banner
-	$("#slider li .desc").show(); //Show Banner
-	$("#slider li .block").animate({ opacity: 0.85 }, 1 ); //Set Opacity
+  //Show Banner
+  $(".carousel-inner .item .desc").show(); //Show Banner
+  $(".carousel-inner .item .carousel-caption").animate({ opacity: 0.85 }, 1 ); //Set Opacity
 
-	
-			
-	//Toggle Teaser
-	$("#slider li a.collapse").click(function() {									  
-		$("#slider li .block").slideToggle();
-		$("a.collapse").toggleClass("show");
-		
-		return false; 
-	});
-	
+  
+      
+  //Toggle Teaser
+  $(".carousel-inner .item a.down").click(function() {                    
+    $(".carousel-inner .item .carousel-caption").slideToggle();
+    $("a.down").toggleClass("show");
+    
+    return false; 
+  });
+  
 });//Close Function
 
 
