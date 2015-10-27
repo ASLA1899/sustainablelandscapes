@@ -8,21 +8,25 @@
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <!--Stylesheets-->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <link href="css/bootstrap-submenu.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,100,700' rel='stylesheet' type='text/css'>
 <!--JS-->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-submenu.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/offcanvas.js"></script>
 <script src="js/dropdown.js"></script>
-<script type="text/javascript" src="js/bootstrap-submenu.min.js"></script>
+
 
 </head>
 
 <body>
-  <div id="home-container">
+<div id="home-container">
 
 <header class="clearfix">
   <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
@@ -40,9 +44,9 @@
           </div>
           <div id="nav-container">
             <ul class="nav navbar-nav" id="dropdown">
-	            <li class="dropdown cases studies">
+              <li class="dropdown cases studies">
                 <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="main-nav">Case Studies</a>
-    		          <ul class="dropdown-menu multi-column cases-body studies-drop cols" role="menu">
+                  <ul class="dropdown-menu multi-column cases-body studies-drop cols" role="menu">
                     <li class="dropdown-submenu">
                   <a href="#">U.S. Mid-Atlantic</a>
                     <ul class="dropdown-menu" role="menu">
@@ -164,72 +168,72 @@
     <div id="header">
         <div class="title"><a href="index.html"><span class="design">DESIGNING OUR FUTURE:</span>&nbsp;<span class="sustainable">SUSTAINABLE LANDSCAPES</span></a></div>
     </div>
-    <div class="thumnail-nav-bar"><a class="prev browse left textleft">View previous</a><a class="next browse right textright">View more</a></div>
+  
 
     <!-- THUMBNAILS -->
 
-            <a class="prev browse left bigleft">
-            </a>
             <div class="scrollable">
-                <div class="items">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="thumbnails">
-	
-	                           <li class="view"><span>30 case studies illustrate the transformative effects of sustainable landscape design.</span></li>
-                               <li><a href="cas.html"><span><p class="title">California Academy of Sciences</p><p class="index-title-city">San Francisco, California, U.S.A.</p></span><img src="images/home/CAS.jpg"></a></li><li><a href="chongae.html"><span><p class="title">ChonGae Canal Point Source Park</p><p class="index-title-city">Seoul, South Korea</p></span><img src="images/home/ChonGae.jpg"></a></li>
-                               <li><a href="sidwell.html"><span><p class="title">Sidwell Friends School</p><p class="index-title-city">Washington, D.C., U.S.A</p></span><img src="images/home/Sidwell.jpg"></a></li>
-                               <li><a href="gowanus.html"><span><p class="title">Gowanus Canal Sponge Park&trade;</p><p class="index-title-city">Brooklyn, New York, U.S.A.</p></span><img src="images/home/Gowanus.jpg"></a></li>
-                               <li><a href="geos.html"><span><p class="title">Geos Net Zero Energy Neighborhood</p><p class="index-title-city">Arvada, Colorado, U.S.A.</p></span><img src="images/home/Geos.jpg"></a></li>
-                               <li><a href="ecolodge.html"><span><p class="title">Crosswaters Ecolodge</p><p class="index-title-city">Nankun Mountain Reserve, Guangdong Province, China</p></span><img src="images/home/Ecolodge.jpg"></a></li>
-                               <li class="movie"><div style=" position:relative;"><div style="position:absolute"><!--<img src="images/home/VideosHeader_Orange.png">--><p style="padding:10px 25px 0px 25px;">Watch animations created with Google Sketchup to learn how sustainable design works. 
-                               <br><br>
-                               <a class="non" href="videos.html"></a></p></div></div></li><li><a href="discovery.html"><span><p class="title">James Clarkson Environmental Discovery Center</p><p class="index-title-city">White Lake Township, Michigan, U.S.A.</p></span><img src="images/home/Discovery.jpg"></a></li>
-                               <li><a href="about.html"><span><img src="images/home/about.jpg"></span><img src="images/home/about.jpg"></a></li>
-                               <li><a href="gardengarden.html"><span><p class="title">Garden/Garden &mdash; A Comparison in Santa Monica</p><p class="index-title-city">Santa Monica, California, U.S.A.</p></span><img src="images/home/GardenGarden.jpg"></a></li>
-                               <li><a href="education.html"><span><img src="images/home/Education.jpg"></span><img src="images/home/Education.jpg"></a></li>
-                               <li><a href="lilylake.html"><span><p class="title">Lily Lake Residence</p><p class="index-title-city">Dalton, Pennsylvania, U.S.A.</p></span><img src="images/home/LilyLake.jpg"></a></li>
-                               <li><a href="caltech.html"><span><p class="title">California Institute of Technology Master Plan</p><p class="index-title-city">Pasadena, California, U.S.A.</p></span><img src="images/home/CalTech.jpg"></a></li>
-                            </ul>
-                        </div>
-                    </div>
+              <div class="thumbnails">
+                <!--row 1 1st slide-->
+                <div class="thumb"><span>30 case studies illustrate the transformative effects of sustainable landscape design.</span></div>
+                <div class="thumb"><a href="cas.html"><span><p class="title">California Academy of Sciences</p><p class="index-title-city">San Francisco, California, U.S.A.</p></span><img src="images/home/CAS.jpg"></a></div>
+                <div class="thumb"><a href="chongae.html"><span><p class="title">ChonGae Canal Point Source Park</p><p class="index-title-city">Seoul, South Korea</p></span><img src="images/home/ChonGae.jpg"></a></div>
+                <div class="thumb"><a href="sidwell.html"><span><p class="title">Sidwell Friends School</p><p class="index-title-city">Washington, D.C., U.S.A</p></span><img src="images/home/Sidwell.jpg"></a></div>
+                <div class="thumb"><a href="gowanus.html"><span><p class="title">Gowanus Canal Sponge Park&trade;</p><p class="index-title-city">Brooklyn, New York, U.S.A.</p></span><img src="images/home/Gowanus.jpg"></a></div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-	                       <ul class="thumbnails">
-                            <li><a href="cradletocradle.html"><span><p class="title">Park 20/20: <br>A Cradle to Cradle Inspired Master Plan</p><p class="index-title-city">Haarlemmermeer, Netherlands</p></span><img src="images/home/2020Cradle.jpg"></a></li>
-                            <li><a href="highpoint.html"><span><p class="title">High Point</p><p class="index-title-city">Seattle, Washington, U.S.A.</p></span><img src="images/home/Highpoint_Index.jpg"></a></li>
-                            <li><a href="bryantpark.html"><span><p class="title">Bryant Park</p><p class="index-title-city">New York City, <br>New York, U.S.A.</p></span><img src="images/home/BryantPark.jpg"></a></li>
-                            <li><a href="rooftophaven.html"><span><p class="title">Rooftop Haven for Urban Agriculture</p><p class="index-title-city">Chicago, Illinois, U.S.A.</p></span><img src="images/home/RooftopHaven.jpg"></a></li>
-                            <li><a href="greenstreet.html"><span><p class="title">NE Siskiyou Green Street</p><p class="index-title-city">Portland, Oregon, U.S.A.</p></span><img src="images/home/SiskiyouSt_Index.jpg"></a></li>
-                            <li><a href="cannerylofts.html"><span><p class="title">Pacific Cannery Lofts</p><p class="index-title-city">Oakland, California, U.S.A.</p></span><img src="images/home/CanneryLofts.jpg"></a></li>
-                            <li><a href="brownfield.html"><span><p class="title">From Brownfield to Greenfield</p><p class="index-title-city">Wellesley, Massachusetts, U.S.A.</p></span><img src="images/home/WellesleyCollege_Index.jpg"></a></li>
-                            <li><a href="greensburg.html"><span><p class="title">Greensburg Sustainable Comprehensive Plan</p><p class="index-title-city">Greensburg, Kansas, U.S.A.</p></span><img src="images/home/Greensburg_Index.jpg"></a></li>
-                            <li><a href="trid.html"><span><p class="title">Transit Revitalization Investment District (TRID) Master Plan</p><p class="index-title-city">Philadelphia, Pennsylvania, U.S.A.</p></span><img src="images/home/TRID.jpg"></a></li>
-                            <li><a href="raingarden.html"><span><p class="title">Mount Tabor Middle School Rain Garden</p><p class="index-title-city">Portland, Oregon, U.S.A.</p></span><img src="images/home/RainGarden_Index.jpg"></a></li>
-                            <li><a href="transwater.html"><span><p class="title">Transformative Water</p><p class="index-title-city">Pitkin County, Colorado, U.S.A.</p></span><img src="images/home/TransWater.jpg"></a></li>
-                            <li><a href="vietvillage.html"><span><p class="title">Viet Village Urban Farm</p><p class="index-title-city">New Orleans, Louisiana, U.S.A.</p></span><img src="images/home/VietVillage_Index.jpg"></a></li>
-                            <li><a href="hto.html"><span><p class="title">HtO Park</p><p class="index-title-city">Toronto, Canada</p></span><img src="images/home/HtO.jpg"></a></li>
-                            <li><a href="crackgarden.html"><span><p class="title">The Crack Garden</p><p class="index-title-city">San Francisco,<br>California, U.S.A.</p></span><img src="images/home/CrackGarden_Index.jpg"></a></li>
-                            <li><a href="kresge.html"><span><p class="title">Kresge Foundation Headquarters</p><p class="index-title-city">Troy, Michigan, U.S.A.</p></span><img src="images/home/Kresge.jpg"></a></li>
-                           </ul>
-                        </div>
-                    </div>
+                <div class="clear"></div>
+                <!--row 2 1st slide-->               
+                <div class="thumb"><a href="geos.html"><span><p class="title">Geos Net Zero Energy Neighborhood</p><p class="index-title-city">Arvada, Colorado, U.S.A.</p></span><img src="images/home/Geos.jpg"></a></div>
+                <div class="thumb"><a href="ecolodge.html"><span><p class="title">Crosswaters Ecolodge</p><p class="index-title-city">Nankun Mountain Reserve, Guangdong Province, China</p></span><img src="images/home/Ecolodge.jpg"></a></div>
+                <!--double widde-->
+                <div class="movie"><img src="images/home/VideosHeader_Orange.png"><p style="padding:10px 25px 0px 25px;">Watch animations created with Google Sketchup to learn how sustainable design works.
+                <a class="non" href="videos.html"></a></p></div>
+                <div class="thumb"><a href="discovery.html"><span><p class="title">James Clarkson Environmental Discovery Center</p><p class="index-title-city">White Lake Township, Michigan, U.S.A.</p></span><img src="images/home/Discovery.jpg"></a></div>
+                
+                <div class="clear"></div>
+                <!--row 3 1st slide-->
+                <div class="thumb"><a href="about.html"><span><img src="images/home/about.jpg"></span><img src="images/home/about.jpg"></a></div>
+                <div class="thumb"><a href="gardengarden.html"><span><p class="title">Garden/Garden &mdash; A Comparison in Santa Monica</p><p class="index-title-city">Santa Monica, California, U.S.A.</p></span><img src="images/home/GardenGarden.jpg"></a></div>
+                <div class="thumb"><a href="education.html"><span><img src="images/home/Education.jpg"></span><img src="images/home/Education.jpg"></a></div>
+                <div class="thumb"><a href="lilylake.html"><span><p class="title">Lily Lake Residence</p><p class="index-title-city">Dalton, Pennsylvania, U.S.A.</p></span><img src="images/home/LilyLake.jpg"></a></div>
+                <div class="thumb"><a href="caltech.html"><span><p class="title">California Institute of Technology Master Plan</p><p class="index-title-city">Pasadena, California, U.S.A.</p></span><img src="images/home/CalTech.jpg"></a></div>
+              </div>
+                      
+              <div class="thumbnails">
+                <!--row 1 2nd slide-->
+                <div class="thumb"><a href="cradletocradle.html"><span><p class="title">Park 20/20: <br>A Cradle to Cradle Inspired Master Plan</p><p class="index-title-city">Haarlemmermeer, Netherlands</p></span><img src="images/home/2020Cradle.jpg"></a></div>
+                <div class="thumb"><a href="highpoint.html"><span><p class="title">High Point</p><p class="index-title-city">Seattle, Washington, U.S.A.</p></span><img src="images/home/Highpoint_Index.jpg"></a></div>
+                <div class="thumb"><a href="bryantpark.html"><span><p class="title">Bryant Park</p><p class="index-title-city">New York City, <br>New York, U.S.A.</p></span><img src="images/home/BryantPark.jpg"></a></div>
+                <div class="thumb"><a href="rooftophaven.html"><span><p class="title">Rooftop Haven for Urban Agriculture</p><p class="index-title-city">Chicago, Illinois, U.S.A.</p></span><img src="images/home/RooftopHaven.jpg"></a></div>
+                <div class="thumb"><a href="greenstreet.html"><span><p class="title">NE Siskiyou Green Street</p><p class="index-title-city">Portland, Oregon, U.S.A.</p></span><img src="images/home/SiskiyouSt_Index.jpg"></a></div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-	                       <ul class="thumbnails">
-                            <li><a href="greenroof.html"><span><p class="title">Washington Mutual Center Green Roof</p><p class="index-title-city">Seattle, Washington, U.S.A.</p></span><img src="images/home/WaMuRoof_Index.jpg"></a></li>
-                            <li><a href="highline.html"><span><p class="title">High Line Park</p><p class="index-title-city">New York City, <br>New York, U.S.A.</p></span><img src="images/home/Highline_Index.jpg"></a></li>
-                            <li><a href="redribbon.html"><span><p class="title">The Red Ribbon, Tanghe River Park</p><p class="index-title-city">Qinhuangdao City, <br>Hebei Province, China</p></span><img src="images/home/RedRibbon_Index.jpg"></a></li>
-                            <li><a href="nuevaschool.html"><span><p class="title">Nueva School</p><p class="index-title-city">Hillsborough, California, U.S.A</p></span><img src="images/home/NuevaSchool.jpg"></a></li>
-                            <li><a href="sonoran.html"><span><p class="title">Underwood Family Sonoran Landscape Laboratory</p><p class="index-title-city">University of Arizona, Tucson, Arizona, U.S.A.</p></span><img src="images/home/Sonoran.jpg"></a></li>
-                           </ul>
-                        </div>
-                    </div>
-                </div>
+                <div class="clear"></div>
+                <!--row 2 2nd slide-->
+                <div class="thumb"><a href="cannerylofts.html"><span><p class="title">Pacific Cannery Lofts</p><p class="index-title-city">Oakland, California, U.S.A.</p></span><img src="images/home/CanneryLofts.jpg"></a></div>
+                <div class="thumb"><a href="brownfield.html"><span><p class="title">From Brownfield to Greenfield</p><p class="index-title-city">Wellesley, Massachusetts, U.S.A.</p></span><img src="images/home/WellesleyCollege_Index.jpg"></a></div>
+                <div class="thumb"><a href="greensburg.html"><span><p class="title">Greensburg Sustainable Comprehensive Plan</p><p class="index-title-city">Greensburg, Kansas, U.S.A.</p></span><img src="images/home/Greensburg_Index.jpg"></a></div>
+                <div class="thumb"><a href="trid.html"><span><p class="title">Transit Revitalization Investment District (TRID) Master Plan</p><p class="index-title-city">Philadelphia, Pennsylvania, U.S.A.</p></span><img src="images/home/TRID.jpg"></a></div>
+                <div class="thumb"><a href="raingarden.html"><span><p class="title">Mount Tabor Middle School Rain Garden</p><p class="index-title-city">Portland, Oregon, U.S.A.</p></span><img src="images/home/RainGarden_Index.jpg"></a></div>
+
+                <div class="clear"></div>
+                <!--row 3 2nd slide-->
+                <div class="thumb"><a href="transwater.html"><span><p class="title">Transformative Water</p><p class="index-title-city">Pitkin County, Colorado, U.S.A.</p></span><img src="images/home/TransWater.jpg"></a></div>
+                <div class="thumb"><a href="vietvillage.html"><span><p class="title">Viet Village Urban Farm</p><p class="index-title-city">New Orleans, Louisiana, U.S.A.</p></span><img src="images/home/VietVillage_Index.jpg"></a></div>
+                <div class="thumb"><a href="hto.html"><span><p class="title">HtO Park</p><p class="index-title-city">Toronto, Canada</p></span><img src="images/home/HtO.jpg"></a></div>
+                <div class="thumb"><a href="crackgarden.html"><span><p class="title">The Crack Garden</p><p class="index-title-city">San Francisco,<br>California, U.S.A.</p></span><img src="images/home/CrackGarden_Index.jpg"></a></div>
+                <div class="thumb"><a href="kresge.html"><span><p class="title">Kresge Foundation Headquarters</p><p class="index-title-city">Troy, Michigan, U.S.A.</p></span><img src="images/home/Kresge.jpg"></a></div>
+              </div>
+
+              <div class="thumbnails">
+                <!--row 1 3rd slide-->
+                  <div class="thumb"><a href="greenroof.html"><span><p class="title">Washington Mutual Center Green Roof</p><p class="index-title-city">Seattle, Washington, U.S.A.</p></span><img src="images/home/WaMuRoof_Index.jpg"></a></div>
+                  <div class="thumb"><a href="highline.html"><span><p class="title">High Line Park</p><p class="index-title-city">New York City, <br>New York, U.S.A.</p></span><img src="images/home/Highline_Index.jpg"></a></div>
+                  <div class="thumb"><a href="redribbon.html"><span><p class="title">The Red Ribbon, Tanghe River Park</p><p class="index-title-city">Qinhuangdao City, <br>Hebei Province, China</p></span><img src="images/home/RedRibbon_Index.jpg"></a></div>
+                  <div class="thumb"><a href="nuevaschool.html"><span><p class="title">Nueva School</p><p class="index-title-city">Hillsborough, California, U.S.A</p></span><img src="images/home/NuevaSchool.jpg"></a></div>
+                  <div class="thumb"><a href="sonoran.html"><span><p class="title">Underwood Family Sonoran Landscape Laboratory</p><p class="index-title-city">University of Arizona, Tucson, Arizona, U.S.A.</p></span><img src="images/home/Sonoran.jpg"></a></div>
+              </div>
             </div>
-            <a class="next browse right bigright"></a>
+
         
             <!--THUMBNAILS END-->
 
@@ -240,7 +244,7 @@
 <div id="loadMore"><p>Load more</p></div>
 <div id="showLess"><p>Show less</p></div>
 <div id="footer">
-	<div class="copy">&copy;2014 American Society of Landscape Architects<br>
+  <div class="copy">&copy;2014 American Society of Landscape Architects<br>
     <a href="mailto:info@asla.org">Contact Us</a>
   </div>
     
@@ -251,58 +255,97 @@
 </div>
 <!-- JAVASCRIPT - TOP NATIGATION ___________________________________________________________________________________-->
 
-<!--<script>
-
-$(function(){
-
-    $("ul.dropdown li").hover(function(){
-
-        $(this).addClass("hover");
-
-        $('ul:first',this).css('visibility', 'visible');
-		
-		$('ul:first',this).animate('fade');
-
-    }, function(){
-
-        $(this).removeClass("hover");
-
-        $('ul:first',this).css('visibility', 'hidden');
-    });
-    $("ul.dropdown li ul li:has(ul)").find("a:first").append(" &raquo; ");
-	
-
-	
-
-
-
+<script type="text/javascript">
+$( ".dropdown-submenu" ).click(function(event) {
+    // stop bootstrap.js to hide the parents
+    event.stopPropagation();
+    // hide the open children
+    $( this ).find(".dropdown-submenu").removeClass('open');
+    // add 'open' class to all parents with class 'dropdown-submenu'
+    $( this ).parents(".dropdown-submenu").addClass('open');
+    // this is also open (or was)
+    $( this ).toggleClass('open');
 });
 
-//$('ul.dropdown li').hover(function () { $('ul:first').slideToggle('medium'); });
-
-
-
-</script>-->
+$('.dropdown-submenu>a').unbind('click').click(function(e){
+        $('.dropdown-submenu>p').hide();
+        $(this).next('p').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+</script>
 
 <!--JAVSCRIPT - THUMBNAIL NAVIGATION___________________________________________________________________________________-->
 <script>
-(function() {
-  // initialize scrollable
-  $('.scrollable').scrollable();
-})();
+$(document).ready(function(){
+  $('.scrollable').slick({
+
+  });
+});
 </script>
-
-
+<script>
+$('.single-item').slick({
+  dots: false,
+  slidesToScroll: 3,
+  swipeToSlide: true,
+  swipe: true,
+  arrows: true,
+});
+</script>
 
 <!-- JAVASCRIPT - IMAGE HOVER___________________________________________________________________________________-->
 
 <script type="text/javascript">
+
+$(document).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (max-width: 767px)");
+
+    if (isMobile.matches) {
+
+      var totalCount;   //Keeps track of the total number of li's, shown or hidden.
+      var currentCount; //Keeps track of the number of li's currently shown.
+
+      $(document).ready(function () {
+      //Count how many li's there are in total.
+      totalCount  = $('.thumb').size();
+      //Start by showing three of them.
+      currentCount = 10;
+      adjustLiShown();
+      $('#loadMore').click(function () {
+       //Increase by three and update.
+       currentCount += 10;
+       adjustLiShown()
+      });
+      $('#showLess').click(function () {
+       //Decrease by three and update.
+       currentCount -= 10;
+       adjustLiShown()
+    });
+});
+
+function adjustLiShown() {
+    //Hide all and then show the one with index under total count.
+    $('.thumb').hide().filter(':lt(' + currentCount + ')').show();
+    //Only show "load more" if we haven't reached the total yet.
+    $('#loadMore').toggle(currentCount < totalCount);
+    //Only show "show less" if we are above the starting number.
+    $('#showLess').toggle(currentCount > 10);
+}
+
+       }
+
+});
+
+
+</script>
+
+<script type="text/javascript">
 $(function(){
-	$("ul.thumbnails a").hover(function(){
-		$(this).children("img").fadeOut();
-	}, function(){
-		$(this).children("img").fadeIn();
-	})		
+  $("div.thumbnails a").hover(function(){
+    $(this).children("img").fadeOut();
+  }, function(){
+    $(this).children("img").fadeIn();
+  })    
 });
 
 </script>
@@ -318,48 +361,5 @@ $(function(){
         ga('send', 'pageview');
 </script>
 
-<script type="text/javascript">
-
-$(document).ready(function() {      
-    var isMobile = window.matchMedia("only screen and (max-width: 767px)");
-
-    if (isMobile.matches) {
-
-      var totalCount;   //Keeps track of the total number of li's, shown or hidden.
-      var currentCount; //Keeps track of the number of li's currently shown.
-
-      $(document).ready(function () {
-      //Count how many li's there are in total.
-      totalCount  = $('.thumbnails li').size();
-      //Start by showing three of them.
-      currentCount = 8;
-      adjustLiShown();
-      $('#loadMore').click(function () {
-       //Increase by three and update.
-       currentCount += 8;
-       adjustLiShown()
-      });
-      $('#showLess').click(function () {
-       //Decrease by three and update.
-       currentCount -= 8;
-       adjustLiShown()
-    });
-});
-
-function adjustLiShown() {
-    //Hide all and then show the one with index under total count.
-    $('.thumbnails li').hide().filter(':lt(' + currentCount + ')').show();
-    //Only show "load more" if we haven't reached the total yet.
-    $('#loadMore').toggle(currentCount < totalCount);
-    //Only show "show less" if we are above the starting number.
-    $('#showLess').toggle(currentCount > 8);
-}
-
-       }
-
-});
-
-
-</script>
 </body>
 </html>

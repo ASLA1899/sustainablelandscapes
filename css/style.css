@@ -1821,13 +1821,8 @@ div.scrollable {
 	margin-left: 0;
 }
 
-a.bigleft, a.bigright {
+.slick-prev, .slick-next {
 	display: none !important;
-}
-
-.slick-initialized,
-.slick-slide:first-child { 
-	display: block; 
 }
 
 #loadMore {
