@@ -255,38 +255,25 @@
 </div>
 <!-- JAVASCRIPT - TOP NATIGATION ___________________________________________________________________________________-->
 
-<!--<script>
-
-$(function(){
-
-    $("ul.dropdown li").hover(function(){
-
-        $(this).addClass("hover");
-
-        $('ul:first',this).css('visibility', 'visible');
-		
-		$('ul:first',this).animate('fade');
-
-    }, function(){
-
-        $(this).removeClass("hover");
-
-        $('ul:first',this).css('visibility', 'hidden');
-    });
-    $("ul.dropdown li ul li:has(ul)").find("a:first").append(" &raquo; ");
-	
-
-	
-
-
-
+<script type="text/javascript">
+$( ".dropdown-submenu" ).click(function(event) {
+    // stop bootstrap.js to hide the parents
+    event.stopPropagation();
+    // hide the open children
+    $( this ).find(".dropdown-submenu").removeClass('open');
+    // add 'open' class to all parents with class 'dropdown-submenu'
+    $( this ).parents(".dropdown-submenu").addClass('open');
+    // this is also open (or was)
+    $( this ).toggleClass('open');
 });
 
-//$('ul.dropdown li').hover(function () { $('ul:first').slideToggle('medium'); });
-
-
-
-</script>-->
+$('.dropdown-submenu>a').unbind('click').click(function(e){
+        $('.dropdown-submenu>p').hide();
+        $(this).next('p').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+</script>
 
 <!--JAVSCRIPT - THUMBNAIL NAVIGATION___________________________________________________________________________________-->
 <script>
@@ -299,8 +286,11 @@ $(document).ready(function(){
 <script>
 $('.single-item').slick({
   dots: false,
+  slidesToShow: 1,
   slidesToScroll: 3,
-  arrows: true
+  swipeToSlide: true,
+  swipe: true,
+  arrows: true,
 });
 </script>
 
@@ -328,48 +318,5 @@ $(function(){
         ga('send', 'pageview');
 </script>
 
-<script type="text/javascript">
-
-$(document).ready(function() {      
-    var isMobile = window.matchMedia("only screen and (max-width: 767px)");
-
-    if (isMobile.matches) {
-
-      var totalCount;   //Keeps track of the total number of li's, shown or hidden.
-      var currentCount; //Keeps track of the number of li's currently shown.
-
-      $(document).ready(function () {
-      //Count how many li's there are in total.
-      totalCount  = $('.thumbnails div').size();
-      //Start by showing three of them.
-      currentCount = 15;
-      adjustLiShown();
-      $('#loadMore').click(function () {
-       //Increase by three and update.
-       currentCount += 15;
-       adjustLiShown()
-      });
-      $('#showLess').click(function () {
-       //Decrease by three and update.
-       currentCount -= 15;
-       adjustLiShown()
-    });
-});
-
-function adjustLiShown() {
-    //Hide all and then show the one with index under total count.
-    $('.thumbnails div').hide().filter(':lt(' + currentCount + ')').show();
-    //Only show "load more" if we haven't reached the total yet.
-    $('#loadMore').toggle(currentCount < totalCount);
-    //Only show "show less" if we are above the starting number.
-    $('#showLess').toggle(currentCount > 15);
-}
-
-       }
-
-});
-
-
-</script>
 </body>
 </html>

@@ -2,17 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/VideoTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
+
 <title>Designing Our Future: Sustainable Landscapes</title>
-<!-- InstanceEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<!--Stylesheets-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-submenu.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Work+Sans:400,100,700' rel='stylesheet' type='text/css'>
+<!--JS-->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/easyslider.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-submenu.min.js"></script>
 <script script src="js/jquery.tipsy.js"></script>
-<script script src="js/tools.scrollable-1.1.0.js"></script>
+<script type="text/javascript" src="js/offcanvas.js"></script>
 <script src="js/dropdown.js"></script>
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+
 </head>
 
 <body>
@@ -20,176 +27,220 @@
 
 <!-- HEADER___________________________________________________________________________________________________-->
 
+<header class="clearfix">
+  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+    <span class="sr-only">Toggle Button</span>
+    MENU
+  </button>
+<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+            <span class="sr-only">Toggle Navigation</span>
+            <i class="glyphicon glyphicon-remove"></i>
+          </button>
+          <a class="navbar-brand" id="logo" href="http://www.asla.org"><img src="images/Logo.png"></a>
+      </div>
+      <div id="nav-container">
+        <ul class="nav navbar-nav" id="dropdown">
+          <li class="dropdown cases studies">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="main-nav">Case Studies</a>
+              <ul class="dropdown-menu multi-level cases-body studies-drop cols" role="menu">
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Mid-Atlantic</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="sidwell.html">Sidwell Friends School</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Northeast</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="bryantpark.html">Bryant Park</a></p>
+                      <p class="category-cases"><a href="brownfield.html">From Brownfield to Greenfield</a></p>
+                      <p class="category-cases"><a href="gowanus.html">Gowanus Canal Sponge Park&trade;</a></p>
+                      <p class="category-cases"><a href="highline.html">High Line Park</a></p>
+                      <p class="category-cases"><a href="breakwaters.html">Living Breakwaters</a></p>
+                      <p class="category-cases"><a href="lilylake.html">Lily Lake Residence</a></p>
+                      <p class="category-cases"><a href="steelyard.html">The Steel Yard</a></p>
+                      <p class="category-cases"><a href="trid.html">Transit Revitalization Investment District (TRID) Master Plan</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Northwest</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="highpoint.html">High Point</a></p>
+                      <p class="category-cases"><a href="lafayette.html">Lafayette Greens</a></p>
+                      <p class="category-cases"><a href="raingarden.html">Mount Tabor Middle School Rain Garden</a></p>
+                      <p class="category-cases"><a href="greenstreet.html">NE Siskiyou Green Street </a></p>
+                      <p class="category-cases"><a href="greenroof.html">Washington Mutual Center Green Roof</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Midwest</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></p>
+                      <p class="category-cases"><a href="discovery.html">James Clarkson Environmental Discovery Center</a></p>
+                      <p class="category-cases"><a href="kresge.html">Kresge Foundation Headquarters</a></p>
+                      <p class="category-cases"><a href="rooftophaven.html">Rooftop Haven for Urban Agriculture</a></p>
+                      <p class="category-cases"><a href="woodland.html">The Woodland Discovery Playground</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. West</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="burbank.html">Burbank Water and Power Eco-Campus</a></p>
+                      <p class="category-cases"><a href="cas.html">California Academy of Sciences</a></p>
+                      <p class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></p>
+                      <p class="category-cases"><a href="apartments.html">Drs. Julian and Raye Richardson Apartments</a></p>
+                      <p class="category-cases"><a href="crackgarden.html">The Crack Garden</a></p>
+                      <p class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></p>
+                      <p class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></p>
+                      <p class="category-cases"><a href="nuevaschool.html">Nueva School </a></p>
+                      <p class="category-cases"><a href="cannerylofts.html">Pacific Cannery Lofts</a></p>
+                      <p class="category-cases"><a href="sunnylands.html">Sunnylands Center &amp; Gardens</a></p>
+                      <p class="category-cases"><a href="transwater.html">Transformative Water</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Southeast</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="vietvillage.html">Viet Village Urban Farm</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">U.S. Southwest</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="courthouse.html">Pete v. Domenici U.S. Courthouse Sustainable Landscape Rennovation</a></p>
+                      <p class="category-cases"><a href="sonoran.html">Underwood Family Sonoran Landscape Laboratory</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">Canada</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="hto.html">HtO Park</a></p>
+                      <p class="category-cases"><a href="sherbourne.html">Sherbourne Common</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">Europe</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan</a></p>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#">Asia</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <p class="category-cases"><a href="chongae.html">ChonGae Canal Point Source Park</a></p>
+                      <p class="category-cases"><a href="ecolodge.html">Crosswaters Ecolodge</a></p>
+                      <p class="category-cases"><a href="quarry.html">Quarry Garden</a></p>
+                      <p class="category-cases"><a href="redribbon.html">The Red Ribbon, Tanghe River Park</a></p>
+                    </ul>
+                </li>   
+              </ul>
+          </li>
+          <li class="dropdown cases videos">
+            <a class="dropdown-toggle" href="videos.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Animations</a>
+              <ul class="dropdown-menu cases-body videos-drop">
+                <p style="padding-top:15px;" class="category-cases"><a href="Vid_Waste.html">Building a Park Out of Waste</a></p>
+                <p class="category-cases"><a href="Vid_ActiveLiving.html">Designing for Active Living</a></li>
+                <p class="category-cases"><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></p>
+                <p class="category-cases"><a href="Vid_UrbanAg.html">The Edible City</a></li>
+                <p class="category-cases"><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></p>
+                <p class="category-cases"><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></p>
+                <p class="category-cases"><a href="Vid_Infrastructure.html">Infrastructure for All</a></p>
+                <p class="category-cases"><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></p>
+                <p class="category-cases"><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></p>
+                <p class="category-cases"><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></p>
+              </ul>
+          </li>
+          <li class="dropdown cases educations">
+            <a class="dropdown-toggle" href="education.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="main-nav">Education</a>
+              <ul style="padding-right:0;" class="dropdown-menu cases-body educations-drop">
+                <p style="padding-top:15px; " class="category-cases"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></p>
+                <p class="category-cases"><a href="Ed_ActiveLiving.html">Design for Active Living</a></p>
+                <p class="category-cases"><a href="Ed_Wildlife.html">Designing for Biodiversity</a></p>
+                <p class="category-cases"><a href="Ed_Energy.html">Energy Efficiency</a></p>
+                <p class="category-cases"><a href="Ed_WaterManagement.html">Green Infrastructure</a></p>
+                <p class="category-cases"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a></p>
+                <p class="category-cases"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></p>
+                <p class="category-cases"><a href="Ed_UrbanAg.html">Urban Agriculture</a></p>
+                <p class="category-cases"><a href="Ed_UrbanForests.html">Urban Forestry</a></p>
+                <p class="category-cases"><a href="Ed_Parks.html">Urban Parks</a></p>
+              </ul>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
+</header>
 <div id="header">
-
-<div id="nav">
-<div id="logo"><a href="http://www.asla.org"><img src="images/Logo.png"></a></div>
-<div id="nav-container">
-<ul id="dropdown">
-	<li class="cases studies"><a class="mainnav" href="#">Case Studies</a>
-    		<ul class="cases-body studies-drop">
-        	<li class="cols"><p class="category">U.S. Mid-Atlantic</p>
-            <p class="category-cases"><a href="sidwell.html">Sidwell Friends School</a></p>
-            
-            <p class="category">U.S. Northeast</p>
-            <p class="category-cases"><a href="bryantpark.html">Bryant Park</a></p>
-            <p class="category-cases"><a href="brownfield.html">From Brownfield to Greenfield</a></p>
-            <p class="category-cases"><a href="gowanus.html">Gowanus Canal Sponge Park&trade;</a></p>
-            <p class="category-cases"><a href="highline.html">High Line Park</a></p>
-            <p class="category-cases"><a href="lilylake.html">Lily Lake Residence</a></p>
-            <p class="category-cases"><a href="trid.html">Transit Revitalization Investment District (TRID) Master Plan</a></p>
-            
-             <p class="category">U.S. Northwest</p>
-            <p class="category-cases"><a href="highpoint.html">High Point</a></p>
-            <p class="category-cases"><a href="raingarden.html">Mount Tabor Middle School Rain Garden</a></p>
-            <p class="category-cases"><a href="greenstreet.html">NE Siskiyou Green Street </a></p>
-            <p class="category-cases"><a href="greenroof.html">Washington Mutual Center Green Roof</a></p>
-            </li><li class="cols"> <p class="category">U.S. Midwest</p>
-            <p class="category-cases"><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></p>
-            <p class="category-cases"><a href="discovery.html">James Clarkson Environmental Discovery Center</a></p>
-            <p class="category-cases"><a href="kresge.html">Kresge Foundation Headquarters</a><br></p>
-            <p class="category-cases"><a href="rooftophaven.html">Rooftop Haven for Urban Agriculture</a></p>
-            
-            
-               <p class="category">U.S. West </p>
-            <p class="category-cases"><a href="cas.html">California Academy of Sciences</a></p>
-            <p class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></p>
-            <p class="category-cases"><a href="crackgarden.html">The Crack Garden</a></p>
-            <p class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></p>
-            <p class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></p>
-            <p class="category-cases"><a href="nuevaschool.html">Nueva School </a></p>
-
-            <p class="category-cases"><a href="cannerylofts.html">Pacific Cannery Lofts</a></p>
-            <p class="category-cases"><a href="transwater.html">Transformative Water</a></p>
-            </li><li class="cols">   <p class="category">U.S. Southeast </p>
-            <p class="category-cases"><a href="vietvillage.html">Viet Village Urban Farm</a></p>
-            
-            <p class="category">U.S. Southwest </p>
-            <p class="category-cases"><a href="sonoran.html">Underwood Family Sonoran Landscape Laboratory</a></p>
-            
-            <p class="category">Canada </p>
-            <p class="category-cases"><a href="hto.html">HtO Park</a></p>
-            
-            <p class="category">Europe </p>
-            <p class="category-cases"><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan </a></p>
-            
-              <p class="category">Asia </p>
-            <p class="category-cases"><a href="chongae.html">ChonGae Canal Point Source Park</a></p>
-            <p class="category-cases"><a href="ecolodge.html">Crosswaters Ecolodge </a></p>
-            <p class="category-cases"><a href="redribbon.html">The Red Ribbon, Tanghe River Park </a></p></li></ul>
-     </li><li class="cases videos"><a class="mainnav" href="videos.html">Animations</a>
-    		<ul class="cases-body videos-drop">
-        	<li class="cols">
-            <p style="padding-top:15px;" class="category-cases"><a href="Vid_Waste.html">Building a Park Out of Waste</a></p>
-            <p class="category-cases"><a href="Vid_ActiveLiving.html">Designing for Active Living</a></p>
-            <p class="category-cases"><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></p>
-            <p class="category-cases"><a href="Vid_UrbanAg.html">The Edible City</a></p>
-            <p class="category-cases"><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></p>
-            <p class="category-cases"><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></p>
-            <p class="category-cases"><a href="Vid_Infrastructure.html">Infrastructure for All</a></p>
-            <p class="category-cases"><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></p>
-            <p class="category-cases"><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></p>
-            <p class="category-cases"><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></p>
-            
-            
-            </li></ul></li><li class="cases educations"><a class="mainnav" href="education.html">Education</a>
-    		<ul style="padding-right:0;" class="cases-body educations-drop">
-        	<li class="cols"><p style="padding-top:15px; " class="category-cases"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></p>
-            <p class="category-cases"><a href="Ed_ActiveLiving.html">Design for Active Living</a></p>
-            <p class="category-cases"><a href="Ed_Wildlife.html">Designing for Biodiversity</a></p>
-            <p class="category-cases"><a href="Ed_Energy.html">Energy Efficiency</a></p>
-            <p class="category-cases"><a href="Ed_WaterManagement.html">Green Infrastructure</a></p>
-            <p class="category-cases"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a><br></p>
-            <p class="category-cases"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></p>
-            <p class="category-cases"><a href="Ed_UrbanAg.html">Urban Agriculture</a></p>
-            <p class="category-cases"><a href="Ed_UrbanForests.html">Urban Forestry</a></p>
-            <p class="category-cases"><a href="Ed_Parks.html">Urban Parks</a></p>
-            </li></ul></li>
-</ul>
-</div>
-</div>
-<div class="clear"></div>
-<a href="index.html"><img src="images/Title.jpg" style="padding:30px 0px 5px 25px; border:0;"/></a>
-
+  <div class="title"><a href="index.html"><span class="design">DESIGNING OUR FUTURE:</span>&nbsp;<span class="sustainable">SUSTAINABLE LANDSCAPES</span></a></div>
 </div>
 
 <!-- LEFT COLUMN___________________________________________________________________________________________________-->
-<div style="margin:0 0 0 100px;">
-<div id="left-col">
-<h2>All Animations</h2>
-	<ul class="links">
-	  <!-- InstanceBeginEditable name="AllAnimations" -->
-	  <li><a href="Vid_Waste.html">Building a Park Out of Waste</a></li>
-	  <li><a href="Vid_ActiveLiving.html">Designing For Active Living</a></li>
-      <li><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></li>
-      <li><a href="Vid_UrbanAg.html">The Edible City</a></li>
-            <li><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></li>
+<div class="main-container">
+  <div id="left-col">
+    <div class="project-type">
+    <h2>All Animations</h2>
+	   <ul class="links">
+	     <li><a href="Vid_Waste.html">Building a Park Out of Waste</a></li>
+	     <li><a href="Vid_ActiveLiving.html">Designing For Active Living</a></li>
+       <li><a href="Vid_Wildlife.html">Designing Neighborhoods for People and Wildlife</a></li>
+       <li><a href="Vid_UrbanAg.html">The Edible City</a></li>
+       <li><a href="Vid_Energy.html">Energy Efficient Home Landscapes</a></li>
+       <li><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></li>
+	     <li><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></li>
+	     <li><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></li>
+       <li><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></li> <!-- InstanceEndEditable -->    
+	   </ul>
 
-      <li><a href="Vid_Brownfields.html">From Industrial Wasteland to Community Park</a></li>
-	  <li><a href="Vid_WaterManagement.html">Leveraging the Landscape to Manage Water</a></li>
-	  <li><a href="Vid_Parks.html">Revitalizing Communities with Parks</a></li>
-      <li><a href="Vid_UrbanForests.html">Urban Forests = Cleaner, Cooler Air</a></li> <!-- InstanceEndEditable --> 
-       
-	</ul>
-    <!-- InstanceBeginEditable name="EducationButton" -->
     <a href="Ed_Infrastructure.html"><img src="images/Ed_BTN.jpg"  class="ed-button"/></a> <!-- InstanceEndEditable -->
-<h2>Related Projects</h2>
-	<ul class="links">
-    	<!-- InstanceBeginEditable name="RelatedProject" -->
-        <li><a href="highline.html">High Line</a></li>
-        <li><a href="hto.html">HtO Park</a></li>
-      
-        
-        
-		
-        <!-- InstanceEndEditable -->
-	</ul>
-	
-    
-    
- 
-   
- </div>
+
+
+    <h2>Related Projects</h2>
+	   <ul class="links">
+      <li><a href="highline.html">High Line</a></li>
+      <li><a href="hto.html">HtO Park</a></li>
+	   </ul>
+  </div>
+</div>
 
 <!-- RIGHT COLUMN___________________________________________________________________________________________________-->
 
 <div id="right-col"><!-- InstanceBeginEditable name="Col2" -->
 <h1>Infrastructure for All</h1>
 
-  <div id="video"><iframe src="http://player.vimeo.com/video/25031134?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="724" height="407" frameborder="0"></iframe></div>
+  <div id="video"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/25031134' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div>
   
   <div class="explanation">Use the <sub><img src="images/VideoVolume_IMG.jpg" width="17" height="18" /></sub> icon above to adjust the <strong>sound</strong>. Select the <sub><img src="images/VideoExpand_IMG.jpg"/></sub> icon above to watch in <strong>full-screen mode</strong>. <br />
     To <strong>download</strong> video, go to <a href="http://vimeo.com/25031134" target="_blank">Vimeo and login.</a></div>
 
     <div class="ideas">
-<p class="header">Key Facts:</p>
+      <p class="header">Key Facts:</p>
       <div class="col1">
        <p>Many cities have been designed around their transportation systems, to the detriment of their own people. <strong>Now, transportation infrastructure accounts for 20-40 percent of all urban land</strong>. Even in Washington, D.C., which has invested in a range of sustainable transportation options, streets, intersections, and alleys accounts for 22 percent of all land, and once you include parking spaces, that number easily reaches 30 percent. These systems have also enabled the growth of transportation-related greenhouse gas emissions (GHGs), which now account for 30 percent of all U.S. emissions.<br />
          <em>(Sources: <a href="http://en.wikipedia.org/wiki/Transport" target="_blank">Wikipedia</a>, <a href="http://www.dc.gov/DC/DDOT/District+Department+of+Transportation" target="_blank">Washington D.C. Department of Transportation</a>, and <a href="http://www.amazon.com/Urbanism-Climate-Change-Peter-Calthorpe/dp/1597267201/ref=sr_1_1?ie=UTF8&amp;qid=1305921266&amp;sr=8-1" target="_blank">“Urbanism in the Age of Climate Change,” </a>Peter Calthorpe, Island Press)</em><br />
-  <a href="http://www.dc.gov/DC/DDOT/District+Department+of+Transportation"></a> <br />
-New York, San Francisco, and other cities have pioneered programs to transform streets and parking spaces into mini-plazas or “parklets.” Parklets are safe, people-friendly environments that offer inviting café-style chairs and tables, benches, and trees and plants. These spaces, which can be created for less than $20,000, encourage people to get out of their cars, walk, and interact, which helps build the local economy. <strong>In San Francisco, one new parklet increased pedestrian foot traffic by 37 percent.</strong> Some cities are also prioritizing under-served populations. In a new program, New York City is finding old parking lots and other under-used areas in communities with low per capita open space and turning them into plazas.  <br />
-<em>(Sources: <a href="http://sfpavementtoparks.sfplanning.org/index.htm" target="_blank">City of San Francisco Planning Department Pavement to Parks Program</a>, <a href="http://www.sfgreatstreets.org" target="_blank">San Francisco Great Streets Project</a>, and <a href="http://www.nyc.gov/html/dot/html/sidewalks/publicplaza.shtml" target="_blank">NYC Plaza Program</a>, New York City Department of Transportation)</em><br />
+        <a href="http://www.dc.gov/DC/DDOT/District+Department+of+Transportation"></a> <br />
+       New York, San Francisco, and other cities have pioneered programs to transform streets and parking spaces into mini-plazas or “parklets.” Parklets are safe, people-friendly environments that offer inviting café-style chairs and tables, benches, and trees and plants. These spaces, which can be created for less than $20,000, encourage people to get out of their cars, walk, and interact, which helps build the local economy. <strong>In San Francisco, one new parklet increased pedestrian foot traffic by 37 percent.</strong> Some cities are also prioritizing under-served populations. In a new program, New York City is finding old parking lots and other under-used areas in communities with low per capita open space and turning them into plazas.<br />
+        <em>(Sources: <a href="http://sfpavementtoparks.sfplanning.org/index.htm" target="_blank">City of San Francisco Planning Department Pavement to Parks Program</a>, <a href="http://www.sfgreatstreets.org" target="_blank">San Francisco Great Streets Project</a>, and <a href="http://www.nyc.gov/html/dot/html/sidewalks/publicplaza.shtml" target="_blank">NYC Plaza Program</a>, New York City Department of Transportation)</em><br />
        </p>
-</div>
+    </div>
       <div class="col2">
         <p>Isolated underpasses, which are often spaces for crime, are found directly below highways. As some cities know, underpasses are diamonds in the rough, ripe for polishing. For example, the city of Toronto is reusing one of its highway underpasses to create a 2.5-acre park, connecting neighborhoods and creating valuable green space in the process. Communities are redesigning other forms of infrastructure, too. <strong>Across the U.S.,</strong> <strong>19,000 miles of abandoned rail lines have been transformed into more than 1,600 walking and bicycling trails through innovative “Rails to Trails” programs</strong>. Other cities have even transformed old water infrastructure, turning polluted waterways and toxic brownfields into new developments that spur economic growth. All of these approaches may be more environmentally sustainable than simply pulling down and disposing of old infrastructure. <br />
           <em>(Sources: <a href="http://www.waterfrontoronto.ca/explore_projects2/west_don_lands/underpass_park" target="_blank">Waterfront Toronto</a> and <a href="http://www.railstotrails.org/aboutUs/index.html" target="_blank">Rails-to-Trails Conservancy</a>)</em><br />
-<a href="http://www.railstotrails.org/aboutUs/index.html"></a> <br />
+        <a href="http://www.railstotrails.org/aboutUs/index.html"></a> <br />
         </p>
       </div>
       <div class="clear"></div>
 </div>
-<p style="width:723px;"><em>This animation is designed to be a basic introduction to sustainable design concepts, created for the general public and students of all ages. We look forward to receiving your comments.</em></p>
-<script type="text/javascript">
-try{
-var pageTracker = _gat._getTracker("UA-4677685-1");
-pageTracker._trackPageview();
-} catch(err) {}
-</script><!-- InstanceEndEditable -->
-    <div id="comments"><div class="share">
-<div class="share-button"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a95791f4a30594f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a95791f4a30594f"></script></div>
+<div class="note"><p><em>This animation is designed to be a basic introduction to sustainable design concepts, created for the general public and students of all ages. We look forward to receiving your comments.</em></p></div>
 
-</div><script>
+    <div id="comments">
+      <div class="share">
+        <div class="share-button"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a95791f4a30594f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a95791f4a30594f"></script></div>
+      </div>
+
+<script>
 var idcomments_acct = 'b83f1c10ae5ee54d431dc475ba32c9c8';
 var idcomments_post_id;
 var idcomments_post_url;
@@ -216,15 +267,6 @@ var idcomments_post_url;
     <div class="clear"></div>
 </div>
 <!--JAVSCRIPT - NAVIGATION___________________________________________________________________________________-->
-<script>
-// execute your scripts when the DOM is ready. this is a good habit
-$(function() {
-
-	// initialize scrollable
-	var api = $(".scrollable").scrollable(); 
-
-});
-</script>
 
 <script type='text/javascript'>
   $(function() {
@@ -244,36 +286,27 @@ $(function() {
   });
 </script>
 
+<script type="text/javascript">
+$( ".dropdown-submenu" ).click(function(event) {
+    // stop bootstrap.js to hide the parents
+    event.stopPropagation();
+    // hide the open children
+    $( this ).find(".dropdown-submenu").removeClass('open');
+    // add 'open' class to all parents with class 'dropdown-submenu'
+    $( this ).parents(".dropdown-submenu").addClass('open');
+    // this is also open (or was)
+    $( this ).toggleClass('open');
+});
+
+$('.dropdown-submenu>a').unbind('click').click(function(e){
+        $('.dropdown-submenu>p').hide();
+        $(this).next('p').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+</script>
+
 <!--JAVSCRIPT - SLIDESHOW___________________________________________________________________________________-->
-
-
-<script type="text/javascript">
-	$(document).ready(function(){	
-		$("#slider").easySlider();
-	});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function() {	
-
-	//Show Banner
-	$("#slider li .desc").show(); //Show Banner
-	$("#slider li .block").animate({ opacity: 0.85 }, 1 ); //Set Opacity
-
-	
-			
-	//Toggle Teaser
-	$("#slider li a.collapse").click(function() {									  
-		$("#slider li .block").slideToggle();
-		$("a.collapse").toggleClass("show");
-		
-		return false; 
-	});
-	
-});//Close Function
-
-
-</script>
 
 <script type="text/javascript">
         (function (i, s, o, g, r, a, m) {
