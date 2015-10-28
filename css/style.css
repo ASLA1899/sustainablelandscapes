@@ -1,7 +1,6 @@
 ﻿@charset "UTF-8";
 /* CSS Document Baseline*/
 
-
 body {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 12px !important;
@@ -9,6 +8,10 @@ body {
 	line-height:18px !important;
 	padding:0;
 	margin:0;
+	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
 }
 
 a
@@ -43,7 +46,7 @@ body a:hover {
 
 #home-container {
 	width:1160px;
-	margin:auto;
+	margin: 0 auto;
 	position:relative;
 	max-width: 100%;
 	/*border:1px solid #808285;*/
@@ -64,8 +67,9 @@ body a:hover {
 .thumbnail-bar {
 	z-index:50; 
 	max-width: 100%; 
-	margin:10px 125px 10px 125px; 
-	padding:0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 .textleft, .textright {
@@ -1524,11 +1528,12 @@ html, body {
 
 .thumbnail-bar {
 	z-index:50; 
-	width: 100%; 
-	height: 20px;
-	margin:20px 0px 20px 25px; 
-	padding:0;
+	max-width: 100%; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
+
 
 .textleft {
 	max-width: 100px;
@@ -1828,30 +1833,46 @@ html, body {
 }
 
 div.thumbnails .thumb {
-	width: 135px;
-	height: 135px;
+	width: 125px;
+	height: 125px;
+	margin: 6px;
 }
 
 .thumb img {
-	width: 135px;
-	height: 135px;
+	width: 125px;
+	height: 125px;
+}
+
+div.thumbnails .thumb a span {
+	display:block;
+	width:125px;
+	height:125px;
+	background-color:#eeeeee;
+	position:absolute;
 }
 
 div.thumbnails div.movie {
-width: 300px;
+width: 278px;
+height: 125px !important;
+margin: 6px;
+}
+
+.movie img {
+	width: 190px;
 }
 
 div.thumbnails div.movie a:link, div.thumbnails div.movie a:hover, div.thumbnails div.movie a:visited {
 	margin-left: 20px;
 	margin-top: 0px;
+	background-size: 190px 38px;
 }
 
 div.scrollable { 	
-	width: 100%;	
+	width: 90%;	
 	height: auto;
 	overflow-y: visible;
 	overflow-x: hidden;
-	margin-left: 0;
+	margin: 0 auto;
 }
 
 .slick-prev, .slick-next {
@@ -1905,7 +1926,7 @@ div.scrollable {
 	position: relative;
 	width: 100%;
 	height: auto;
-	bottom: 0;
+	bottom: -50px;
 	left: 0;
 }
 
@@ -2048,10 +2069,18 @@ width: 100%;
 /*Tweener====================================*/
 @media (min-width: 768px) and (max-width: 1068px) {
 
+#home-container {
+	min-height: 100%;
+}
+
 div.scrollable {
 	width: 700px;
 	height: 420px;
 	padding: 20px 0;
+}
+
+.textright {
+	margin-left: 700px;
 }
 
 div.thumbnails .thumb {
@@ -2077,6 +2106,24 @@ div.thumbnails div.movie a:link {
 	height: 105px;
 }
 
+div.thumbnails .thumb a span {
+	display:block;
+	width:105px;
+	height:105px;
+	background-color:#eeeeee;
+	position:absolute;
+}
+
+div.thumbnails .thumb a span p.title {
+	font-size: 11px;
+	line-height: 15px
+}
+
+div.thumbnails .thumb a span p.index-title-city {
+	font-size: 10px;
+	line-height: 14px;
+}
+
 .movie img {
 	width: 150px;
 }
@@ -2086,11 +2133,27 @@ div.thumbnails div.movie a:link {
 }
 
 .slick-prev, .slick-next {
-	top: 30%;
+	top: 39%;
 }
 
 .slick-prev {
-	left: -8%;
+	left: -3%;
+}
+
+.slick-next {
+	background:url(../images/LargeSlideRIGHT.png) no-repeat !important;
+	clear:right;
+	margin-left:10px;
+	right: -8%;
+	background-size: 30px 79px !important;
+}
+
+.slick-prev, .slick-next { 
+    display:block;
+	width:75px;
+	height:536px; 
+	background: url(../images/LargeSlideLEFT.png) no-repeat;
+	background-size: 30px 79px;
 }
 
 #left-col .ed-button {
@@ -2100,11 +2163,10 @@ div.thumbnails div.movie a:link {
 }
 
 #footer {
-	margin-bottom: 0px;
-	position: relative;
+	position: absolute;
 	width: 100%;
-	height: auto;
-	bottom: 0;
+	height: 150px;
+	bottom: -250px;
 	left: 0;
 }
 
@@ -2125,6 +2187,7 @@ html, body {
 
 #home-container {
 	max-width: 100%;
+	min-height: 100%;
 }
 
 .navbar-default {
@@ -2211,8 +2274,13 @@ html, body {
   	left: 0;
 }
 
+.textright {
+	margin-left: 500px;
+}
+
 #home-container {
 	max-width: 100%;
+	min-height: 100%;
 }
 
 .navbar-default {
