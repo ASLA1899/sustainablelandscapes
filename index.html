@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+﻿<!DOCTYPE html>
+
+<html class='no-js' lang='en'>
 
 <title>Designing Our Future: Sustainable Landscapes</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
@@ -168,6 +168,10 @@
     <div id="header">
         <div class="title"><a href="index.html"><span class="design">DESIGNING OUR FUTURE:</span>&nbsp;<span class="sustainable">SUSTAINABLE LANDSCAPES</span></a></div>
     </div>
+    <div class="thumbnail-bar">
+      <a class="textleft prev disabled">View Previous</a>
+      <a class="textright next">View More</a>
+    </div>
   
 
     <!-- THUMBNAILS -->
@@ -185,7 +189,7 @@
                 <!--row 2 1st slide-->               
                 <div class="thumb"><a href="geos.html"><span><p class="title">Geos Net Zero Energy Neighborhood</p><p class="index-title-city">Arvada, Colorado, U.S.A.</p></span><img src="images/home/Geos.jpg"></a></div>
                 <div class="thumb"><a href="ecolodge.html"><span><p class="title">Crosswaters Ecolodge</p><p class="index-title-city">Nankun Mountain Reserve, Guangdong Province, China</p></span><img src="images/home/Ecolodge.jpg"></a></div>
-                <!--double widde-->
+                <!--double wide-->
                 <div class="movie"><img src="images/home/VideosHeader_Orange.png"><p style="padding:10px 25px 0px 25px;">Watch animations created with Google Sketchup to learn how sustainable design works.
                 <a class="non" href="videos.html"></a></p></div>
                 <div class="thumb"><a href="discovery.html"><span><p class="title">James Clarkson Environmental Discovery Center</p><p class="index-title-city">White Lake Township, Michigan, U.S.A.</p></span><img src="images/home/Discovery.jpg"></a></div>
@@ -276,16 +280,21 @@ $('.dropdown-submenu>a').unbind('click').click(function(e){
 </script>
 
 <!--JAVSCRIPT - THUMBNAIL NAVIGATION___________________________________________________________________________________-->
-<script>
-$(document).ready(function(){
-  $('.scrollable').slick({
 
-  });
+<script type="text/javascript">
+$('.textleft').click(function(){
+  $('.scrollable').slick('slickPrev');
+});
+
+$('.textright').click(function(){
+  $('.scrollable').slick('slickNext');
 });
 </script>
+
 <script>
-$('.single-item').slick({
+$('.scrollable').slick({
   dots: false,
+  slidesToShow: 1,
   slidesToScroll: 3,
   swipeToSlide: true,
   swipe: true,
@@ -294,50 +303,6 @@ $('.single-item').slick({
 </script>
 
 <!-- JAVASCRIPT - IMAGE HOVER___________________________________________________________________________________-->
-
-<script type="text/javascript">
-
-$(document).ready(function() {      
-    var isMobile = window.matchMedia("only screen and (max-width: 767px)");
-
-    if (isMobile.matches) {
-
-      var totalCount;   //Keeps track of the total number of li's, shown or hidden.
-      var currentCount; //Keeps track of the number of li's currently shown.
-
-      $(document).ready(function () {
-      //Count how many li's there are in total.
-      totalCount  = $('.thumb').size();
-      //Start by showing three of them.
-      currentCount = 10;
-      adjustLiShown();
-      $('#loadMore').click(function () {
-       //Increase by three and update.
-       currentCount += 10;
-       adjustLiShown()
-      });
-      $('#showLess').click(function () {
-       //Decrease by three and update.
-       currentCount -= 10;
-       adjustLiShown()
-    });
-});
-
-function adjustLiShown() {
-    //Hide all and then show the one with index under total count.
-    $('.thumb').hide().filter(':lt(' + currentCount + ')').show();
-    //Only show "load more" if we haven't reached the total yet.
-    $('#loadMore').toggle(currentCount < totalCount);
-    //Only show "show less" if we are above the starting number.
-    $('#showLess').toggle(currentCount > 10);
-}
-
-       }
-
-});
-
-
-</script>
 
 <script type="text/javascript">
 $(function(){
