@@ -1950,6 +1950,8 @@ h2 {
 
 .secondary-title-city {
 	padding-left: 25px;
+	padding-right: 25px;
+	display: block;
 }
 
 .main-container {
