@@ -193,6 +193,10 @@ li.bigleft {
 	margin: 0 0 0 100px !important;
 }
 
+.main-container-education {
+	margin: 0 50px 0 100px;
+}
+
 .navbar-default {
 	background:#00AEEF;
 	margin:0 0 0 100px;
