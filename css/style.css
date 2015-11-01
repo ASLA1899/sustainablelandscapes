@@ -1565,7 +1565,7 @@ html, body {
 	padding-left: 0px;
 	padding: 0px;
 	position: relative;
-	width: 220px;
+	width: 210px;
 }
 
 .dropdown-submenu {
@@ -1626,6 +1626,7 @@ html, body {
 
 .category-cases {
 	padding-left: 20px;
+	margin-right: 20px;
 }
 
 #nav-container ul#dropdown li.dropdown a:link#main-nav, #nav-container ul#dropdown li.dropdown a:visited#main-nav {
@@ -1692,7 +1693,7 @@ html, body {
 .navbar-offcanvas {
 	position:fixed;
 	height: 100%;
-	width:260px;
+	width:250px;
 	left:-250px;
 	top:0px;
 	z-index:999;
