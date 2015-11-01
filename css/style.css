@@ -760,7 +760,7 @@ line-height:16px;
 #footer .copy {
 	padding: 25px 0 0 0;
 	margin:0px 0 25px 25px;
-	width:162px;
+	width:250px;
 	font-size:10px;
 	line-height:15px;
 	float:left;
@@ -1932,6 +1932,7 @@ div.scrollable {
 
 #footer .nea {
 	float: left;
+	padding: 0px;
 }
 
 #footer .date {
