@@ -25,18 +25,22 @@
 
 </head>
 
-<body>
+<body class="body-offcanvas">
 <div id="home-container">
 
 <header class="clearfix">
-  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+  <button type="button" class="navbar-toggle offcanvas-toggle js-offcanvas-has-events" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
     <span class="sr-only">Toggle Button</span>
     MENU
   </button>
-<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas">
+<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade offcanvas-transform js-offcanas-done" role="navigation" id="js-bootstrap-offcanvas">
   <div class="container-fluid">
       <div class="navbar-header">
           <a class="navbar-brand" id="logo" href="http://www.asla.org"><img src="images/Logo.png"></a>
+          <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+            <span class="sr-only">Toggle Navigation</span>
+            <i class="glyphicon glyphicon-remove"></i>
+          </button>
       </div>
       <div id="nav-container">
         <ul class="nav navbar-nav" id="dropdown">
@@ -88,8 +92,8 @@
                       <p class="category-cases"><a href="burbank.html">Burbank Water and Power Eco-Campus</a></p>
                       <p class="category-cases"><a href="cas.html">California Academy of Sciences</a></p>
                       <p class="category-cases"><a href="caltech.html">California Institute of Technology Master Plan</a></p>
-                      <p class="category-cases"><a href="apartments.html">Drs. Julian and Raye Richardson Apartments</a></p>
                       <p class="category-cases"><a href="crackgarden.html">The Crack Garden</a></p>
+                      <p class="category-cases"><a href="apartments.html">Drs. Julian and Raye Richardson Apartments</a></p>
                       <p class="category-cases"><a href="gardengarden.html">Garden/Garden &mdash; A Comparison in Santa Monica</a></p>
                       <p class="category-cases"><a href="geos.html">Geos Net Zero Energy Neighborhood</a></p>
                       <p class="category-cases"><a href="nuevaschool.html">Nueva School </a></p>
