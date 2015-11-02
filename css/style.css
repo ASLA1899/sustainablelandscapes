@@ -1936,9 +1936,14 @@ div.scrollable {
 	left: 0;
 }
 
+#footer .copy {
+	margin-bottom: 0px;
+}
+
 #footer .nea {
 	float: left;
 	padding: 0px;
+	margin-top: 25px;
 }
 
 #footer .date {
