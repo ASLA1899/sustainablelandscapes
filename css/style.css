@@ -1955,6 +1955,16 @@ h2 {
 	padding: 5px 0 5px 30px;
 }
 
+div.thumbnails .thumb a span p.title {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+div.thumbnails .thumb a span p.index-title-city {
+	font-size: 11px;
+	line-height: 15px;
+}
+
 .secondary-title-city {
 	padding-left: 25px;
 	padding-right: 25px;
