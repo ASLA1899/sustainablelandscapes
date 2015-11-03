@@ -1950,6 +1950,12 @@ div.scrollable {
 	margin-bottom: 25px;
 }
 
+/*Disqus*/
+#layout {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
 /*Mobile Secondary Pages___________________________________________________________________________________ */
 
 h1 {
