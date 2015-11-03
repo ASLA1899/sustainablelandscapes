@@ -352,20 +352,27 @@
             <div class="clear"></div>
         </div>
         
-        <div id="comments">
-          <div class="share">
-            <div class="share-button"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a95791f4a30594f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a95791f4a30594f"></script>
-            </div>
-          </div>
-
-          <script>
-          var idcomments_acct = 'b83f1c10ae5ee54d431dc475ba32c9c8';
-          var idcomments_post_id;
-          var idcomments_post_url;
-          </script>
-          <span id="IDCommentsPostTitle"></span>
-          <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-        </div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        /*
+        var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+         */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//sustainablelandscapes.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
   </div>
 
@@ -377,7 +384,7 @@
 
 </div>
 <div id="footer">
-	<div class="date">&copy;2013 American Society of Landscape Architects<br />
+	<div class="date">&copy;2015 American Society of Landscape Architects<br />
     <a href="mailto:info@asla.org">Contact Us</a>
     </div>
     
@@ -386,15 +393,7 @@
     <div class="clear"></div>
 </div>
 <!--JAVSCRIPT - NAVIGATION___________________________________________________________________________________-->
-<script>
-// execute your scripts when the DOM is ready. this is a good habit
-$(function() {
 
-	// initialize scrollable
-	var api = $(".scrollable").scrollable(); 
-
-});
-</script>
 
 <script type='text/javascript'>
   $(function() {
@@ -481,6 +480,7 @@ $(document).ready(function() {
         ga('send', 'pageview');
 </script>
 
+<script id="dsq-count-scr" src="//sustainablelandscapes.disqus.com/count.js" async></script>
 
 </body>
 <!-- InstanceEnd --></html>
