@@ -282,7 +282,7 @@ ul.cases-body ul.dropdown-menu {
 .dropdown-submenu>a:after {
     display: block;
     content: " ";
-    float: right;
+    float: left;
     width: 0;
     height: 0;
     border-color: transparent;
@@ -290,7 +290,7 @@ ul.cases-body ul.dropdown-menu {
     border-width: 5px 0 5px 5px;
     border-left-color: #fff;
     margin-top: 5px;
-    margin-right: -10px;
+    margin-right: 15px;
 }
 
 .dropdown-submenu:hover>a:after {
@@ -314,6 +314,10 @@ ul.cases-body ul.dropdown-menu {
 .dropdown-menu > li > a:focus {
 	background-color: #00AEEF;
 	text-decoration: underline;
+}
+
+.dropdown-menu > li > a {
+	padding: 5px 0;
 }
 
 .dropdown-menu > .active > a,
@@ -1586,7 +1590,7 @@ html, body {
 .dropdown-submenu>a:after {
     display: block;
     content: " ";
-    float: right;
+    float: left;
     width: 0;
     height: 0;
     border-color: transparent;
@@ -1594,7 +1598,7 @@ html, body {
     border-width: 5px 0 5px 5px;
     border-left-color: #fff;
     margin-top: 5px;
-    margin-right: -10px;
+    margin-right: 15px;
 }
 
 .dropdown-submenu:hover>a:after {
