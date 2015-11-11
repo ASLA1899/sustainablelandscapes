@@ -1929,6 +1929,7 @@ div.scrollable {
 
 #right-col #facts .col1 {
 	width: 100%;
+	padding-bottom: 0px;
 }
 
 #right-col #facts .col2 {
