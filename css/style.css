@@ -82,6 +82,13 @@ body a:hover {
 	margin-left: 770px;
 }
 
+.textleft {
+	animation: myfirst 8s;
+	-moz-animation:myfirst 8s; /* Firefox */
+	-webkit-animation:myfirst 8s; /* Safari and Chrome */
+	-o-animation:myfirst 8s; /* Opera */
+}
+
 .title {
 	padding:30px 25px 25px 25px;
 	
@@ -177,10 +184,10 @@ li.bigleft {
 	background: url(../images/LargeSlideLEFT.png) no-repeat;
 	margin:5px 0 0 0;
 	float:left;
-	transition:.4s linear;
+	transition:.6s linear;
   /* We need to help some browsers along for this to work */
-  -moz-transition:.4s linear;
-  -webkit-transition:.4s linear;
+  -moz-transition:.6s linear;
+  -webkit-transition:.6s linear;
 	cursor:pointer;
 	top: 35%;
 }
