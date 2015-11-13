@@ -175,42 +175,6 @@
 
 <!-- LEFT COLUMN___________________________________________________________________________________________________-->
 <div class="main-container">
-<div id="left-col">
-  <div class="project-type">
-  <h2>Educational<br /> Resources</h2>
-    <ul class="links">
-	    <li><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></li>
-      <li><a href="Ed_ActiveLiving.html">Design for Active Living</a></li>
-      <li><a href="Ed_Wildlife.html">Designing  for Biodiversity</a></li>
-      <li><a href="Ed_Energy.html">Energy Efficiency</a></li>
-      <li><a href="Ed_WaterManagement.html">Green  Infrastructure</a></li>
-      <li><a href="Ed_Waste.html">Incorporating Sustainable Materials</a></li>
-      <li><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></li>
-       <li><a href="Ed_UrbanAg.html">Urban Agriculture</a></li>
-      <li><a href="Ed_UrbanForests.html">Urban Forestry</a></li>  
-	  </ul>
-
-<h2>Related <br />Animations</h2>
-
-	<ul class="links">
-    <!-- InstanceBeginEditable name="RelatedAnimations" -->
-	  <li><a href="Vid_ActiveLiving.html">Designing for Active Living</a></li>
-      <li><a href="Vid_Parks.html">Revitalizing Communities with Parks </a></li> 
-      <!-- InstanceEndEditable -->
-	</ul>
-
-<h2>Related Projects</h2>
-	<ul class="links">
-    <li><a href="bryantpark.html">Bryant park</a></li>
-    <li><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></li>
-    <li><a href="highline.html">High Line Park</a></li>
-    <li><a href="hto.html">HtO Park</a></li>
-    <li><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan</a></li>
-    <li><a href="redribbon.html">The Red Ribbon, Tanghe River Park</a></li>
-    <li><a href="vietvillage.html">Viet Village Urban Farm</a></li>
-	</ul>
-</div>
-</div>
 
 <!-- RIGHT COLUMN___________________________________________________________________________________________________-->
 
@@ -322,6 +286,42 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 </div>
+<div id="left-col">
+  <div class="project-type">
+  <h2>Educational<br /> Resources</h2>
+    <ul class="links">
+      <li><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></li>
+      <li><a href="Ed_ActiveLiving.html">Design for Active Living</a></li>
+      <li><a href="Ed_Wildlife.html">Designing  for Biodiversity</a></li>
+      <li><a href="Ed_Energy.html">Energy Efficiency</a></li>
+      <li><a href="Ed_WaterManagement.html">Green  Infrastructure</a></li>
+      <li><a href="Ed_Waste.html">Incorporating Sustainable Materials</a></li>
+      <li><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></li>
+       <li><a href="Ed_UrbanAg.html">Urban Agriculture</a></li>
+      <li><a href="Ed_UrbanForests.html">Urban Forestry</a></li>  
+    </ul>
+
+<h2>Related <br />Animations</h2>
+
+  <ul class="links">
+    <!-- InstanceBeginEditable name="RelatedAnimations" -->
+    <li><a href="Vid_ActiveLiving.html">Designing for Active Living</a></li>
+      <li><a href="Vid_Parks.html">Revitalizing Communities with Parks </a></li> 
+      <!-- InstanceEndEditable -->
+  </ul>
+
+<h2>Related Projects</h2>
+  <ul class="links">
+    <li><a href="bryantpark.html">Bryant park</a></li>
+    <li><a href="greensburg.html">Greensburg Sustainable Comprehensive Plan</a></li>
+    <li><a href="highline.html">High Line Park</a></li>
+    <li><a href="hto.html">HtO Park</a></li>
+    <li><a href="cradletocradle.html">Park 20/20: A Cradle to Cradle Inspired Master Plan</a></li>
+    <li><a href="redribbon.html">The Red Ribbon, Tanghe River Park</a></li>
+    <li><a href="vietvillage.html">Viet Village Urban Farm</a></li>
+  </ul>
+</div>
+</div>
 
 <div class="clear"></div>
 </div>
@@ -356,6 +356,26 @@
 
     
   });
+</script>
+
+<script type="text/javascript">
+$( ".dropdown-submenu" ).click(function(event) {
+    // stop bootstrap.js to hide the parents
+    event.stopPropagation();
+    // hide the open children
+    $( this ).find(".dropdown-submenu").removeClass('open');
+    // add 'open' class to all parents with class 'dropdown-submenu'
+    $( this ).parents(".dropdown-submenu").addClass('open');
+    // this is also open (or was)
+    $( this ).toggleClass('open');
+});
+
+$('.dropdown-submenu>a').unbind('click').click(function(e){
+        $('.dropdown-submenu>p').hide();
+        $(this).next('p').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
 </script>
 
 <!--JAVSCRIPT - SLIDESHOW___________________________________________________________________________________-->

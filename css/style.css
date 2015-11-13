@@ -744,7 +744,10 @@ line-height:16px;
 }
 
 #disqus_thread {
-	margin-bottom: 15px;
+	margin: 0 25px 25px 0;
+	width: 723px;
+	position: relative;
+	top: -380px
 }
 
 /*Index-Footer___________________________________________________________________________________ */
@@ -755,6 +758,7 @@ line-height:16px;
 	padding:0;
 	height:162px;
 	background:#eee;
+	position: relative;
 	
 }
 
@@ -1912,7 +1916,7 @@ div.scrollable {
 }
 
 #right-col #facts {
-	margin-bottom: -15px;
+	margin-bottom: 0px;
 }
 
 #footer {
@@ -2099,6 +2103,13 @@ ul.video li .vid-thumnail-desc {
 	margin-right: 3%;
 }
 
+#disqus_thread {
+	margin: 0 25px 25px 25px;
+	width: 86%;
+	position: relative;
+	top: 0px;
+}
+
 }
 
 /*Tweener====================================*/
@@ -2197,6 +2208,13 @@ div.thumbnails .thumb a span p.index-title-city {
 	border:0;
 }
 
+#disqus_thread {
+	margin: 0 25px 25px 25px;
+	width: 94%;
+	position: relative;
+	top: 0px;
+}
+
 #footer {
 	position: relative;
 	width: 100%;
@@ -2273,10 +2291,6 @@ html, body {
 	width: 72%;
 }
 
-h3 {
-	margin-top: 0px;
-}
-
 #left-col .ed-button {
 	padding:0 0 25px 0px;
 	margin:0;
@@ -2294,6 +2308,13 @@ h3 {
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
 	min-width: 100%;
+}
+
+#disqus_thread {
+	margin: 0 25px 25px 0;
+	max-width: 72%;
+	position: relative;
+	top: -315px
 }
 
 #footer {
