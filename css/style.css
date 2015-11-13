@@ -746,8 +746,6 @@ line-height:16px;
 #disqus_thread {
 	margin: 0 25px 25px 0;
 	width: 723px;
-	position: relative;
-	top: -380px
 }
 
 /*Index-Footer___________________________________________________________________________________ */
@@ -2106,8 +2104,6 @@ ul.video li .vid-thumnail-desc {
 #disqus_thread {
 	margin: 0 25px 25px 25px;
 	width: 86%;
-	position: relative;
-	top: 0px;
 }
 
 }
@@ -2314,7 +2310,6 @@ html, body {
 	margin: 0 25px 25px 0;
 	max-width: 72%;
 	position: relative;
-	top: -315px
 }
 
 #footer {
