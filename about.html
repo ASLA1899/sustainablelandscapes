@@ -29,16 +29,20 @@
 <!-- HEADER___________________________________________________________________________________________________-->
 
 <header class="clearfix">
-  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
-    <span class="sr-only">Toggle Button</span>
-    MENU
-  </button>
-<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas">
+  <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
       <div class="navbar-header">
           <a class="navbar-brand" id="logo" href="http://www.asla.org"><img src="images/Logo.png"></a>
+          <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float: left;">
+          <span class="sr-only">Toggle Button</span>
+          <span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </span>
+          </button>
       </div>
-      <div id="nav-container">
+      <div class="navbar-offcanvas navbar-offcanvas-touch nav-container" id="js-bootstrap-offcanvas">
         <ul class="nav navbar-nav" id="dropdown">
           <li class="dropdown cases studies">
             <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="main-nav">Case Studies</a>
@@ -176,12 +180,27 @@
 
 <!-- LEFT COLUMN___________________________________________________________________________________________________-->
 <div class="main-container">
+
+<!-- RIGHT COLUMN___________________________________________________________________________________________________-->
+
+<div id="right-col"><!-- InstanceBeginEditable name="Col2" -->
+<h1>What are Sustainable Landscapes?</h1>
+<div class="ed-section">
+<p>Sustainable landscapes are responsive to the environment, re-generative, and can actively contribute to the development of healthy communities. Sustainable landscapes sequester carbon, clean the air and water, increase energy efficiency, restore habitats, and create value through significant economic, social and, environmental benefits.</p>
+<p>Through this site, you will learn how landscape architects improve your world through projects ranging from the large-scale sustainable master plans and housing communities to small-scale green streets, parking lots, and private yards. You will also learn how landscape architects, planners, architects, engineers, horticulturalists, and others work in interdisciplinary teams to create innovative models that outline a path to sustainable future practice.  </p>
+<p>Once you’ve explored the projects, learn more about the technical details that landscape architects bring to designing and creating sustainable landscapes. Visit the <a href="http://www.asla.org/ContentDetail.aspx?id=25064">Sustainable Sites Initiative</a>, a new rating system that will help bring these types of projects to all communities. </p>
+<div class="animation-callout" style="width:349px; height:162px; position:relative;"><div style="position:absolute"><img src="images/home/VideosHeader.png" /><p style="padding:15px 25px 0px 25px;">Watch animations created with Google Sketchup to learn how sustainable design works. <br />
+	  <br /><a href="videos.html" class="non"></a></p></div></div>
+</div>
+
+
+</div>
 <div id="left-col">
 <h2>Projects</h2>
 
-	<ul class="links">
+  <ul class="links">
     <!-- InstanceBeginEditable name="AllProjects" -->
-	  
+    
       <li><a href="bryantpark.html">Bryant Park</a></li>
       <li><a href="cas.html">California Academy of Sciences</a></li>
       <li><a href="caltech.html">California Institute of Technology Master Plan</a></li>
@@ -215,30 +234,9 @@
       <li><a href="greenroof.html">Washington Mutual Center Green Roof</a></li>    
     
       <!-- InstanceEndEditable -->
-	</ul>
-
-    
-    
-    
- 
-   
+  </ul>
  </div>
-
-<!-- RIGHT COLUMN___________________________________________________________________________________________________-->
-
-<div id="right-col"><!-- InstanceBeginEditable name="Col2" -->
-<h1>What are Sustainable Landscapes?</h1>
-<div class="ed-section">
-<p>Sustainable landscapes are responsive to the environment, re-generative, and can actively contribute to the development of healthy communities. Sustainable landscapes sequester carbon, clean the air and water, increase energy efficiency, restore habitats, and create value through significant economic, social and, environmental benefits.</p>
-<p>Through this site, you will learn how landscape architects improve your world through projects ranging from the large-scale sustainable master plans and housing communities to small-scale green streets, parking lots, and private yards. You will also learn how landscape architects, planners, architects, engineers, horticulturalists, and others work in interdisciplinary teams to create innovative models that outline a path to sustainable future practice.  </p>
-<p>Once you’ve explored the projects, learn more about the technical details that landscape architects bring to designing and creating sustainable landscapes. Visit the <a href="http://www.asla.org/ContentDetail.aspx?id=25064">Sustainable Sites Initiative</a>, a new rating system that will help bring these types of projects to all communities. </p>
-<div class="animation-callout" style="width:349px; height:162px; position:relative;"><div style="position:absolute"><img src="images/home/VideosHeader.png" /><p style="padding:15px 25px 0px 25px;">Watch animations created with Google Sketchup to learn how sustainable design works. <br />
-	  <br /><a href="videos.html" class="non"></a></p></div></div>
-</div>
-<!-- InstanceEndEditable -->
-
-
-<div id="disqus_thread"></div>
+ <div id="disqus_thread"></div>
         <script>
         /**
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -261,10 +259,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-
 </div>
-
-<div class="clear"></div>
 </div>
 
 <!--FOOTER___________________________________________________________________________________________________-->

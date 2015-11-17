@@ -14,8 +14,7 @@ body {
   	height: 100%;
 }
 
-a
-{
+a{
   outline: none;
 }
 
@@ -91,7 +90,7 @@ body a:hover {
 
 .title {
 	padding:30px 25px 25px 25px;
-	
+	text-align: center;
 }
 
 .title a {
@@ -100,14 +99,14 @@ body a:hover {
 
 .title .design {
 	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
-	font-weight: 100;
+	font-weight: 200;
 	font-size: 3.7rem;
 	color: #d4d4d4;
 }
 
 .title .sustainable {
 	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
-	font-weight: 100;
+	font-weight: 200;
 	font-size: 3.7rem;
 	color: #666666;
 }
@@ -208,14 +207,14 @@ li.bigleft {
 	background:#00AEEF;
 	margin:0 0 0 100px;
 	padding:0;
-	height:100px;
+	height:90px;
 	width:960px;
 	max-width: 100%;
 	border-radius: 0px;
 	border: none;
 }
 
-#nav-container {
+.nav-container {
 background:none;
 width: 720px;
 padding:40px 0 0 25px;
@@ -224,14 +223,17 @@ max-width: 100%;
 }
 
 ul.cases-body ul.dropdown-menu {
-	padding: 0;
-	text-decoration: none;
-	background: none;
+	padding:5px 20px 15px 15px;
+	margin:0 15px 0 10px;
+	background: #00Aeef;
+	border:none;
+	list-style:none;
+	z-index:100;
+	border-radius: 0px;
 	width: 190px;
-	margin: 0 25px 0 0;
 }
 
-#nav-container ul.dropdown-menu {
+ul.dropdown-menu {
 	padding:5px 20px 15px 15px;
 	margin:0 15px 0 10px;
 	position:absolute;
@@ -251,6 +253,18 @@ ul.cases-body ul.dropdown-menu {
 
 .dropdown-submenu {
     position: relative;
+}
+
+.studies-drop > ul.dropdown-menu {
+	padding:5px 20px 15px 15px;
+	margin:0 15px 0 10px;
+	position:absolute;
+	background: #00Aeef;
+	border:none;
+	list-style:none;
+	z-index:100;
+	border-radius: 0px;
+	width: 190px;
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -379,7 +393,7 @@ ul.cases-body ul.dropdown-menu {
 
 }
 
-#nav-container ul.dropdown-menu a#cases {
+.nav-container ul.dropdown-menu a#cases {
 list-style:none;
 font-family:Arial, Helvetica, sans-serif;
 font-size:18px;
@@ -389,8 +403,8 @@ float:left;
 }
 
 
-#nav-container ul#dropdown li.dropdown a:link#main-nav,
-#nav-container ul#dropdown li.dropdown a:visited#main-nav {
+.nav-container ul#dropdown li.dropdown a:link#main-nav,
+.nav-container ul#dropdown li.dropdown a:visited#main-nav {
 	background:url(../images/TopNave-ArrownRight.png) no-repeat left;
 	background-position: 0 -3px;
 	color:#fff !important;
@@ -402,15 +416,15 @@ float:left;
 }
 
 
-#nav-container ul#dropdown li.dropdown a:hover#main-nav, 
-#nav-container ul#dropdown li.dropdown a:active#main-nav{
+.nav-container ul#dropdown li.dropdown a:hover#main-nav, 
+.nav-container ul#dropdown li.dropdown a:active#main-nav{
 	
 background:url(../images/TopNAV-ArrowDown.png) no-repeat left;
 text-decoration:underline;
 
 }
 
-#nav-container ul.dropdown li.dropdown a#main-nav ul.cases-body { 
+.nav-container ul.dropdown li.dropdown a#main-nav ul.cases-body { 
 	display:none; 
 	padding:0 0 25px 25px;
 	margin:0 0 0 30px;
@@ -430,7 +444,6 @@ font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
 	padding:8px 0 0px 0px;
 	text-decoration:none;
-	margin:none;
 	background:none;
 	cursor:pointer;
 	margin:0px 0 0 0;
@@ -567,13 +580,17 @@ a.category {
 }
 
 #logo {
-	margin:18px 0 0 25px;
+	margin:23px 0 0 25px;
 	float:left;
 }
 
 #logo img {
 	padding:0;
 	border:0;
+}
+
+.navbar-brand {
+	padding: 0px;
 }
 
 
@@ -699,6 +716,7 @@ div.thumbnails .thumb a span p.title {
 	color:#eeeeee;
 	font-size:18px;
 	line-height:22px;
+	text-align: left;
 }
 
 div.thumbnails .thumb a:hover span p.title {
@@ -875,6 +893,7 @@ font-size:17px;
 padding:0;
 margin:0;
 line-height:22px;
+text-align: left;
 
 }
 
@@ -1569,7 +1588,7 @@ html, body {
 	margin: 18px 0 0 15px;
 }
 
-#nav-container ul.dropdown-menu {
+.nav-container ul.dropdown-menu {
 	height: auto;
 	padding-left: 0px;
 	padding: 0px;
@@ -1638,17 +1657,17 @@ html, body {
 	margin-right: 20px;
 }
 
-#nav-container ul#dropdown li.dropdown a:link#main-nav, #nav-container ul#dropdown li.dropdown a:visited#main-nav {
+.nav-container ul#dropdown li.dropdown a:link#main-nav, .nav-container ul#dropdown li.dropdown a:visited#main-nav {
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
 
-#nav-container {
+.nav-container {
 	width: 100%;
 	padding-left: 0px;
 }
 
-#nav-container ul.dropdown-menu {
+.nav-container ul.dropdown-menu {
 	padding-left: 0px;
 	margin-bottom: 10px;
 }
@@ -1688,9 +1707,7 @@ html, body {
 }
 
 .navbar-toggle {
-	margin-top: 30px;
-	margin-right: 45px;
-	border-radius: 0px;
+	float: right !important;
 }
 
 .navbar-toggle a {
@@ -1707,6 +1724,7 @@ html, body {
 	top:0px;
 	z-index:999;
 	overflow-y:scroll;
+	background-color: #00AEEF;
 	-webkit-overflow-scrolling:touch;
 	-webkit-transition:all 0.15s ease-in;
 	-moz-transition:all 0.15s ease-in;
@@ -1760,6 +1778,13 @@ html, body {
 	border-bottom:4px solid;
 	}
 
+.offcanvas-toggle.is-open .icon-bar:nth-child(2) {
+    opacity: 0; }
+  .offcanvas-toggle.is-open .icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translate(4px, -4px);
+        -ms-transform: rotate(-45deg) translate(4px, -4px);
+            transform: rotate(-45deg) translate(4px, -4px); }
+
 .navbar-offcanvas .dropdown-menu {
 	position:relative;
 	width:100%;
@@ -1785,17 +1810,14 @@ html, body {
 	}
 
 .offcanvas-toggle { 
-	background:#f8f8f8;
 	color: #00AEEF;
-	margin-left: 28px;
-	margin-bottom: 15px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;
 	}
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { 
-	background:#f8f8f8;
 	color: #00AEEF;
-	margin-left: 28px;
-	margin-bottom: 15px;
 	}
 
 .offcanvas-toggle .icon-bar { 
@@ -1984,6 +2006,10 @@ div.thumbnails .thumb a span p.index-title-city {
 	margin: 0 0 50px 0;
 }
 
+.title {
+text-align: left;
+}
+
 #left-col {
 	width: 100%;
 	margin-top: 0px;
@@ -2121,6 +2147,10 @@ div.scrollable {
 	padding: 20px 0;
 }
 
+.title {
+text-align: left;
+}
+
 .textright {
 	margin-left: 700px;
 }
@@ -2254,17 +2284,18 @@ html, body {
 	width: 100%;
 }
 
-#nav-container {
+.nav-container {
 	width: 70%;
 	padding-left: 0px;
 }
 
-#nav-container ul.dropdown-menu {
+.nav-container ul.dropdown-menu {
 	padding-left: 15px;
 }
 
 .title {
-	padding: 20px 15px 5px 25px
+	padding: 20px 15px 5px 25px;
+	text-align: center;
 }
 
 .title .design {
@@ -2356,13 +2387,17 @@ html, body {
 	width: 100%;
 }
 
-#nav-container {
+.nav-container {
 	width: 70%;
 	padding-left: 0px;
 }
 
-#nav-container ul.dropdown-menu {
+.nav-container ul.dropdown-menu {
 	padding-left: 0px;
+}
+
+.title {
+text-align: left;
 }
 
 .title .sustainable {
@@ -2383,7 +2418,7 @@ html, body {
 	display: inline-flex;
 }
 
-#nav-container ul.dropdown-menu {
+.nav-container ul.dropdown-menu {
 	padding-left: 15px;
 }
 
