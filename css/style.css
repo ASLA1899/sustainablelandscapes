@@ -255,18 +255,6 @@ ul.dropdown-menu {
     position: relative;
 }
 
-.studies-drop > ul.dropdown-menu {
-	padding:5px 20px 15px 15px;
-	margin:0 15px 0 10px;
-	position:absolute;
-	background: #00Aeef;
-	border:none;
-	list-style:none;
-	z-index:100;
-	border-radius: 0px;
-	width: 190px;
-}
-
 .dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
@@ -349,7 +337,7 @@ ul.dropdown-menu {
 
 .dropdown-submenu .dropdown-menu {
 	top:0;
-	left:95%;
+	left:90%;
 	margin-top:-6px;
 	border-top-left-radius:0
 	}
@@ -427,7 +415,7 @@ text-decoration:underline;
 .nav-container ul.dropdown li.dropdown a#main-nav ul.cases-body { 
 	display:none; 
 	padding:0 0 25px 25px;
-	margin:0 0 0 30px;
+	margin:0 0 0 10px;
 	position:absolute;
 	top:20px;
 	background: #00Aeef;
