@@ -1766,12 +1766,14 @@ html, body {
 	border-bottom:4px solid;
 	}
 
+
 .offcanvas-toggle.is-open .icon-bar:nth-child(2) {
     opacity: 0; }
   .offcanvas-toggle.is-open .icon-bar:nth-child(3) {
     -webkit-transform: rotate(-45deg) translate(4px, -4px);
         -ms-transform: rotate(-45deg) translate(4px, -4px);
-            transform: rotate(-45deg) translate(4px, -4px); }
+            transform: rotate(-45deg) translate(4px, -4px); 
+        }
 
 .navbar-offcanvas .dropdown-menu {
 	position:relative;

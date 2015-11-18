@@ -321,17 +321,17 @@ $('.textright').click(function(){
 <script>
 $('.scrollable').slick({
   dots: false,
-  slidesToShow: 1,
-  slidesToScroll: 3,
   swipeToSlide: true,
   swipe: true,
   arrows: true,
+  infinite: false,
 });
 </script>
 
 <!-- JAVASCRIPT - IMAGE HOVER___________________________________________________________________________________-->
 
 <script type="text/javascript">
+
 $(function(){
   $("div.thumbnails a").hover(function(){
     $(this).children("img").fadeOut();
