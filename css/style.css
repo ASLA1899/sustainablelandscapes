@@ -79,13 +79,14 @@ body a:hover {
 
 .textleft {
 	float: left;
-	margin-left: -400px;
+	left: 10%;
 	position: absolute;
 }
 
 .textright {
 	float: right;
-	margin-left: 400px;
+	right: 10%;
+	position: absolute;
 }
 
 .title {
@@ -191,8 +192,8 @@ li.bigleft {
 	outline: none;
 }
 
-.slick-prev.hidden,
-.slick-next.hidden {
+.slick-prev .hidden,
+.slick-next .hidden {
     opacity: 0;
     pointer-events:none;
 }
@@ -1552,7 +1553,7 @@ html, body {
 	z-index:50; 
 	max-width: 100%; 
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 35px;
 	text-align: center;
 }
 
@@ -1563,7 +1564,6 @@ html, body {
 	padding: 5px;
 	background-color: #eee;
 	border: 1px solid #ff6c2f;
-	float: none;
 	position: relative;
 	margin-left: 0px;
 }
@@ -2147,8 +2147,12 @@ div.scrollable {
 text-align: left;
 }
 
+.thumbnail-bar {
+	max-width: 100%;
+}
+
 .textright {
-	margin-left: 700px;
+	margin-right: 110px;
 }
 
 div.thumbnails .thumb {
@@ -2302,6 +2306,14 @@ html, body {
 	line-height: 1.1em;
 }
 
+.textleft {
+	left: 10%;
+}
+
+.textright {
+	right: 3%;
+}
+
 .main-container {
 	margin: 0 0 0 30px !important;
 }
@@ -2358,8 +2370,12 @@ html, body {
   	left: 0;
 }
 
+.textleft {
+	left: 10%;
+}
+
 .textright {
-	margin-left: 500px;
+	right: 0%;
 }
 
 #home-container {
