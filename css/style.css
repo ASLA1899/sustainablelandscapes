@@ -65,9 +65,9 @@ body a:hover {
 
 .thumbnail-bar {
 	z-index:50; 
-	max-width: 100%; 
+	max-width: 90%; 
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 	text-align: center;
 }
 
@@ -77,15 +77,15 @@ body a:hover {
 	background:none;
 }
 
-.textright {
-	margin-left: 770px;
+.textleft {
+	float: left;
+	margin-left: -400px;
+	position: absolute;
 }
 
-.textleft {
-	animation: myfirst 8s;
-	-moz-animation:myfirst 8s; /* Firefox */
-	-webkit-animation:myfirst 8s; /* Safari and Chrome */
-	-o-animation:myfirst 8s; /* Opera */
+.textright {
+	float: right;
+	margin-left: 400px;
 }
 
 .title {
@@ -127,10 +127,6 @@ div.scrollable {
 
 left: -6%;
 
-	animation: myfirst 8s;
-	-moz-animation:myfirst 8s; /* Firefox */
-	-webkit-animation:myfirst 8s; /* Safari and Chrome */
-	-o-animation:myfirst 8s; /* Opera */
 }
 @keyframes myfirst
 {
@@ -193,6 +189,12 @@ li.bigleft {
 
 .slick-slide {
 	outline: none;
+}
+
+.slick-prev.hidden,
+.slick-next.hidden {
+    opacity: 0;
+    pointer-events:none;
 }
 
 .main-container {
@@ -1561,6 +1563,9 @@ html, body {
 	padding: 5px;
 	background-color: #eee;
 	border: 1px solid #ff6c2f;
+	float: none;
+	position: relative;
+	margin-left: 0px;
 }
 
 .textright {
@@ -1570,6 +1575,7 @@ html, body {
 	padding: 5px 15px;
 	background-color: #eee;
 	border: 1px solid #ff6c2f;
+	float: none;
 }
 
 #logo {

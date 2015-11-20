@@ -321,10 +321,46 @@ $('.textright').click(function(){
 <script>
 $('.scrollable').slick({
   dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 3,
   swipeToSlide: true,
   swipe: true,
   arrows: true,
   infinite: false,
+});
+</script>
+<script>
+$(document).ready(function(){
+$('.scrollable').on('afterChange', function (event, slick, currentSlide) {
+
+        if(currentSlide === 2) {
+            $('.slick-next').addClass('hidden');
+        }
+        else {
+            $('.slick-next').removeClass('hidden');
+        }
+
+        if(currentSlide === 0) {
+            $('.slick-prev').addClass('hidden');
+        }
+        else {
+            $('.slick-prev').removeClass('hidden');
+        }
+
+        if(currentSlide === 2) {
+            $('.textright').addClass('hidden');
+        }
+        else {
+            $('.textright').removeClass('hidden');
+        }
+
+        if(currentSlide === 0) {
+            $('.textleft').addClass('hidden');
+        }
+        else {
+            $('.textleft').removeClass('hidden');
+        }    
+    })
 });
 </script>
 
