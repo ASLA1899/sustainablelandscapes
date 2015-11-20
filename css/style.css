@@ -198,6 +198,10 @@ li.bigleft {
     pointer-events:none;
 }
 
+.slick-prev .hidden {
+	visibility: hidden;
+}
+
 .main-container {
 	margin: 0 0 0 100px !important;
 }
