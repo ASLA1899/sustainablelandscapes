@@ -198,8 +198,8 @@ li.bigleft {
     pointer-events:none;
 }
 
-.slick-prev .hidden {
-	visibility: hidden;
+.slick-disabled {
+	display: none !important;
 }
 
 .main-container {
