@@ -1776,13 +1776,20 @@ html, body {
 	border-bottom:4px solid;
 	}
 
+.offcanvas-toggle.is-open .icon-bar:nth-child(1) {
+    opacity: 0; 
+}
 
 .offcanvas-toggle.is-open .icon-bar:nth-child(2) {
-    opacity: 0; }
-  .offcanvas-toggle.is-open .icon-bar:nth-child(3) {
-    -webkit-transform: rotate(-45deg) translate(4px, -4px);
-        -ms-transform: rotate(-45deg) translate(4px, -4px);
-            transform: rotate(-45deg) translate(4px, -4px); 
+    -webkit-transform: rotate(45deg) translate(3px, -3px);
+        -ms-transform: rotate(45deg) translate(3px, -3px);
+            transform: rotate(45deg) translate(3px, -3px);
+}
+
+.offcanvas-toggle.is-open .icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translate(10px, -5px);
+        -ms-transform: rotate(-45deg) translate(10px, -5px);
+            transform: rotate(-45deg) translate(10px, -5px); 
         }
 
 .navbar-offcanvas .dropdown-menu {
@@ -1828,24 +1835,6 @@ html, body {
 	margin-right:0px;
 	}
 
-.offcanvas-toggle.offcanvas-toggle-close .icon-bar:nth-child(1) {
-	-webkit-transform:rotate(45deg) translate(5px, 4px);
-	-moz-transform:rotate(45deg) translate(5px, 4px);
-	-o-transform:rotate(45deg) translate(5px, 4px);
-	transform:rotate(45deg) translate(5px, 4px);
-	}
-
-.offcanvas-toggle.offcanvas-toggle-close .icon-bar:nth-child(2) {
-	opacity:0 !important;
-	}
-
-.offcanvas-toggle.offcanvas-toggle-close .icon-bar:nth-child(3) {
-	-webkit-transform:rotate(-45deg) translate(4px, -4px);
-	-moz-transform:rotate(-45deg) translate(4px, -4px);
-	-o-transform:rotate(-45deg) translate(4px, -4px);
-	transform:rotate(-45deg) translate(4px, -4px);
-}
-
 .title {
 	padding:20px 25px 5px 25px;
 	
@@ -1878,6 +1867,10 @@ div.thumbnails .thumb {
 .thumb img {
 	width: 125px;
 	height: 125px;
+}
+
+.thumb img:nth-child(2) {
+	display: none;
 }
 
 div.thumbnails .thumb a span {
@@ -1984,11 +1977,13 @@ h2 {
 div.thumbnails .thumb a span p.title {
 	font-size: 12px;
 	line-height: 16px;
+	color: #00AEEF;
 }
 
 div.thumbnails .thumb a span p.index-title-city {
 	font-size: 11px;
 	line-height: 15px;
+	color: #00AEEF;
 }
 
 .secondary-title-city {

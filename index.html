@@ -367,6 +367,10 @@ $('.scrollable').on('afterChange', function (event, slick, currentSlide) {
 <!-- JAVASCRIPT - IMAGE HOVER___________________________________________________________________________________-->
 
 <script type="text/javascript">
+$(document).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (min-width: 768px)");
+
+    if (isMobile.matches) {
 
 $(function(){
   $("div.thumbnails a").hover(function(){
@@ -374,6 +378,9 @@ $(function(){
   }, function(){
     $(this).children("img").fadeIn();
   })    
+});
+}
+
 });
 
 </script>
