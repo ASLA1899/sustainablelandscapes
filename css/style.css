@@ -933,7 +933,7 @@ h3 {
 	font-weight:normal;
 }
 
-#left-col {
+#right-col {
 	width:187px;
 	background-color:#fff;
 	margin:25px 0 0 0;
@@ -941,12 +941,12 @@ h3 {
 	float:left;
 }
 
-#left-col ul {
+#right-col ul {
 	padding:0 0 10px 25px;
 	margin:0;
 }
 
-#left-col ul li{
+#right-col ul li{
 	list-style-type:none;
 	padding:0 0 7px 10px;
 	margin-right:7px;
@@ -957,26 +957,26 @@ h3 {
 
 
 
-#left-col ul.links {
+#right-col ul.links {
 	padding:0 0 10px 25px;
 	margin:0;
 }
 
-#left-col ul.links li{
+#right-col ul.links li{
 	list-style-type:none;
 	padding:0 0 7px 0px;
 	margin-right:7px;
 	background:none;
 }
 
-#left-col .related {
+#right-col .related {
 	width:187px;
 	background: url(../images/Related_BKGD.png) bottom repeat-x #f16527;
 	padding:0;
 	margin:0;
 }
 
-#left-col .related h1 {
+#right-col .related h1 {
  padding:0px 0px 5px 0px;
  margin:0 15px 0 25px;
  font-family:Arial, Helvetica, sans-serif;
@@ -988,28 +988,28 @@ h3 {
  
 }
 
-#left-col .related p {
+#right-col .related p {
 	padding:0 0 25px 0px;
 	margin:0 0 0 25px;
 }
 
-#left-col .related  a:link,
-#left-col .related  a:visited {
+#right-col .related  a:link,
+#right-col .related  a:visited {
 	color:#fff;
 	text-decoration:none;
 }
 
-#left-col .related  a:hover{
+#right-col .related  a:hover{
 	color:#fff;
 	text-decoration:underline;
 }
 
-#left-col ul.related-box {
+#right-col ul.related-box {
 	padding:0 15px 15px 25px;
 	margin:10px 0 0 0;
 }
 
-#left-col ul.related-box li{
+#right-col ul.related-box li{
 	list-style-type:none;
 	padding:0 0 7px 0px;
 	margin-right:7px;
@@ -1018,39 +1018,36 @@ h3 {
 }
 
 
-#left-col .ed-button {
+#right-col .ed-button {
 	padding:0 0 25px 0px;
 	margin:0;
 	border:0;
 }
 
 
-
-
-
-#left-col .sources {
+#right-col .sources {
 	font-style:italic;
 }
 
-#left-col p {
+#right-col p {
 	margin-left:25px;
 	margin-right:10px;
 }
 
-#left-col img {
+#right-col img {
 	margin-left:25px;
 	margin-bottom:20px;
 	border:none;
 }
 
-#right-col {
+#left-col {
 	width:723px;
 	margin:25px 25px 0 0;
 	padding:0;
 	float:left;
 }
 
-#right-col h2 {
+#left-col h2 {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#f26526;
 	font-size:20px;
@@ -1061,44 +1058,44 @@ h3 {
 	line-height:21px;
 }
 
-#right-col h2 .ref {
+#left-col h2 .ref {
 font-size:16px;
 font-style:italic;
 }
 
-#right-col .ed-section {
+#left-col .ed-section {
 margin:25px 0px 0 0;
 padding: 0 0 25px 0;
 border-bottom:solid 1px #cccccc;
 width: 100%;
 }
 
-#right-col .ed-section p {
+#left-col .ed-section p {
 padding:10px 0 0 0;
 margin:0;
 
 }
 
-#right-col #facts {
+#left-col #facts {
 	
 	margin:0 0 25px 0;
 	background-color:#eeeeee;
 }
 
-#right-col .ideas {
+#left-col .ideas {
 	width: 100%;
 	margin:25px 0 25px 0px;
 	background-color:#eeeeee;
 
 }
 
-#right-col ul.facts {
+#left-col ul.facts {
 	padding:0 0 10px 0;
 	margin:0;
 	color:#555;
 }
 
-#right-col ul.facts li{
+#left-col ul.facts li{
 	list-style-type:none;
 	padding:0 0 7px 10px;
 	margin-right:7px;
@@ -1106,62 +1103,62 @@ margin:0;
 }
 
 
-#right-col #facts .col1 {
+#left-col #facts .col1 {
 	padding:0 0 25px 25px;
 	margin:0;
 	float:left;
 	width:321px;
 }
 
-#right-col .ideas .col1 {
+#left-col .ideas .col1 {
 	padding:0 0 25px 25px;
 	margin:0;
 	float:left;
 	width:321px;
 }
 
-#right-col .ideas .col1 p,
-#right-col .ideas .col2 p{
+#left-col .ideas .col1 p,
+#left-col .ideas .col2 p{
 	padding:0 0 15px 0; margin:0;
 }
 
 
 
-#right-col #facts .col2 {
+#left-col #facts .col2 {
 	padding:0 25px 0 25px;
 	margin:0;
 	float:left;
 	width:321px;
 }
 
-#right-col .ideas .col2 {
+#left-col .ideas .col2 {
 	padding:0 25px 0 25px;
 	margin:0;
 	float:left;
 	width:321px;
 }
 
-#right-col #facts p.header {
+#left-col #facts p.header {
 	padding:25px 25px 15px 25px;
 	margin:0;
 	font-size:18px;
 	color:#00AEEF;
 }
 
-#right-col .ideas p.header {
+#left-col .ideas p.header {
 	padding:25px 25px 15px 25px;
 	margin:0;
 	font-size:18px;
 	color:#00AEEF;
 }
 
-#right-col .desc {
+#left-col .desc {
 	width:550px;
 	font-size:14px;
 	line-height:18px;
 }
 
-#right-col .animation-callout {
+#left-col .animation-callout {
 	
 	overflow:hidden;
 	width:349px;
@@ -1171,9 +1168,9 @@ margin:0;
 	background-color:#eee;	
 }
 
-#right-col .animation-callout a:link,
-#right-col .animation-callout a:hover,
-#right-col .animation-callout a:visited{
+#left-col .animation-callout a:link,
+#left-col .animation-callout a:hover,
+#left-col .animation-callout a:visited{
 display:block;
 width:120px;
 height:40px;
@@ -1917,18 +1914,18 @@ div.scrollable {
 	background-color: #eee;
 }
 
-#right-col #facts .col1 {
+#left-col #facts .col1 {
 	width: 100%;
 	padding-bottom: 0px;
 	padding-right: 25px;
 }
 
-#right-col #facts .col2 {
+#left-col #facts .col2 {
 	width: 100%;
 	padding-right: 25px;
 }
 
-#right-col #facts {
+#left-col #facts {
 	margin-bottom: 0px;
 }
 
@@ -2005,17 +2002,17 @@ div.thumbnails .thumb a span p.index-title-city {
 text-align: left;
 }
 
-#left-col {
+#right-col {
 	width: 100%;
 	margin-top: 0px;
 	border-bottom: 1px solid #aaa;
 }
 
-#left-col ul {
+#right-col ul {
 	padding: 0 0 5px 20px;
 }
 
-#right-col .ed-section {
+#left-col .ed-section {
 margin: 0 auto;
 padding: 25px;
 border-bottom:solid 1px #cccccc;
@@ -2030,11 +2027,11 @@ width: 100%;
 	display: inline-block;
 }
 
-#left-col .related {
+#right-col .related {
 	width: 100%;
 }
 
-#right-col {
+#left-col {
 	width: 100%;
 	margin-left: 0px;
 }
@@ -2077,7 +2074,7 @@ ul.video li .vid-thumnail-desc {
 	margin-right: 25px;
 }
 
-#left-col .ed-button {
+#right-col .ed-button {
 	padding:0 0 25px 25px;
 	margin:0;
 	border:0;
@@ -2227,7 +2224,7 @@ div.thumbnails .thumb a span p.index-title-city {
 	background-size: 30px 79px;
 }
 
-#left-col .ed-button {
+#right-col .ed-button {
 	padding:0 0 25px 25px;
 	margin:0;
 	border:0;
@@ -2317,15 +2314,15 @@ html, body {
 	margin: 0 0 0 30px !important;
 }
 
-#left-col {
+#right-col {
 	width: 20%;
 }
 
-#right-col {
+#left-col {
 	width: 72%;
 }
 
-#left-col .ed-button {
+#right-col .ed-button {
 	padding:0 0 25px 0px;
 	margin:0;
 	border:0;
@@ -2419,13 +2416,13 @@ text-align: left;
 	margin: 0 0 0 0px !important;
 }
 
-#left-col {
+#right-col {
 	width: 100%;
 	margin-left: 0px;
 	margin-top: 0px;
 }
 
-#left-col ul {
+#right-col ul {
 	display: inline-flex;
 }
 
@@ -2433,11 +2430,11 @@ text-align: left;
 	padding-left: 15px;
 }
 
-#left-col .related {
+#right-col .related {
 	width: 100%;
 }
 
-#right-col {
+#left-col {
 	margin: 0 auto;
 	float: none;
 	padding-top: 25px;
