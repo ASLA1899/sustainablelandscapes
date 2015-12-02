@@ -689,7 +689,7 @@ div.thumbnails .thumb a span {
 	position:absolute;
 }
 
-div.thumbnails .thumb a span p{
+div.thumbnails .thumb a span p {
 	padding:10px 10px 5px 10px;
 	margin:0;
 }
@@ -697,12 +697,11 @@ div.thumbnails .thumb a span p{
 div.thumbnails .thumb a span p.index-title-city {
 	font-size:12px;	
 	line-height:16px;
-	padding-top:0;
 	color:#eeeeee;
 }
 
 div.thumbnails .thumb a, 
-div.thumbnails .thumb a:hover span p{
+div.thumbnails .thumb a:hover span p {
 	text-decoration:none;
 	color:#00AEEF;
 }
@@ -732,14 +731,14 @@ div.thumbnails .thumb a span p {
 	background: url(../images/View_Index_NoArrow.jpg) top;
 }
 
-div.thumbnails li.view {
+div.thumbnails .view {
 width:162px;
 height:162px;
 background:url(../images/View_Index_NoArrow.jpg) top;
 position:relative;
 }
 
-div.thumbnails li.view span {
+div.thumbnails .view span {
 padding:75px 10px 5px 2px;
 font-family:Arial, Helvetica, sans-serif;
 font-size:11px;
@@ -857,17 +856,12 @@ ul.video li {
 	display:inline-block;
 	overflow:hidden;
 	list-style:none;
-	width:443px;
+	max-width:443px;
 	height:162px;
-	margin:25px 0px 0px 25px;
+	margin:25px 25px 0px 25px;
 	padding:0px;
 	
-}
-
-ul.video li div {
-	width:443;
-	height:162px;
-}
+} 
 
 ul.video li .vid-thumbnail {
 	width:162px;
@@ -1894,6 +1888,18 @@ div.thumbnails div.movie a:link, div.thumbnails div.movie a:hover, div.thumbnail
 	background-size: 190px 38px;
 }
 
+div.thumbnails .view {
+width: 125px;
+height: 125px;
+background:none;
+position:relative;
+}
+
+div.thumbnails .view span {
+	padding-top: 0px;
+
+}
+
 div.scrollable { 	
 	width: 90%;	
 	height: auto;
@@ -2065,13 +2071,12 @@ width: 100%;
 	top: 25%;
 }
 ul.video li {
-	height: 220px;
-	padding-right: 25px;
+	height: auto;
+	width: 100%
 }
 
 ul.video li .vid-thumnail-desc {
-	width: 40%;
-	margin-right: 25px;
+padding: 10px 0 10px 0;
 }
 
 #right-col .ed-button {
@@ -2154,6 +2159,18 @@ text-align: left;
 div.thumbnails .thumb {
 	width: 105px;
 	height: 105px;
+}
+
+div.thumbnails .view {
+width: 105px;
+height: 105px;
+background:none;
+position:relative;
+}
+
+div.thumbnails .view span {
+	padding-top: 0px;
+
 }
 
 div.thumbnails div.movie {
