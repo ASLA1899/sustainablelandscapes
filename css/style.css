@@ -67,7 +67,7 @@ body a:hover {
 	z-index:50; 
 	max-width: 90%; 
 	padding-top: 10px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 	text-align: center;
 }
 
@@ -79,7 +79,7 @@ body a:hover {
 
 .textleft {
 	float: left;
-	left: 10%;
+	left: 11%;
 	position: absolute;
 }
 
@@ -90,7 +90,7 @@ body a:hover {
 }
 
 .title {
-	padding:30px 5px 25px 5px;
+	padding:30px 5px 5px 5px;
 	text-align: center;
 }
 
@@ -224,7 +224,7 @@ li.bigleft {
 .nav-container {
 background:none;
 width: 720px;
-padding:40px 0 0 25px;
+margin:34px 0 0 52px;
 float:left;
 max-width: 100%;
 }
@@ -286,6 +286,8 @@ ul.dropdown-menu {
 .dropdown-menu > li > a {
 	color: #fff;
 	font-weight: 600;
+	white-space: inherit;
+	margin-left: 8px;
 }
 
 .dropdown-menu > li > a:hover,
@@ -303,7 +305,6 @@ ul.dropdown-menu {
     height: 0;
     border-color: transparent;
     border-style: solid;
-    border-width: 5px 0 5px 5px;
     border-left-color: #fff;
     margin-top: 5px;
     margin-right: 15px;
@@ -371,6 +372,7 @@ ul.dropdown-menu {
 
 .dropdown-submenu > a:after {
 	margin-top:6px;
+	margin-right: 15px;
 	border-left:4px dashed;
 	border-top:4px solid transparent;
 	border-bottom:4px solid transparent;
@@ -686,7 +688,7 @@ div.thumbnails .thumb a span {
 	width:162px;
 	height:162px;
 	background-color:#eeeeee;
-	position:absolute;
+	position:relative;
 }
 
 div.thumbnails .thumb a span p {
@@ -749,7 +751,11 @@ color:#666;
 line-height:16px;
 }
 
-
+.animation-callout {
+	width: 349px;
+	height: 162px;
+	position: relative;
+}
 
 .thumbnails-grey {
 	background-color:#eeeeee;
@@ -1155,7 +1161,7 @@ margin:0;
 #left-col .animation-callout {
 	
 	overflow:hidden;
-	width:349px;
+	max-width: 100%;
 	height:162px;
 	margin:25px 0px 0px 0px;
 	padding:0px;
@@ -1170,7 +1176,7 @@ width:120px;
 height:40px;
 background:url(../images/home/WatchBTN.png);
 padding:0;
-margin-left:180px;	
+margin: 0 20px 0 100px;	
 }
 
 /*Video Embed__________________________________________________________________________________*/
@@ -1577,6 +1583,11 @@ html, body {
 	margin: 18px 0 0 25px;
 }
 
+.nav-container {
+	padding: 40px 0 0 0;
+	margin: 0;
+}
+
 .nav-container ul.dropdown-menu {
 	height: auto;
 	padding-left: 0px;
@@ -1954,11 +1965,11 @@ h3 {
 #footer .nea {
 	float: left;
 	padding: 0px;
-	margin-top: 25px;
 }
 
 #footer .date {
 	margin-bottom: 25px;
+	width: 100%;
 }
 
 /*Disqus*/
