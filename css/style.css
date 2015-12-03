@@ -90,7 +90,7 @@ body a:hover {
 }
 
 .title {
-	padding:30px 25px 25px 25px;
+	padding:30px 5px 25px 5px;
 	text-align: center;
 }
 
@@ -100,14 +100,14 @@ body a:hover {
 
 .title .design {
 	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 3.7rem;
 	color: #d4d4d4;
 }
 
 .title .sustainable {
 	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 3.7rem;
 	color: #666666;
 }
@@ -1574,7 +1574,7 @@ html, body {
 }
 
 #logo {
-	margin: 18px 0 0 15px;
+	margin: 18px 0 0 25px;
 }
 
 .nav-container ul.dropdown-menu {
@@ -2423,6 +2423,7 @@ html, body {
 
 .title {
 text-align: left;
+padding-left: 25px;
 }
 
 .title .sustainable {
