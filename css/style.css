@@ -241,7 +241,7 @@ ul.cases-body ul.dropdown-menu {
 }
 
 ul.dropdown-menu {
-	padding:5px 20px 15px 15px;
+	padding:5px 20px 25px 15px;
 	margin:0 15px 0 10px;
 	position:absolute;
 	background: #00Aeef;
@@ -260,6 +260,7 @@ ul.dropdown-menu {
 
 .dropdown-submenu {
     position: relative;
+    margin-bottom: -15px;
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -288,12 +289,14 @@ ul.dropdown-menu {
 	font-weight: 600;
 	white-space: inherit;
 	margin-left: 8px;
+	padding: 10px 0;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
 	text-decoration: underline;
 	color: #fff;
+	background-color: #00AEEF;
 
 }
 
@@ -325,16 +328,6 @@ ul.dropdown-menu {
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
     margin-bottom: 10px;
-}
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-	background-color: #00AEEF;
-	text-decoration: underline;
-}
-
-.dropdown-menu > li > a {
-	padding: 5px 0;
 }
 
 .dropdown-menu > .active > a,
@@ -878,7 +871,7 @@ ul.video li .vid-thumbnail {
 
 ul.video li .vid-thumnail-desc {
 	width:256px;
-	height:162px;
+	height:auto;
 	float:left;
 }
 
@@ -1090,7 +1083,7 @@ margin:0;
 }
 
 #left-col ul.facts {
-	padding:0 0 10px 0;
+	padding:0;
 	margin:0;
 	color:#555;
 }
@@ -1562,21 +1555,15 @@ html, body {
 .textleft {
 	max-width: 100px;
 	height: auto;
-	padding: 5px;
-	background-color: #eee;
-	border: 1px solid #ff6c2f;
 	position: relative;
-	margin-left: 0px;
+	left: 25px;
 }
 
 .textright {
-	margin-left: 120px;
 	max-width: 100px;
 	height: auto;
-	padding: 5px 15px;
-	background-color: #eee;
-	border: 1px solid #ff6c2f;
 	float: none;
+	right: 10%;
 }
 
 #logo {
@@ -1837,6 +1824,16 @@ html, body {
 	margin-right:0px;
 	}
 
+ul.dropdown-menu {
+	padding:5px 20px 15px 15px;
+}
+
+.dropdown-submenu {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+
 .title {
 	padding:20px 25px 5px 25px;
 	
@@ -1869,10 +1866,15 @@ div.thumbnails .thumb {
 .thumb img {
 	width: 125px;
 	height: 125px;
+	display: none;
 }
 
-.thumb img:nth-child(2) {
-	display: none;
+.about img {
+	display: block !important;
+}
+
+.education img {
+	display: block !important;
 }
 
 div.thumbnails .thumb a span {
@@ -1965,6 +1967,7 @@ h3 {
 #footer .nea {
 	float: left;
 	padding: 0px;
+	margin-top: 25px;
 }
 
 #footer .date {
@@ -1996,7 +1999,7 @@ div.thumbnails .thumb a span p.title {
 
 div.thumbnails .thumb a span p.index-title-city {
 	font-size: 11px;
-	line-height: 15px;
+	line-height: 12px;
 	color: #00AEEF;
 }
 
@@ -2026,7 +2029,7 @@ text-align: left;
 }
 
 #right-col ul {
-	padding: 0 0 5px 20px;
+	padding: 0 0 5px 30px;
 }
 
 #left-col .ed-section {
@@ -2034,6 +2037,10 @@ margin: 0 auto;
 padding: 25px;
 border-bottom:solid 1px #cccccc;
 width: 100%;
+}
+
+#left-col .ideas .col1 {
+	padding-bottom: 0px;
 }
 
 .project-type {
