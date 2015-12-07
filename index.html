@@ -21,6 +21,7 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/offcanvas.js"></script>
 <script src="js/dropdown.js"></script>
+<script type="text/javascript" scr="js/modernizr.js"></script>
 
 
 </head>
@@ -304,6 +305,31 @@ $('.dropdown-submenu>a').unbind('click').click(function(e){
         e.stopPropagation();
         e.preventDefault();
     });
+</script>
+
+<script type="text/javascript">
+  //Non-Touch devices
+//Hover expands menu (non default Bootstrap behaviour)
+$('html.no-touch li.dropdown').hover(function(e) {
+  $(this).toggleClass('open');
+});
+
+//Non-Touch devices
+//Click follows main link (non default Bootstrap behaviour)
+$('html.no-touch li.dropdown a.dropdown-toggle').on('click', function(e) {
+  e.preventDefault();
+  window.location.href = $(this).attr('href');
+})
+
+//Touch devices
+//Touch (click) expands menu (default Bootstrap behaviour)
+
+//Touch devices
+//Allow touch (click) to follows main link when menu open (non default Bootstrap behaviour)
+$('html.touch li.dropdown.open a.dropdown-toggle').on('click', function(e) {
+  e.preventDefault();
+  window.location.href = $(this).attr('href');
+})
 </script>
 
 
