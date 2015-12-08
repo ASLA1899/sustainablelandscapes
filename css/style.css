@@ -210,6 +210,10 @@ li.bigleft {
 	margin: 0 0 50px 100px;
 }
 
+.navbar-nav {
+	padding-left: 15px;
+}
+
 .navbar-default {
 	background:#00AEEF;
 	margin:0 0 0 100px;
@@ -685,7 +689,7 @@ div.thumbnails .thumb a span {
 }
 
 div.thumbnails .thumb a span p {
-	padding:10px 10px 5px 10px;
+	padding:5px 10px 5px 10px;
 	margin:0;
 }
 
@@ -1563,7 +1567,7 @@ html, body {
 	max-width: 100px;
 	height: auto;
 	float: none;
-	right: 10%;
+	right: 25px;
 }
 
 #logo {
@@ -2430,9 +2434,14 @@ html, body {
 	width: 100%;
 }
 
+.navbar-nav {
+	padding-left: 0px;
+}
+
 .nav-container {
 	width: 70%;
 	padding-left: 0px;
+	margin-left: 25px;
 }
 
 .nav-container ul.dropdown-menu {
