@@ -180,46 +180,34 @@
 
 <ul class="video">
 <li><div><div class="vid-thumbnail"><a href="Ed_Brownfields.html"><img src="images/education/Brownfields.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
-<p class="title"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a> </p>
-<p></p>
-</div><div class="clear"></div></div></li
+<p class="title"><a href="Ed_Brownfields.html">Brownfield Restoration / Ecosystem Rehabilitation</a></p>
+</div><div class="clear"></div></div></li>
 
- ><li><div><div class="vid-thumbnail"><a href="Ed_ActiveLiving.html"><img src="images/education/ActiveLiving.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
+<li><div><div class="vid-thumbnail"><a href="Ed_ActiveLiving.html"><img src="images/education/ActiveLiving.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
 <p class="title"><a href="Ed_ActiveLiving.html">Design for Active Living</a> </p>
-<p>&nbsp;</p>
-</div><div class="clear"></div></div></li
-    
-    ><li><div><div class="vid-thumbnail"><a href="Ed_Energy.html"><img src="images/education/Energy.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
-<p class="title"><a href="Ed_Energy.html">Energy Efficiency</a> </p>
-<p>&nbsp;</p>
-</div><div class="clear"></div></div></li
+</div><div class="clear"></div></div></li>
 
-    ><li><div><div class="vid-thumbnail"><a href="Ed_WaterManagement.html"><img src="images/education/Water.jpg" border="0"/></a></div><div class="vid-thumnail-desc"><p class="title"><a href="Ed_WaterManagement.html">Green  Infrastructure</a> </p>
-	<p>&nbsp;</p></div><div class="clear"></div></div></li
+<li><div><div class="vid-thumbnail"><a href="Ed_Energy.html"><img src="images/education/Energy.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
+<p class="title"><a href="Ed_Energy.html">Energy Efficiency</a></p>
+</div><div class="clear"></div></div></li>
 
-    ><li><div><div class="vid-thumbnail"><a href="Ed_Waste.html"><img src="images/education/Waste.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
-<p class="title"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a> </p>
-<p><strong><br />
-</strong></p>
-</div><div class="clear"></div></div></li
+<li><div><div class="vid-thumbnail"><a href="Ed_WaterManagement.html"><img src="images/education/Water.jpg" border="0"/></a></div><div class="vid-thumnail-desc"><p class="title"><a href="Ed_WaterManagement.html">Green  Infrastructure</a> </p>
+</div><div class="clear"></div></div></li>
 
-><li><div><div class="vid-thumbnail"><a href="Ed_Infrastructure.html"><img src="images/education/Infrastructure.jpg" border="0" /></a></div><div class="vid-thumnail-desc"><p class="title"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a> </p>
-<p></p>
-</div><div class="clear"></div></div></li
-    
- ><li><div><div class="vid-thumbnail"><a href="Ed_UrbanForests.html"><img src="images/education/UrbanForest.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
+<li><div><div class="vid-thumbnail"><a href="Ed_Waste.html"><img src="images/education/Waste.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
+<p class="title"><a href="Ed_Waste.html">Incorporating Sustainable Materials</a></p>
+</div><div class="clear"></div></div></li>
+
+<li><div><div class="vid-thumbnail"><a href="Ed_Infrastructure.html"><img src="images/education/Infrastructure.jpg" border="0" /></a></div><div class="vid-thumnail-desc"><p class="title"><a href="Ed_Infrastructure.html">Transforming Transportation Infrastructure</a></p>
+</div><div class="clear"></div></div></li>
+
+<li><div><div class="vid-thumbnail"><a href="Ed_UrbanForests.html"><img src="images/education/UrbanForest.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
 <p class="title"><a href="Ed_UrbanForests.html">Urban Forestry</a></p>
-<p></p>
-</div><div class="clear"></div></div></li
-	
-    
-    ><li><div><div class="vid-thumbnail"><a href="Ed_Parks.html"><img src="images/education/Parks.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
-<p class="title"><a href="Ed_Parks.html">Urban Parks</a> </p>
-<p>&nbsp;</p>
-</div><div class="clear"></div></div></li
+</div><div class="clear"></div></div></li>
 
-
- ></ul>
+<li><div><div class="vid-thumbnail"><a href="Ed_Parks.html"><img src="images/education/Parks.jpg" border="0"/></a></div><div class="vid-thumnail-desc">
+<p class="title"><a href="Ed_Parks.html">Urban Parks</a></p>
+</div><div class="clear"></div></div></li></ul>
 <!--THUMBNAILS END-->
 </div>
 <!--FOOTER-->
@@ -274,6 +262,22 @@ $('.dropdown-submenu>a').unbind('click').click(function(e){
         e.stopPropagation();
         e.preventDefault();
     });
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (min-width: 1366px)");
+
+    if (isMobile.matches) {
+  
+    $('.dropdown a.dropdown-toggle').on('click', function(e) {
+    e.preventDefault();
+    window.location.href = $(this).attr('href');
+})
+}
+
+});
 </script>
 
 <!-- JAVASCRIPT - IMAGE HOVER___________________________________________________________________________________-->

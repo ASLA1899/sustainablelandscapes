@@ -431,6 +431,22 @@ $('.dropdown-submenu>a').unbind('click').click(function(e){
     });
 </script>
 
+<script type="text/javascript">
+
+$(document).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (min-width: 1366px)");
+
+    if (isMobile.matches) {
+  
+    $('.dropdown a.dropdown-toggle').on('click', function(e) {
+    e.preventDefault();
+    window.location.href = $(this).attr('href');
+})
+}
+
+});
+</script>
+
 <!--JAVSCRIPT - SLIDESHOW___________________________________________________________________________________-->
 
 <script type="text/javascript">

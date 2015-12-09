@@ -102,7 +102,7 @@ body a:hover {
 	font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 3.7rem;
-	color: #d4d4d4;
+	color: #ababad;
 }
 
 .title .sustainable {
@@ -1992,7 +1992,7 @@ h1 {
 }
 
 h2 {
-	padding: 5px 0 5px 30px;
+	padding: 5px 0 5px 25px;
 }
 
 div.thumbnails .thumb a span p.title {
@@ -2388,6 +2388,8 @@ html, body {
 
 #footer {
 	width: 100%;
+	bottom: -130px;
+	position: relative;
 }
 
 }
@@ -2499,6 +2501,8 @@ h3 {
 
 #footer {
 	width: 100%;
+	bottom: -15px;
+	position: absolute;
 }
 
 }
