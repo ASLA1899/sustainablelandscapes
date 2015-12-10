@@ -2160,6 +2160,11 @@ padding: 10px 0 10px 0;
 	min-height: 100%;
 }
 
+.nav-container {
+	position: absolute;
+	margin-left: 240px;
+}
+
 div.scrollable {
 	width: 700px;
 	height: 420px;
@@ -2307,6 +2312,13 @@ html, body {
 	margin: 0 25px 50px 0px;
 }
 
+.nav-container {
+	position: absolute;
+	margin-left: 240px;
+	width: 70%;
+	padding-left: 0px;
+}
+
 .navbar-default {
 	height: 100px;
 	margin: 0;
@@ -2317,11 +2329,6 @@ html, body {
 	margin: 0 !important;
 	min-height: 80px;
 	width: 100%;
-}
-
-.nav-container {
-	width: 70%;
-	padding-left: 0px;
 }
 
 .nav-container ul.dropdown-menu {
@@ -2388,7 +2395,7 @@ html, body {
 
 #footer {
 	width: 100%;
-	bottom: -130px;
+	bottom: -100px;
 	position: relative;
 }
 
@@ -2443,7 +2450,7 @@ html, body {
 .nav-container {
 	width: 70%;
 	padding-left: 0px;
-	margin-left: 25px;
+	margin-left: 210px;
 }
 
 .nav-container ul.dropdown-menu {
@@ -2501,8 +2508,9 @@ h3 {
 
 #footer {
 	width: 100%;
-	bottom: -15px;
 	position: absolute;
+	bottom: 0;
+
 }
 
 }
